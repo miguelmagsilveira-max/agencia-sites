@@ -29,6 +29,7 @@ JF Eletricista      | eletricista (não-vis) | PRONTO (200)  | https://jf-eletri
 RD Caça Vazamentos  | vazamento/desent (nv) | PRONTO (200)  | https://rd-caca-vazamentos.vercel.app  | (12) 98161-9504
 Chaveiro Vitória 24h| chaveiro 24h (não-vis)| PRONTO (200)  | https://chaveiro-vitoria-24h.vercel.app| (12) 99119-6481
 Torres Manutenção   | reparos/manut (nv)    | PRONTO (200)  | https://torres-manutencao.vercel.app   | (12) 98804-7080
+Du Tattoos          | tatuagem (VISUAL-aut) | PRONTO (200)  | https://du-tattoos.vercel.app          | (12) 98102-4628 · @dutattooz
 
 ------------------------------------------------------------------------
 LINKS DE ANALYTICS — clicar ENABLE em cada um (conta pessoal)
@@ -43,6 +44,7 @@ https://vercel.com/miguelmagsilveira-3897/jf-eletricista/analytics
 https://vercel.com/miguelmagsilveira-3897/rd-caca-vazamentos/analytics
 https://vercel.com/miguelmagsilveira-3897/chaveiro-vitoria-24h/analytics
 https://vercel.com/miguelmagsilveira-3897/torres-manutencao/analytics
+https://vercel.com/miguelmagsilveira-3897/du-tattoos/analytics
 (Frente A completa. Frente B: 4 não-visuais prontos; faltam os visual-autorais.)
 
 ------------------------------------------------------------------------
