@@ -35,7 +35,7 @@ Apresenta o email com assunto, corpo completo e confirmação de que os screensh
    - **Bloco 1** — Abertura humana: "Olá, tudo bem? Meu nome é Miguel, sou desenvolvedor web aqui de São Paulo."
    - **Bloco 2** — Como conheceu + elogio interpretado: conta como encontrou o negócio, cita o dado real, e *interpreta* o dado ("é coisa séria", "trabalho fala por si só", "isso não é à toa")
    - **Bloco 3** — Transição em uma linha: "Justamente por isso resolvi entrar em contato." (ou variação)
-   - **Bloco 4** — Problema como história: reconhece o que o negócio JÁ FAZ BEM antes de mostrar a falha; constrói a cena com o cliente potencial fazendo a busca
+   - **Bloco 4** — Problema como história: reconhece o que o negócio JÁ FAZ BEM antes de mostrar a falha; constrói a cena com o cliente potencial fazendo a busca. **Rodada 5 — ancorar num FATO REAL VERIFICADO do alvo** (só o que o Roberto confirmou: ex. "vi que vocês têm 4,8 no Google com 60 avaliações, mas não têm site") em vez de uma dor genérica. Sem fato verificável, manter a versão atual (dor do nicho). Nunca inventar número ou fato.
    - **Bloco 5** — Ponte emocional: "Pensei: um(a) [negócio/tipo] com esse nível de qualidade merece uma presença digital à altura."
    - **Bloco 6** — Iniciativa concreta: "Aí fui em frente e já deixei no ar uma versão do site pra vocês verem como ficaria — com [3-5 elementos reais do site]. Ficou bonito de verdade." (verbos no passado, nunca futuro; o site agora está DE FATO publicado, então "já deixei no ar" é verdade literal)
    - **Bloco 7** — Referência aos anexos + link ao vivo: "Anexei algumas telas aqui 👇 e, se quiser ver funcionando no seu próprio celular, é só abrir esse link: [URL_AO_VIVO]" — o link (lido de `link-ao-vivo.txt`) e os screenshots CONVIVEM, nunca um substitui o outro
@@ -65,6 +65,12 @@ Apresenta o email com assunto, corpo completo e confirmação de que os screensh
 10. **Link ao vivo no Bloco 7 — obrigatório** — Além dos screenshots, o Bloco 7 sempre inclui a URL pública do site, lida de `squads/prospeccao-sites/output/{run_id}/{slug}/link-ao-vivo.txt` (gerada pelo Diego no deploy Vercel). Telas e link convivem: as telas dão o impacto imediato, o link deixa o cliente explorar no próprio celular. Se o `link-ao-vivo.txt` não existir, PAUSAR e avisar — nunca inventar URL nem omitir o link.
 
 11. **Bloco 8 termina em pergunta fechada de permissão** — O fecho é sempre uma pergunta de sim/não fácil de responder no celular, que pede permissão pra continuar a conversa ("Quer que eu te mande os detalhes?", "Posso te explicar como funciona pra deixar isso no ar de vez?"). NUNCA pergunta aberta ("o que achou?"), NUNCA decisão de compra ("vamos fechar?", "topa contratar?"), NUNCA tom de vendedor. Manter "sem compromisso" na frase.
+
+12. **Fechamento, objeções e pergunta pós-visualização (Rodada 5)** — Além dos 9 blocos (mensagem inicial), Carlos escreve, no `email.md`, uma seção separada e marcada **"FECHAMENTO E OBJEÇÕES"** com o conteúdo aprovado que o Eduardo leva pro kit (Carlos não inventa fato; o preço e as falas-padrão vêm do `documento-vivo.md` → "Fechamento e abordagem comercial"):
+    - **Pergunta pós-visualização** (depois que o alvo VER o site): "Hoje seus clientes chegam mais por indicação ou pelo Google?"
+    - **Fala de fechamento** (quando o alvo demonstra interesse / pergunta preço): "Fica R$500, pagamento único, sem mensalidade, e você só paga quando o site estiver no ar. Me manda suas fotos e informações e em até 2 dias úteis tá pronto, já com as suas fotos e depoimentos reais no lugar desses de exemplo. Posso passar aqui [dia] às [hora] pra pegar o material?"
+    - **3 objeções** (nunca confrontar, sempre terminar em pergunta): "Já tenho Instagram" → "Faz sentido, o Insta já ajuda bastante. Só por curiosidade: quem não te segue e procura [nicho] no Google, hoje acha você?"; "Tá caro / agora não dá" → "Entendo, sem problema nenhum. Me fala só uma coisa: um cliente novo por mês pagaria isso pra você?" (SÓ em nicho onde 1 serviço/venda cobre R$500); "Vou pensar / vou ver com um conhecido" → "Claro, tem que ver mesmo. Ficou alguma dúvida que eu possa tirar agora, ou é mais o valor?".
+    - **PROIBIDO:** "então não é pra você", escassez/urgência falsa, desconto inventado. O preço e o fechamento NÃO vão no corpo dos 9 blocos nem no site — só nesta seção, para uso quando a conversa avançar.
 
 ## Voice Guidance
 
@@ -121,7 +127,7 @@ Apresenta o email com assunto, corpo completo e confirmação de que os screensh
 - [ ] 180-240 palavras no corpo
 - [ ] Bloco 1: apresentação do Miguel antes de qualquer dado
 - [ ] Bloco 2: elogio interpretado com frase de interpretação ("é coisa séria" ou similar)
-- [ ] Bloco 4: problema construído como história, reconhece o que já funciona
+- [ ] Bloco 4: problema construído como história, reconhece o que já funciona; ancorado em fato real verificado do alvo quando houver (só o confirmado pelo Roberto), sem inventar
 - [ ] Bloco 6: verbos no passado, 3-5 elementos reais do site
 - [ ] Bloco 7: referência aos screenshots com 👇 + link ao vivo (de link-ao-vivo.txt)
 - [ ] Bloco 8: termina em pergunta fechada de permissão (sim/não), mantém "sem compromisso", sem pergunta aberta nem decisão de compra
@@ -129,6 +135,8 @@ Apresenta o email com assunto, corpo completo e confirmação de que os screensh
 - [ ] Assunto no formato novo (curto, sem dois pontos provocativos)
 - [ ] Mínimo 2 screenshots PNG reais capturados em `screenshots/`
 - [ ] Arquivo salvo em `squads/prospeccao-sites/output/{run_id}/{slug-negocio}/email.md`
+- [ ] Seção "FECHAMENTO E OBJEÇÕES" presente no email.md: pergunta pós-visualização, fala de fechamento (R$500 pagamento único, paga no ar), 3 objeções terminando em pergunta, sem frase proibida de objeção
+- [ ] Preço/fechamento ficam só na seção de fechamento — nunca no corpo dos 9 blocos nem no site
 - [ ] Nenhuma frase do anti-patterns present
 
 ## Integration

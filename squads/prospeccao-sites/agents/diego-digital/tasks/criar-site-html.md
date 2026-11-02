@@ -690,6 +690,34 @@ Cada imagem de galeria/portfólio amplia ao clique num modal/lightbox simples, 1
 ```
 Adaptar o seletor (`.gallery-item img`) à classe real da galeria do site. Vale para qualquer galeria de fotos do trabalho (tatuagens, bolos, pratos, antes/depois).
 
+#### 1.1. Galeria / Portfólio — grade pela quantidade (fecha no desktop E no mobile)
+
+A galeria pode ter quantas fotos boas o negócio tiver, desde que a grade **feche sem foto sobrando** nos dois tamanhos. Montar a grade pela QUANTIDADE de fotos boas:
+
+| Fotos | Grade desktop |
+|---|---|
+| 4 | 2×2 |
+| 5 | 1 destaque 2×2 + 4 (grade de 4 colunas) |
+| 6 | 3 colunas — 1 destaque 2×2 + 5 |
+| 8 | 2 linhas de 4 |
+| 9 | 3×3 |
+
+Se a contagem não fecha numa grade limpa, **remover a foto mais fraca** até fechar. Fotos boas que sobrarem vão para outras seções (hero, sobre, banner, cards) — nunca numa linha solta. A fonte das imagens NÃO muda (gate do Princípio 31 / Step 4.0).
+
+**Mobile (2 colunas): nenhuma foto pode ficar sozinha numa linha** — se a contagem der ímpar no mobile, promover 1 foto a largura total (`span 2`) ou cortar a mais fraca.
+
+```css
+/* exemplo: 5 fotos = 1 destaque 2x2 + 4 */
+.galeria-grid{display:grid;gap:12px;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;}
+.galeria-grid .g-destaque{grid-column:span 2;grid-row:span 2;}
+.galeria-grid img{width:100%;height:100%;object-fit:cover;border-radius:10px;display:block;}
+@media(max-width:768px){
+  .galeria-grid{grid-template-columns:1fr 1fr;}          /* 2 colunas */
+  .galeria-grid .g-destaque{grid-column:span 2;grid-row:auto;} /* destaque vira linha cheia; nunca foto sozinha */
+}
+```
+Veto: grade com buraco/foto sobrando no desktop ou no mobile, ou foto sozinha numa linha de 2 colunas no celular.
+
 #### 2. Seção "Como funciona" visual — cards numerados grandes ou linha do tempo
 A seção de processo NÃO usa o formato "texto + ícone pequeno". Duas formas válidas (escolher uma):
 - **Cards numerados:** cada passo é um card com o número em destaque tipográfico grande (fonte display, ~3rem, cor `--secondary`), título curto e 1-2 linhas de texto.
@@ -738,9 +766,17 @@ Veto: o mesmo número estampado em destaque duas vezes no mesmo site.
 ### Step 8 — Salvar o arquivo
 Salvar em: `squads/prospeccao-sites/output/{run_id}/{slug-negocio}/site.html`
 
-### Step 9 — Deploy ao vivo no Vercel
+### Step 8.5 — Inserir o snippet do Vercel Analytics (antes do deploy)
 
-Depois de salvar o `site.html`, publicar o site no Vercel para gerar uma URL pública que o cliente possa abrir no celular. Os screenshots continuam sendo capturados normalmente (Carlos depende deles) — o deploy é um complemento, não substitui as imagens.
+Todo site novo recebe o Vercel Web Analytics **ANTES do deploy**, para medir se o alvo abriu o link (dado agregado — ver documento-vivo → "Analytics em sites novos"). Inserir, logo antes de `</body>`:
+```html
+<script defer src="/_vercel/insights/script.js"></script>
+```
+O `script.js` é servido pela própria Vercel após o deploy (responde 200 quando o projeto está na conta e o Analytics está ligado). Não há chave nem config no HTML além dessa linha — nada de segredo no arquivo.
+
+### Step 9 — Deploy ao vivo no Vercel (conta pessoal)
+
+Depois de salvar o `site.html` (já com o snippet do Step 8.5), publicar o site no Vercel para gerar uma URL pública que o cliente possa abrir no celular. O deploy é feito na **conta PESSOAL** (`miguelmagsilveira-3897`), nunca na de trabalho. Os screenshots continuam sendo capturados normalmente (Carlos depende deles) — o deploy é um complemento, não substitui as imagens.
 
 **Comando (sempre com prefixo `npx vercel`):** a partir da pasta do negócio (`squads/prospeccao-sites/output/{run_id}/{slug-negocio}/`), rodar:
 ```bash
@@ -762,6 +798,8 @@ O Vercel publica o conteúdo da pasta e retorna a URL pública de produção (ex
 squads/prospeccao-sites/output/{run_id}/{slug-negocio}/link-ao-vivo.txt
 ```
 O arquivo contém apenas a URL (uma linha). Carlos e Eduardo leem esse arquivo para incluir o link no email e no kit.
+
+**Ao final do lote — lista de Analytics para o Miguel:** o "Enable" do Web Analytics é um passo só-painel. Depois de deployar todos os sites do lote, entregar ao Miguel a lista de links `https://vercel.com/miguelmagsilveira-3897/<projeto>/analytics` (um por site) para ele clicar **Enable** em todos de uma vez.
 
 **Se o deploy falhar** (erro de rede, autenticação, etc.): PAUSAR, mostrar a mensagem de erro exata ao usuário e não inventar uma URL. O `link-ao-vivo.txt` só é criado com uma URL real retornada pelo Vercel.
 
@@ -854,3 +892,5 @@ Reject and redo if ANY are true:
 29. Rodapé vazio/genérico, sem nenhum item útil reaproveitado (miniaturas do trabalho, selo do diferencial, Instagram) (Step 6.6.3)
 30. O mesmo número de prova social em destaque duas vezes no site (Step 6.6.4)
 31. Foto do Instagram do alvo usada fora do gate de 2 condições — nicho não visual-autoral (prestador de serviço) ou sem trabalho próprio usável (Step 4.0 / Princípio 31). Fora do gate, a imagem vem da Unsplash oficial + Picsum
+32. Galeria com grade que não fecha (buraco/foto sobrando) no desktop ou no mobile, ou foto sozinha numa linha de 2 colunas no celular (Step 6.6.1.1 / Princípio 32)
+33. Site deployado sem o snippet do Vercel Analytics (`/_vercel/insights/script.js`), ou deployado na conta de trabalho em vez da pessoal (Step 8.5 / Step 9 / Princípio 33)

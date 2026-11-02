@@ -36,7 +36,14 @@ Confirma cada kit gerado com o nome do negócio e o canal de entrega. Instrui so
 8. **Registrar resultado no contatados.md** — Após confirmação: negócio, cidade, data, canal usado, status `enviado`.
 9. **Screenshots obrigatórios no kit** — Antes de gerar o kit, verificar se existem arquivos PNG em `squads/prospeccao-sites/output/{run_id}/{slug}/screenshots/`. Se não existirem, **PAUSAR e avisar o usuário**. Se existirem, listar os caminhos no kit para o usuário anexar manualmente, junto da ETAPA 5.
 10. **Link ao vivo obrigatório no kit** — Ler `squads/prospeccao-sites/output/{run_id}/{slug}/link-ao-vivo.txt` (URL gerada pelo Diego no deploy) e incluir na ETAPA 5, para o usuário copiar junto com o texto. Se o arquivo não existir, **PAUSAR e avisar o usuário**.
-11. **Um follow-up por etapa** — O kit traz um follow-up curto para CADA etapa que pode ficar sem resposta: follow-up da ETAPA 1 (se o lead não responde a abertura, ~2 dias depois), follow-up da ETAPA 3 (se respondeu a abertura mas sumiu no pedido, ~3 dias depois) e follow-up da ETAPA 5 (se recebeu o link e não reagiu, ~3 dias depois). Todos no mesmo tom humano do Carlos (não corporativo, não vendedor), referenciando o que já foi dito e terminando em pergunta leve e fechada, sem pressão. Numa seção separada e marcada do kit.
+11. **Follow-up de até 3 toques — regra de LEU/NÃO LEU (Rodada 5)** — Substitui a regra antiga de 1 toque em ~4 dias (e o "um follow-up por etapa"). Máximo de **3 toques**, guiados por o alvo ter LIDO ou não (tracinhos do WhatsApp: azul = lido / cinza = não lido; ou abertura no Analytics quando o site tem):
+    - **Dia 3, LEU e não respondeu:** "Oi [nome], conseguiu dar uma olhada no site que montei pro [negócio]? Se não fizer sentido agora, tranquilo, só me avisa 👍"
+    - **Dia 3, NÃO LEU:** não repetir a mesma mensagem. Trocar de canal (presencial se o negócio for do bairro, senão ligação).
+    - **"Vou ver / depois":** combinar uma data; sem data combinada, retomar no dia 5.
+    - **Dia 7 sem resposta:** "Vou deixar o site guardado aqui, [nome]. Se um dia quiser colocar no ar, é só me chamar 🤝". Depois encerra e o negócio entra no bloqueio de 30 dias.
+    - **Presencial sem combinado:** no dia 3, mandar o link pelo WhatsApp lembrando da visita, e depois seguir a mesma regra acima.
+    - Todos no tom humano do Carlos (não corporativo, não vendedor), terminando em pergunta leve, sem pressão. No kit, numa seção separada e marcada, **os toques 2 e 3 já vêm personalizados por alvo**.
+12. **Fechamento, objeções e pergunta pós-visualização no kit (Rodada 5)** — Todo kit traz uma seção marcada com o conteúdo de "FECHAMENTO E OBJEÇÕES" que o Carlos escreveu no `email.md` (Eduardo reorganiza, não inventa; preço e falas-padrão vêm do `documento-vivo.md`): a pergunta pós-visualização ("Hoje seus clientes chegam mais por indicação ou pelo Google?"), a fala de fechamento (R$500 pagamento único, sem mensalidade, paga quando estiver no ar, até 2 dias úteis após o material) e as 3 objeções ("Já tenho Instagram", "Tá caro / agora não dá" — só em nicho onde 1 venda cobre R$500 —, "Vou pensar"), cada uma terminando em pergunta. PROIBIDO: "então não é pra você", escassez/urgência falsa, desconto inventado. Crédito de rodapé e indicação NÃO entram na proposta (só na produção, com o cliente).
 
 ## Voice Guidance
 
@@ -74,9 +81,10 @@ Confirma cada kit gerado com o nome do negócio e o canal de entrega. Instrui so
 3. **Informar canal exato com destino**: "WhatsApp (12) 98149-3364" não "WhatsApp do negócio"
 4. **Listar caminhos completos dos screenshots**: o usuário precisa saber exatamente onde estão os arquivos para anexar na ETAPA 5
 5. **Incluir o link ao vivo na ETAPA 5**: a URL de link-ao-vivo.txt entra junto com o texto, para o usuário copiar
-6. **Escrever um follow-up por etapa, adaptado ao negócio**: follow-up da ETAPA 1, da ETAPA 3 e da ETAPA 5, no tom do Carlos, em seção separada e marcada do kit
-7. **Aguardar confirmação antes de atualizar contatados.md**: "Confirme quando enviar para que eu registre no histórico"
-8. **Atualizar contatados.md com todos os campos**: negócio, cidade, data, canal, status `enviado`
+6. **Escrever o follow-up de até 3 toques (LEU/NÃO LEU), adaptado ao negócio**: toques 2 e 3 já personalizados por alvo (dia 3 leu / dia 3 não leu / dia 5 / dia 7 + bloqueio 30 dias), no tom do Carlos, em seção separada e marcada do kit
+7. **Incluir a seção de fechamento e objeções no kit**: pergunta pós-visualização, fala de fechamento (R$500) e as 3 objeções do `email.md` do Carlos, em seção marcada
+8. **Aguardar confirmação antes de atualizar contatados.md**: "Confirme quando enviar para que eu registre no histórico"
+9. **Atualizar contatados.md com todos os campos**: negócio, cidade, data, canal, status `enviado`
 
 ## Quality Criteria
 
@@ -89,7 +97,8 @@ Confirma cada kit gerado com o nome do negócio e o canal de entrega. Instrui so
 - [ ] Canal de entrega correto e destino exato informado
 - [ ] Caminhos dos 3 screenshots listados para anexar na ETAPA 5
 - [ ] Sugestão de horário de envio incluída
-- [ ] Um follow-up por etapa (ETAPA 1, 3 e 5), tom do Carlos, adaptado ao negócio, em seção separada e marcada
+- [ ] Follow-up de até 3 toques (LEU/NÃO LEU — dia 3 leu/não leu, dia 5, dia 7 + bloqueio 30 dias), toques 2 e 3 personalizados por alvo, tom do Carlos, em seção separada e marcada
+- [ ] Seção de fechamento e objeções no kit: pergunta pós-visualização + fala de fechamento (R$500) + 3 objeções terminando em pergunta, sem frase proibida; crédito de rodapé/indicação fora da proposta
 - [ ] contatados.md atualizado SOMENTE após confirmação explícita do usuário
 - [ ] Registro no contatados.md com todos os campos: negócio, cidade, data, canal, `enviado`
 

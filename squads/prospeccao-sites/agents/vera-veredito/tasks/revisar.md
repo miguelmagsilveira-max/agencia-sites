@@ -147,6 +147,28 @@ Para cada item, marcar ✅ (OK) ou ❌ (FALHA) com observação específica. Apl
 - ❌ se: botão verde-neon gritante que destoa da paleta
 - ✅ se: harmonizado com a paleta do site
 
+**ITENS DA RODADA 5 (21-25) — padrões novos**
+
+**Item 21 — Grade da galeria fechada (desktop e mobile)**
+- Se há galeria/portfólio: a grade fecha sem foto sobrando (sem buraco) no desktop E no mobile? No mobile (2 colunas), nenhuma foto sozinha numa linha?
+- ✅ se: grade fecha nos dois tamanhos, OU não há galeria | ❌ se: buraco/foto sobrando, ou foto sozinha numa linha de 2 colunas no celular
+
+**Item 22 — Nenhum dado inventado**
+- Horário, preço, itens de cardápio/serviço e depoimentos batem com o briefing OU estão ausentes — nada fabricado.
+- ✅ se: tudo confere com o briefing ou está ausente sem placeholder | ❌ se: qualquer dado inventado/divergente do briefing
+
+**Item 23 — Etapa 3 / Bloco 4 só com fato verificado**
+- No email/kit, o Bloco 4 (etapa 3) usa só fato verificado do alvo (briefing/Roberto). Sem fato verificável, usa a versão genérica do nicho — nunca número inventado.
+- ✅ se: fato real verificado OU versão genérica | ❌ se: fato/número inventado na etapa 3
+
+**Item 24 — Analytics presente**
+- O HTML tem o snippet `/_vercel/insights/script.js` antes de `</body>`?
+- ✅ se: snippet presente | ❌ se: ausente
+
+**Item 25 — Site na conta pessoal da Vercel**
+- Existe `link-ao-vivo.txt` com a URL pública, e o deploy foi na conta pessoal (`miguelmagsilveira-3897`)?
+- ✅ se: link-ao-vivo.txt presente (deploy pessoal) | ❌ se: ausente ou deploy na conta de trabalho
+
 ### Step 3 — Verificar Email (Gold Standard — 9 blocos)
 
 Comparar o email com o gold standard em `squads/prospeccao-sites/_references/email-padrao-sabor-do-ipiranga.md`.
@@ -163,14 +185,16 @@ i. **Bloco 9** presente: assinatura "Abraço, / Miguel Magalhães Silveira / 129
 j. Nenhuma frase proibida: "O problema:", "Vi que vocês têm X estrelas", "Posso te mostrar?", "O que achou?", "Sem compromisso" sozinho?
 k. Palavras no corpo entre 150 e 260?
 l. Assunto no formato novo (sem dois pontos + provocação)?
-m. Sem menção a preços ou proposta comercial?
+m. Sem menção a preços ou proposta comercial **no corpo dos 9 blocos** (o preço vive só na seção de Fechamento, nunca nos blocos nem no site)?
+n. Seção "FECHAMENTO E OBJEÇÕES" presente: pergunta pós-visualização ("indicação ou Google?"), fala de fechamento (R$500 pagamento único, paga no ar) e as 3 objeções, cada uma terminando em pergunta?
+o. Nenhuma frase de objeção proibida ("então não é pra você", escassez/urgência falsa, desconto inventado)?
 
 ### Step 4 — Calcular Veredicto
 
 - 🔒 **Antes de marcar qualquer ❌, aplicar a TRAVA DE FASE 1**: se a "falha" for ausência de depoimento textual real, antes/depois real, preço ou feed Instagram embutido, NÃO é ❌ — é comportamento correto da fase de prospecção.
-- REJEITADO se: qualquer dos 15 itens do checklist OU qualquer item visual (16-20) marcado como ❌
-- REJEITADO se: qualquer item de email (a-m) falhar
-- APROVADO se: todos os 15 itens ✅, todos os itens visuais (16-20) ✅ E todos os itens de email (a-m) ✅
+- REJEITADO se: qualquer dos 15 itens do checklist OU qualquer item visual (16-20) OU qualquer item da Rodada 5 (21-25) marcado como ❌
+- REJEITADO se: qualquer item de email (a-o) falhar
+- APROVADO se: todos os 15 itens ✅, todos os itens visuais (16-20) ✅, todos os itens da Rodada 5 (21-25) ✅ E todos os itens de email (a-o) ✅
 
 ### Step 5 — Documentar e Salvar
 
@@ -212,6 +236,13 @@ Data: [data]
 - [19] ✅/❌ Não parece template genérico: [observação]
 - [20] ✅/❌ WhatsApp flutuante na identidade: [observação]
 
+### Filtro Rodada 5 (21-25)
+- [21] ✅/❌ Grade da galeria fechada (desktop e mobile): [observação / N-A]
+- [22] ✅/❌ Nenhum dado inventado (horário/preço/cardápio/depoimento): [observação]
+- [23] ✅/❌ Etapa 3 / Bloco 4 só com fato verificado: [observação]
+- [24] ✅/❌ Snippet do Vercel Analytics presente: [observação]
+- [25] ✅/❌ Site na conta pessoal da Vercel (link-ao-vivo.txt): [observação]
+
 ## Revisão do Email
 
 - Nome correto: ✅/❌
@@ -219,7 +250,8 @@ Data: [data]
 - Palavras: [N] — ✅/❌
 - CTA é pergunta: ✅/❌
 - Assunto OK: ✅/❌
-- Sem preço: ✅/❌
+- Sem preço no corpo dos 9 blocos: ✅/❌
+- Seção Fechamento e Objeções OK (pós-visualização + R$500 + 3 objeções em pergunta, sem frase proibida): ✅/❌
 
 ---
 Ponto positivo: [algo bem feito]
@@ -236,6 +268,6 @@ Ponto positivo: [algo bem feito]
 
 Reject (don't produce output) and redo if ANY are true:
 1. Veredicto ausente — deve ser APROVADO ou REJEITADO
-2. Algum dos 15 itens do checklist OU dos itens visuais (16-20) não verificado
+2. Algum dos 15 itens do checklist OU dos itens visuais (16-20) OU dos itens da Rodada 5 (21-25) não verificado
 3. Revisão feita sem comparar a prova social do HTML com o briefing
 4. Site rejeitado por falta de conteúdo privado (depoimento textual, antes/depois, preço ou feed Instagram) — viola a TRAVA DE FASE 1

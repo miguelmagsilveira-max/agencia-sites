@@ -25,7 +25,7 @@ Load these files before executing:
    b. Ler o `email.md` para obter destinatário e o conteúdo aprovado (nota, dor, elementos do site, link)
    c. Ler o `link-ao-vivo.txt` para obter a URL pública do site — se faltar, PAUSAR e avisar
    d. Determinar o canal de entrega (WhatsApp / email / DM Instagram / presencial) com destino exato
-   e. Gerar `kit-envio.txt` (texto puro) na sequência de etapas informal — ETAPA 1 → [AGUARDE] → ETAPA 3 → [AGUARDE] → ETAPA 5 — montada a partir do conteúdo aprovado (sem inventar), com um follow-up por etapa, link ao vivo e caminhos dos screenshots na ETAPA 5, horário sugerido. Ver `gerar-kit-envio.md`
+   e. Gerar `kit-envio.txt` (texto puro) na sequência de etapas informal — ETAPA 1 → [AGUARDE] → ETAPA 3 → [AGUARDE] → ETAPA 5 — montada a partir do conteúdo aprovado (sem inventar), com o follow-up de até 3 toques (LEU/NÃO LEU), a seção de fechamento/objeções, a pergunta pós-visualização, link ao vivo e caminhos dos screenshots na ETAPA 5, horário sugerido. Ver `gerar-kit-envio.md`
 2. Apresentar ao usuário os kits gerados, com canal e destino de cada um, e as instruções de envio manual
 3. AGUARDAR confirmação do usuário de que enviou (Eduardo NÃO envia nada por conta própria)
 4. Após confirmação: atualizar `contatados.md` para cada negócio enviado (status "enviado")
@@ -68,6 +68,6 @@ Reject and redo if ANY are true:
 - [ ] Kit na sequência de etapas informal (ETAPA 1 → [AGUARDE] → ETAPA 3 → [AGUARDE] → ETAPA 5), sem markdown pesado
 - [ ] Etapas reorganizam o conteúdo do email.md aprovado, sem inventar fato/dado
 - [ ] Link ao vivo e caminhos dos screenshots incluídos na ETAPA 5
-- [ ] Um follow-up por etapa incluído
+- [ ] Follow-up de até 3 toques (LEU/NÃO LEU), seção de fechamento/objeções e pergunta pós-visualização incluídos
 - [ ] Instruções de envio manual apresentadas
 - [ ] contatados.md atualizado SOMENTE após confirmação

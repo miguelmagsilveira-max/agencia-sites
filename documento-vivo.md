@@ -9,8 +9,8 @@ Documento vivo da agência de sites: registro contínuo de status, decisões e a
 
 ## O Negócio
 Agência de landing pages para pequenos comércios locais em São José dos Campos.
-- Entrega única R$600-800 por site, sem mensalidade
-- Hospedagem Vercel (grátis) + domínio Registro.br (~R$40/ano no nome do cliente)
+- Entrega única R$500, pagamento único, sem mensalidade (atualizado na Rodada 5 — substitui o "R$600-800" anterior)
+- Hospedagem Vercel (grátis) + domínio .com.br no nome do cliente, pago por ele (~R$40/ano, Registro.br)
 
 ## Squad prospeccao-sites — 7 agentes inline
 1. Pablo Prospecção — busca 5 negócios sem site via Google Maps, consulta contatados.md
@@ -33,6 +33,50 @@ Valem daqui pra frente (não são de uma rodada específica):
 1. **Kit de envio em .txt, sequência de etapas informal (Eduardo).** O Eduardo gera `kit-envio.txt` (texto puro, sem markdown pesado: nada de `#`, `**`, tabelas — texto corrido + separadores de hífens, pra copiar/colar fácil no celular). O formato padrão é a **sequência de etapas informal da rodada 4**: ETAPA 1 (abertura morna curta) → [AGUARDE] → ETAPA 3 (contexto + dor + permissão) → [AGUARDE] → ETAPA 5 (entrega do link + telas), com **um follow-up por etapa**. O Eduardo monta as etapas reorganizando o conteúdo aprovado do Carlos, sem inventar fato/dado. Mantém tudo o que já valia: não envia nada, link ao vivo e screenshots obrigatórios, contatados.md só após confirmação.
 2. **Copy informal como tom padrão (Carlos + Eduardo).** O tom padrão das mensagens é o **informal/humano** (como na rodada 4), em sequência de etapas — não mais o registro longo e formal. O Carlos escreve o conteúdo (`email.md`) já nessa voz, em 9 blocos que mapeiam nas etapas (Blocos 1-2 → ETAPA 1; 4-5-8 → ETAPA 3; 6-7 → ETAPA 5). O email longo de 9 blocos (Sabor do Ipiranga) passa a ser **legado** (mensagem única, canal e-mail) e **fonte de tom/guardrails** — não o default.
 3. **Foto do Instagram do alvo com gate de 2 condições (Diego).** Usar foto real do Instagram do alvo (`imagens-insta/`) **SÓ quando as duas valerem**: (a) nicho **visual-autoral** — o trabalho das mãos é o produto: confeitaria, tatuagem, pintura/marmorato, cestas, convites, unhas e similares; E (b) o alvo **publicou os próprios trabalhos de forma usável**. Fora disso (prestador de serviço, ou sem trabalho próprio usável) → **Unsplash oficial + Picsum fallback** com keyword específica do nicho. Isso governa a prioridade de imagem dos Princípios 1/22/30 e do Step 4.0; no tratamento SÓBRIO (prestadores) o gate normalmente fecha → Unsplash.
+
+## Fechamento e abordagem comercial (Rodada 5 — padrões vigentes, 2026-11-02)
+
+Valem daqui pra frente. Entram nos roteiros (Carlos) e nos kits (Eduardo); o **site NÃO exibe preço**.
+
+### Preço e fechamento
+- **Preço:** R$500, pagamento único, SEM mensalidade (substitui o "R$600-800" onde aparecer). Domínio .com.br no nome do cliente, pago por ele.
+- **Pagamento:** 100% na entrega, quando o site estiver no ar.
+- **Prazo:** até 2 dias úteis após receber o material do cliente. Domínio fica fora desse prazo (o site sobe primeiro no link Vercel).
+- **Incluso:** site completo, até 2 rodadas de ajuste antes de ir pro ar, ajuda no registro do domínio, pequenas correções no 1º mês. Depois disso, alterações são cobradas à parte.
+- **Fala de fechamento** (quando o alvo demonstra interesse / pergunta preço): "Fica R$500, pagamento único, sem mensalidade, e você só paga quando o site estiver no ar. Me manda suas fotos e informações e em até 2 dias úteis tá pronto, já com as suas fotos e depoimentos reais no lugar desses de exemplo. Posso passar aqui [dia] às [hora] pra pegar o material?"
+- **Crédito no rodapé ("feito por Mgs Digital") e indicação:** NÃO entram na proposta. Só na produção, combinados com o cliente.
+
+### Sequência em etapas — ajuste na etapa 3
+Mantém o modelo atual (ETAPA 1 abertura → [AGUARDE] → ETAPA 3 contexto+permissão → [AGUARDE] → ETAPA 5 entrega do link). Único ajuste:
+- **Etapa 3:** trocar a dor genérica por um FATO REAL VERIFICADO do alvo (ex.: "vi que vocês têm 4,8 no Google com 60 avaliações, mas não têm site"). Só o que o Roberto confirmou. Sem fato verificável, manter a versão atual. NÃO criar etapa nova.
+- **Depois que o alvo VER o site:** "Hoje seus clientes chegam mais por indicação ou pelo Google?"
+
+### Objeções (em todo roteiro e kit; nunca confrontar, sempre terminar em pergunta)
+- **"Já tenho Instagram":** "Faz sentido, o Insta já ajuda bastante. Só por curiosidade: quem não te segue e procura [nicho] no Google, hoje acha você?"
+- **"Tá caro / agora não dá":** "Entendo, sem problema nenhum. Me fala só uma coisa: um cliente novo por mês pagaria isso pra você?" (SÓ em nicho onde 1 serviço/venda cobre R$500)
+- **"Vou pensar / vou ver com um conhecido":** "Claro, tem que ver mesmo. Ficou alguma dúvida que eu possa tirar agora, ou é mais o valor?"
+- **PROIBIDO:** "então não é pra você", escassez/urgência falsa, desconto inventado.
+
+### Follow-up — máximo 3 toques (substitui a regra antiga de 1 toque em ~4 dias)
+- **Dia 3, LEU e não respondeu:** "Oi [nome], conseguiu dar uma olhada no site que montei pro [negócio]? Se não fizer sentido agora, tranquilo, só me avisa 👍"
+- **Dia 3, NÃO LEU:** não repetir. Trocar de canal (presencial se for do bairro, senão ligação).
+- **"Vou ver / depois":** combinar data; sem data, retomar no dia 5.
+- **Dia 7 sem resposta:** "Vou deixar o site guardado aqui, [nome]. Se um dia quiser colocar no ar, é só me chamar 🤝". Depois encerra e entra no bloqueio de 30 dias.
+- **Presencial sem combinado:** dia 3, mandar o link pelo WhatsApp lembrando da visita, e depois seguir a mesma regra.
+- Todo `kit-envio.txt` traz, por alvo, os toques 2 e 3 já personalizados.
+- LEU / NÃO LEU = tracinhos do WhatsApp (azul = lido / cinza = não lido), ou abertura no Analytics quando o site tem.
+
+### Galeria (Diego)
+Pode ter quantas fotos boas o cliente tiver, desde que a grade feche SEM foto sobrando, no desktop e no celular. Grade pela quantidade: **4** = 2x2 | **5** = destaque 2x2 + 4 | **6** = 3 colunas, destaque 2x2 + 5 | **8** = 2 linhas de 4 | **9** = 3x3. Se não fechar, remover a foto mais fraca; fotos boas que sobrarem vão pra outras seções. No celular (2 colunas), nenhuma foto sozinha numa linha. **A fonte de imagem do Diego NÃO muda** (gate do Instagram / Unsplash do Princípio 31).
+
+### Esforço
+No máximo **1 rodada de ajuste no site ANTES** de o alvo demonstrar interesse. Depois do interesse, valem as 2 rodadas inclusas (ver Incluso).
+
+### Vera — novos itens de checklist
+Grade da galeria fechada (desktop e mobile); etapa 3 só com fato verificado; nenhum dado inventado (horário, preço, cardápio, depoimento); Analytics presente; site publicado na conta PESSOAL da Vercel.
+
+### Analytics em sites novos
+Todo site novo recebe o snippet do Vercel Analytics (`/_vercel/insights/script.js`) ANTES do deploy. Ao final de cada lote, passar ao Miguel a lista de links `vercel.com/miguelmagsilveira-3897/<projeto>/analytics` pra ele clicar Enable em todos de uma vez (o Enable é o único passo só-painel).
 
 ## Status atual
 
@@ -76,6 +120,10 @@ Valem daqui pra frente (não são de uma rodada específica):
 - CLI agora logado na conta pessoal (padrão daqui pra frente). Tokens de migração (expiração 1 dia) revogados pelo Miguel; arquivos temporários apagados.
 - **Web Analytics** (plano Hobby, grátis: 50 mil eventos/mês somados, janela de relatório 1 mês, rastreia visitas/visitantes) ativado em **6 sites** — os em andamento / reservados pra repescagem: **poli-pinturas** (piloto), **blue-house**, **jaci-salgados**, **midog-adestramento**, **saint-joe**, **andre-pintor**. Rotina por site: comparar HTML local × ar (parar se divergir além do script) → religar `.vercel/` à conta pessoal → inserir snippet `/_vercel/insights/script.js` no HTML → Enable no painel (único passo só-painel) → redeploy pela conta pessoal → conferir link igual + `script.js` 200. Objetivo: saber se o alvo ABRIU o link (dado agregado, não identifica quem; para link enviado a 1 alvo ~ equivale a "abriu"; aberturas do próprio Miguel também contam). Os outros 11 sites ficaram SEM Analytics por decisão do Miguel.
 - Status de envio real das rodadas 3-4 registrado no `contatados.md`: `reservado-repescagem` (Pablo NÃO prospecta): MIDOG, JACI, Saint Joe, Blue House; `em-andamento`: André Pintor, Poli; Araci `saiu-do-ramo`; Dona Costura e Dulce nunca enviados.
+
+*Fase 1 — Atualização dos padrões do squad (concluída 2026-11-02):*
+- Padrões comerciais e de abordagem da Rodada 5 aplicados nos agentes e tasks (ver seção "Fechamento e abordagem comercial" acima): preço R$500 pagamento único; fechamento/prazo/incluso; etapa 3 com fato verificado + pergunta pós-visualização; 3 objeções padrão; follow-up de até 3 toques (LEU/NÃO LEU); galeria com grade pela quantidade; esforço máx. 1 ajuste antes do interesse; Analytics antes do deploy; novos itens no checklist da Vera.
+- Confirmado já aplicado antes da Fase 1 (1.1): kit-envio em `.txt`, copy informal em etapas como padrão, gate de 2 condições da foto do Instagram. Nenhum site construído nesta fase — só padrões. Kits antigos em `.md` não convertidos.
 
 **Diagnóstico pendente (resolver antes de mudar copy):**
 - Verificar tracinhos do WhatsApp (cinza = não lido / azul = lido)

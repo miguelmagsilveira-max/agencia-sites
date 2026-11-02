@@ -56,7 +56,8 @@
 - [ ] kit-envio.txt (texto puro) gerado com canal e destino corretos
 - [ ] Kit na sequência de etapas informal (ETAPA 1 → [AGUARDE] → ETAPA 3 → [AGUARDE] → ETAPA 5), sem markdown pesado
 - [ ] Etapas reorganizam o conteúdo do email.md aprovado, sem inventar fato/dado
-- [ ] Link ao vivo e caminhos dos screenshots incluídos na ETAPA 5, um follow-up por etapa
+- [ ] Link ao vivo e caminhos dos screenshots incluídos na ETAPA 5
+- [ ] Follow-up de até 3 toques (LEU/NÃO LEU), seção de fechamento/objeções e pergunta pós-visualização incluídos no kit
 - [ ] contatados.md atualizado SÓ após confirmação do usuário
 
 ---

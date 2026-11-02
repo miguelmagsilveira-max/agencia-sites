@@ -76,6 +76,7 @@ Hoje, quando alguém pesquisa "[BUSCA DO CLIENTE POTENCIAL]" no Google, a primei
 - Sempre reconhecer o que já funciona ANTES de mostrar a falha
 - Construir cena com o cliente potencial em ação — não dizer apenas "vocês não aparecem"
 - Adaptar ao nicho: restaurante ≠ academia ≠ salão ≠ borracharia no que o cliente busca e faz
+- **Rodada 5 — ancorar num fato real verificado do alvo** quando houver (só o confirmado pelo Roberto: ex. "4,8 no Google com 60 avaliações, mas sem site"), em vez de dor genérica. Sem fato verificável, manter a versão genérica acima. Nunca inventar número/fato. Esse fato é o que a ETAPA 3 do kit usa.
 
 **Bloco 5 — Ponte emocional** (1 linha)
 ```
@@ -196,7 +197,16 @@ Miguel Magalhães Silveira
 - Pergunta fechada do Bloco 8: [qual pergunta de permissão]
 - Palavras no corpo: [contagem]
 - Horário sugerido: terça/quarta/quinta às 9h (email) | fim de tarde (WhatsApp)
-- Follow-up: após 3 dias sem resposta
+- Follow-up: até 3 toques (regra Rodada 5 — ver documento-vivo "Follow-up"); Eduardo monta os toques 2 e 3 no kit, por alvo
+
+## Fechamento e Objeções (Rodada 5)
+_Conteúdo que o Eduardo leva pro kit. Preço e falas-padrão vêm do `documento-vivo.md` → "Fechamento e abordagem comercial" — não inventar fato. Nada disto vai no corpo dos 9 blocos nem no site._
+- Pergunta pós-visualização (depois que o alvo VER o site): "Hoje seus clientes chegam mais por indicação ou pelo Google?"
+- Fala de fechamento (quando demonstrar interesse / perguntar preço): "Fica R$500, pagamento único, sem mensalidade, e você só paga quando o site estiver no ar. Me manda suas fotos e informações e em até 2 dias úteis tá pronto, já com as suas fotos e depoimentos reais no lugar desses de exemplo. Posso passar aqui [dia] às [hora] pra pegar o material?"
+- Objeção "Já tenho Instagram": "Faz sentido, o Insta já ajuda bastante. Só por curiosidade: quem não te segue e procura [nicho] no Google, hoje acha você?"
+- Objeção "Tá caro / agora não dá": "Entendo, sem problema nenhum. Me fala só uma coisa: um cliente novo por mês pagaria isso pra você?" (SÓ em nicho onde 1 serviço/venda cobre R$500)
+- Objeção "Vou pensar / vou ver com um conhecido": "Claro, tem que ver mesmo. Ficou alguma dúvida que eu possa tirar agora, ou é mais o valor?"
+- PROIBIDO nas objeções: "então não é pra você", escassez/urgência falsa, desconto inventado.
 ```
 
 ## Anti-Padrões Proibidos (veto imediato)
@@ -208,6 +218,8 @@ NUNCA usar estas frases ou variações próximas:
 - "O que achou?" / "O que você acha?" — pergunta aberta que dá trabalho de responder
 - "Vamos fechar?" / "Topa contratar?" / "Fechamos?" — pergunta de decisão de compra (o Bloco 8 pede permissão pra continuar, não decisão)
 - "Não perca essa oportunidade" / "Última chance" / "Promoção" — tom de vendedor
+- "Então não é pra você" — frase de confronto proibida nas objeções (nunca confrontar; sempre terminar em pergunta)
+- Desconto inventado ou escassez/urgência falsa em qualquer etapa
 - "Modelo especialmente pra [Negócio]"
 - Qualquer assunto com dois pontos + provocação
 

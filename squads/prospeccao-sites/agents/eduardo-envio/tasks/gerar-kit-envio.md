@@ -53,15 +53,19 @@ O kit NÃO é mais uma mensagem única. É uma conversa em etapas, no tom inform
       - ETAPA 1 (abertura morna), ETAPA 3 (contexto + dor + permissão), ETAPA 5 (entrega do link + telas), com os marcadores `[AGUARDE]` entre elas.
       - Tom humano do Carlos: leve, pessoal, não corporativo, não vendedor. Texto puro, sem markdown.
 
-   e. **Escrever um follow-up por etapa** adaptado ao negócio (mesmo tom humano, leve, sem pressão):
-      - **Follow-up da ETAPA 1** (lead não respondeu a abertura — ~2 dias depois): reforça o elogio e antecipa que tem algo rápido pra mostrar.
-      - **Follow-up da ETAPA 3** (respondeu a abertura mas sumiu no pedido — ~3 dias depois): "é só me dar um 'pode mandar' que te envio".
-      - **Follow-up da ETAPA 5** (recebeu o link e não reagiu — ~3 dias depois): "conseguiu abrir aquele link? queria saber o que achou".
+   e. **Escrever o follow-up de até 3 toques (LEU/NÃO LEU)** adaptado ao negócio (tom humano, leve, sem pressão) — regra Rodada 5 (ver documento-vivo "Follow-up"). Guiado pelos tracinhos do WhatsApp (azul = leu / cinza = não leu). Os **toques 2 e 3 já personalizados por alvo**:
+      - **Dia 3, LEU e não respondeu:** "Oi [nome], conseguiu dar uma olhada no site que montei pro [negócio]? Se não fizer sentido agora, tranquilo, só me avisa 👍"
+      - **Dia 3, NÃO LEU:** não repetir; trocar de canal (presencial se for do bairro, senão ligação).
+      - **"Vou ver / depois":** combinar data; sem data, retomar no dia 5.
+      - **Dia 7 sem resposta:** "Vou deixar o site guardado aqui, [nome]. Se um dia quiser colocar no ar, é só me chamar 🤝" → depois encerra e entra no bloqueio de 30 dias.
+      - **Presencial sem combinado:** dia 3, mandar o link lembrando da visita; depois, mesma regra.
+
+   e2. **Escrever a seção de fechamento e objeções** a partir do bloco "FECHAMENTO E OBJEÇÕES" do `email.md` (reorganizar, não inventar; preço e falas vêm do documento-vivo): a pergunta pós-visualização, a fala de fechamento (R$500 pagamento único) e as 3 objeções, cada uma terminando em pergunta.
 
    f. **Gerar `kit-envio.txt`** (texto puro) em `squads/prospeccao-sites/output/{run_id}/{slug}/`:
       - Cabeçalho curto: negócio, status (kit gerado, NÃO enviado), canal + destino exato, link ao vivo, horário sugerido, âncora da abertura
       - As ETAPAS 1/3/5 com `[AGUARDE]` entre elas, cada uma pronta para copiar e colar
-      - Os follow-ups por etapa, em seção separada e marcada ("só se ficar sem resposta")
+      - O follow-up de até 3 toques (LEU/NÃO LEU), a seção de fechamento/objeções e a pergunta pós-visualização, cada uma em seção separada e marcada
       - Caminhos dos 3 screenshots para anexar junto da ETAPA 5
       - Instruções de envio (mandar uma etapa por vez, esperar resposta, conferir que o link abre sem login)
 
@@ -70,7 +74,7 @@ O kit NÃO é mais uma mensagem única. É uma conversa em etapas, no tom inform
 2. **Após gerar todos os kits**, informar o usuário:
    - Quantos kits foram gerados
    - Para quais negócios (com canal e destino de cada um)
-   - Que cada kit é uma sequência de etapas (mandar uma por vez, esperar resposta) e traz um follow-up por etapa, para reenviar se o lead ficar sem responder
+   - Que cada kit é uma sequência de etapas (mandar uma por vez, esperar resposta) e traz o follow-up de até 3 toques (LEU/NÃO LEU), a seção de fechamento/objeções e a pergunta pós-visualização
    - Instruções de envio por canal:
      - WhatsApp (canal principal): "Ajuste a saudação pela hora → mande a ETAPA 1 e PARE → depois da resposta, mande a ETAPA 3 e espere o 'pode mandar' → aí mande a ETAPA 5 + as 3 fotos → confira que o link abre sem login → horário ideal: fim de tarde"
      - Email: "Abra seu cliente de email → as etapas viram a sequência de mensagens (ou, se preferir mandar tudo de uma vez, use o email longo legado) → cole o texto com o link ao vivo → anexe os 3 PNGs → terça/quarta às 9h"
@@ -138,16 +142,47 @@ https://[projeto].vercel.app
 Abre direto no seu celular. O que você achou?
 
 ------------------------------------------------------------
-FOLLOW-UPS (só se ficar sem resposta)
+FOLLOW-UP — ATÉ 3 TOQUES (só se ficar sem resposta; olhar os tracinhos: azul = leu, cinza = não leu)
 
-Follow-up da ETAPA 1 (não respondeu a abertura — ~2 dias depois):
-[1-2 linhas reforçando o elogio e antecipando algo rápido pra mostrar]
+Dia 3 — LEU e não respondeu:
+Oi [nome], conseguiu dar uma olhada no site que montei pro [negócio]? Se não fizer sentido agora, tranquilo, só me avisa 👍
 
-Follow-up da ETAPA 3 (respondeu a abertura mas sumiu no pedido — ~3 dias depois):
-[1-2 linhas: "é só me dar um 'pode mandar' que te envio aquilo que comentei. Se não for a hora, sem problema."]
+Dia 3 — NÃO LEU:
+Não repetir aqui. Trocar de canal: presencial se for do bairro, senão ligação.
 
-Follow-up da ETAPA 5 (recebeu o link e não reagiu — ~3 dias depois):
-[1-2 linhas: "conseguiu abrir aquele link da prévia? queria saber o que você achou."]
+"Vou ver / depois":
+Combinar uma data. Sem data combinada, retomar no dia 5.
+
+Dia 7 — sem resposta:
+Vou deixar o site guardado aqui, [nome]. Se um dia quiser colocar no ar, é só me chamar 🤝
+(Depois deste, encerra e o negócio entra no bloqueio de 30 dias.)
+
+Se o contato foi presencial sem combinado:
+Dia 3, mandar o link pelo WhatsApp lembrando da visita; depois, seguir a mesma regra acima.
+
+------------------------------------------------------------
+DEPOIS QUE ELE VER O SITE (pergunta pós-visualização)
+
+Hoje seus clientes chegam mais por indicação ou pelo Google?
+
+------------------------------------------------------------
+FECHAMENTO (quando ele demonstrar interesse ou perguntar o preço)
+
+Fica R$500, pagamento único, sem mensalidade, e você só paga quando o site estiver no ar. Me manda suas fotos e informações e em até 2 dias úteis tá pronto, já com as suas fotos e depoimentos reais no lugar desses de exemplo. Posso passar aqui [dia] às [hora] pra pegar o material?
+
+------------------------------------------------------------
+OBJEÇÕES (nunca confrontar; sempre terminar em pergunta)
+
+"Já tenho Instagram":
+Faz sentido, o Insta já ajuda bastante. Só por curiosidade: quem não te segue e procura [nicho] no Google, hoje acha você?
+
+"Tá caro / agora não dá" (só se 1 venda/serviço cobre R$500):
+Entendo, sem problema nenhum. Me fala só uma coisa: um cliente novo por mês pagaria isso pra você?
+
+"Vou pensar / vou ver com um conhecido":
+Claro, tem que ver mesmo. Ficou alguma dúvida que eu possa tirar agora, ou é mais o valor?
+
+(NÃO usar: "então não é pra você", escassez/urgência falsa, desconto inventado.)
 
 ------------------------------------------------------------
 ANEXOS — TELAS (enviar JUNTO com a ETAPA 5, logo após o texto)
@@ -175,7 +210,8 @@ INSTRUÇÕES
 - [ ] Link ao vivo (de link-ao-vivo.txt) incluído na ETAPA 5
 - [ ] Caminhos dos screenshots listados com clareza
 - [ ] Horário sugerido incluído
-- [ ] Um follow-up por etapa (ETAPA 1, 3 e 5), tom do Carlos, adaptado ao negócio, em seção separada e marcada
+- [ ] Follow-up de até 3 toques (LEU/NÃO LEU: dia 3 leu/não leu, dia 5, dia 7 + bloqueio 30 dias; presencial sem combinado), toques 2 e 3 personalizados por alvo, tom do Carlos, em seção marcada
+- [ ] Pergunta pós-visualização, fala de fechamento (R$500) e as 3 objeções (terminando em pergunta, sem frase proibida) incluídas em seções marcadas
 - [ ] contatados.md atualizado SOMENTE após confirmação explícita do usuário
 - [ ] Registro no contatados.md com todos os campos obrigatórios
 
@@ -189,4 +225,4 @@ Reject and redo if ANY are true:
 5. Kit gerado sem screenshots — se `01-hero.png` não existir, parar e alertar usuário
 6. Kit gerado sem o link ao vivo — se `link-ao-vivo.txt` não existir, parar e alertar usuário
 7. Eduardo enviou, agendou ou criou rascunho por conta própria — Eduardo só PREPARA o kit; o envio é 100% manual pelo usuário
-8. Kit gerado sem os follow-ups por etapa, ou follow-up genérico/não adaptado ao negócio, ou com tom vendedor/pressão
+8. Kit gerado sem o follow-up de até 3 toques (LEU/NÃO LEU), ou sem a seção de fechamento/objeções, ou com follow-up genérico/não adaptado, ou com tom vendedor/pressão, ou com frase de objeção proibida ("então não é pra você", escassez/urgência falsa, desconto inventado)

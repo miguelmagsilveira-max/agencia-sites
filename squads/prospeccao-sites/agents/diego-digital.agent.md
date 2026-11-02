@@ -110,6 +110,12 @@ Estes pontos foram validados em auditoria como pontos fortes do Diego. São **in
    - **Fora do gate** (nicho que NÃO é visual-autoral — prestador de serviço como personal, montador, organizer, eletricista, chaveiro, TI, contador, etc. — OU sem trabalhos próprios usáveis mesmo sendo visual): usar **Unsplash oficial (API do Step 4) + Picsum fallback**, com keyword específica do nicho. **Nunca** forçar foto do IG fraca/sem relação só porque a pasta `imagens-insta/` existe.
    - Este gate **governa** a prioridade de imagem dos Princípios 1, 22 e 30 e do Step 4.0 (que preferem foto do Instagram): a preferência por foto do IG só se aplica **quando o gate abre**. No tratamento SÓBRIO (Princípio 29), que é justamente o dos prestadores de serviço, o gate normalmente fecha → as 1-2 imagens de respiro vêm da Unsplash com keyword específica (foto do IG só se o alvo for visual-autoral e tiver trabalho próprio usável). Ver Step 4.0 da task.
 
+32. **Galeria/portfólio — grade pela quantidade, sempre fechada (Rodada 5)** — A galeria pode ter quantas fotos boas o negócio tiver, desde que a grade feche **SEM foto sobrando, no desktop E no celular**. Grade pela quantidade de fotos: **4** → 2×2; **5** → 1 destaque 2×2 + 4; **6** → 3 colunas (1 destaque 2×2 + 5); **8** → 2 linhas de 4; **9** → 3×3. Se a contagem não fecha numa grade limpa, **remover a foto mais fraca** até fechar; fotos boas que sobrarem vão para outras seções (hero, sobre, banner, cards), nunca empurradas pra uma linha solta. No **celular (2 colunas), nenhuma foto pode ficar sozinha numa linha**. A **fonte das imagens NÃO muda** — segue o gate do Princípio 31 (Instagram do alvo só com o gate aberto; senão Unsplash oficial + Picsum). Isso refina o piso de fotos do Princípio 30. Ver Step 6 (galeria) da task.
+
+33. **Vercel Analytics em todo site novo — antes do deploy (Rodada 5)** — Todo site novo recebe o snippet do Vercel Web Analytics (`<script defer src="/_vercel/insights/script.js"></script>` logo antes de `</body>`) **ANTES do deploy**, para medir se o alvo abriu o link. O deploy é feito na **conta PESSOAL da Vercel** (`miguelmagsilveira-3897`), nunca na de trabalho. O "Enable" no painel é o único passo só-painel: ao final de cada lote, Diego entrega ao Miguel a lista de links `vercel.com/miguelmagsilveira-3897/<projeto>/analytics` para ele clicar Enable em todos de uma vez. Ver Step 9 da task.
+
+34. **Esforço — no máximo 1 rodada de ajuste antes do interesse (Rodada 5)** — Antes de o alvo demonstrar interesse, Diego faz **no máximo 1 rodada de ajuste** no site (além da criação inicial). Não rebuildar o site repetidamente em cima de um alvo que ainda não respondeu. Depois que o alvo demonstra interesse, valem as 2 rodadas de ajuste inclusas na proposta (ver documento-vivo → "Incluso").
+
 ## Anti-Patterns
 
 ### Never Do
@@ -202,7 +208,9 @@ Estes pontos foram validados em auditoria como pontos fortes do Diego. São **in
 - [ ] Rodapé aproveitado: 2-3 itens úteis reaproveitados (miniaturas do trabalho linkando pra galeria, selo do diferencial, Instagram)
 - [ ] Nenhum número de prova social repetido em destaque — cada número aparece UMA vez forte; demais menções variam o ângulo
 - [ ] Linha de prévia "Prévia / demonstração — site amostra, não oficial" no footer
-- [ ] Deploy no Vercel feito e URL salva em `link-ao-vivo.txt`
+- [ ] Galeria com grade pela quantidade (4=2×2, 5=destaque 2×2+4, 6, 8, 9), fechada no desktop e no mobile — nenhuma foto sozinha numa linha de 2 colunas; fotos extras realocadas para outras seções (Princípio 32)
+- [ ] Snippet do Vercel Analytics (`/_vercel/insights/script.js`) inserido antes do deploy (Princípio 33)
+- [ ] Deploy no Vercel feito (conta pessoal `miguelmagsilveira-3897`) e URL salva em `link-ao-vivo.txt`; link de Analytics do projeto anotado para o lote
 
 ## Integration
 

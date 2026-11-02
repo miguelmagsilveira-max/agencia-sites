@@ -127,6 +127,7 @@ Apresenta achados de forma estruturada, separados por negócio e plataforma. Ind
 - [ ] Instagram classificado para fotos do site: 📸 INSTAGRAM BOM (com @) ou 📷 INSTAGRAM FRACO/SEM, para cada negócio
 - [ ] Busca ativa por site existente registrada: domínio próprio no Google, link na bio do Instagram, link no Google Maps, plataformas comuns (delivery, criadores de página)
 - [ ] Presença web classificada em 1 das 3 categorias para cada negócio: 🚫 SITE INSTITUCIONAL PRÓPRIO / 🟡 PÁGINA DE PLATAFORMA (com ângulo de venda) / ✅ SEM PRESENÇA WEB PRÓPRIA
+- [ ] Fatos verificados do alvo explícitos no briefing (nota Google, nº de avaliações, tempo de mercado, ausência de site) — são a base do "fato real verificado" da etapa 3 / Bloco 4 (Carlos). Só o que foi confirmado; nada estimado vira "fato"
 - [ ] Nenhuma avaliação parafraseada ou inventada
 
 ## Integration
