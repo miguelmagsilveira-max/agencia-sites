@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salão de Beleza Adriana — Vila Industrial · São José dos Campos/SP</title>
+  <meta name="description" content="Salão de Beleza Adriana — Cortes femininos, colorações, mechas, penteados para noivas e tratamentos capilares. Vila Industrial, São José dos Campos/SP. Agende pelo WhatsApp (12) 99794-6928.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Salão de Beleza Adriana",
+    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Presidente Juscelino K. de Oliveira, 6812",
+      "addressLocality": "São José dos Campos",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "telephone": "+5512997946928",
+    "sameAs": [
+      "https://www.instagram.com/sdbelezaadriana",
+      "https://www.facebook.com/sdbelezaadriana"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "12:00"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #8b5e52;
+      --secondary: #c9a96e;
+      --accent: #f0e6de;
+      --dark: #2d1a14;
+      --text: #3d2520;
+      --bg: #faf6f3;
+      --bg-alt: #fff;
+      --gray: #999;
+      --border: rgba(139,94,82,0.15);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { display: block; width: 100%; }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes slowZoom {
+      from { transform: scale(1); }
+      to   { transform: scale(1.08); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-d1 { transition-delay: 0.1s; }
+    .reveal-d2 { transition-delay: 0.2s; }
+    .reveal-d3 { transition-delay: 0.3s; }
+    .reveal-d4 { transition-delay: 0.4s; }
+
+    /* ===== TYPOGRAPHY ===== */
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 14px;
+    }
+
+    .section-tag::after {
+      content: '';
+      display: block;
+      width: 36px;
+      height: 1px;
+      background: var(--secondary);
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 600;
+      color: var(--dark);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--primary);
+    }
+
+    /* ===== LAYOUT ===== */
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: var(--secondary);
+      margin: 22px 0;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 15px 32px;
+      border-radius: 4px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--secondary);
+      color: var(--dark);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(201,169,110,0.42);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.55);
+    }
+
+    .btn-outline:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,0.1);
+      border-color: #fff;
+    }
+
+    .btn-dark {
+      background: var(--dark);
+      color: #fff;
+    }
+
+    .btn-dark:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(45,26,20,0.35);
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--primary);
+      transition: all 0.2s;
+    }
+
+    .btn-link:hover {
+      transform: translateY(-2px);
+      color: var(--secondary);
+    }
+
+    /* ===== 1. NAV ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(45,26,20,0.93);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,169,110,0.15);
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-style: italic;
+      color: var(--secondary);
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.72);
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--secondary); }
+
+    .nav-cta {
+      border: 1.5px solid var(--secondary);
+      color: var(--secondary) !important;
+      padding: 8px 20px;
+      border-radius: 4px;
+      font-weight: 600 !important;
+      transition: all 0.2s !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--secondary) !important;
+      color: var(--dark) !important;
+    }
+
+    /* ===== 2. HERO ===== */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 660px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      animation: slowZoom 22s ease-in-out infinite alternate;
+      z-index: 0;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(45,26,20,0.88) 0%, rgba(45,26,20,0.4) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 620px;
+      padding: 0 24px;
+      margin-left: max(24px, calc((100vw - 1140px) / 2));
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,169,110,0.18);
+      border: 1px solid rgba(201,169,110,0.4);
+      color: var(--secondary);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: 7px 16px;
+      border-radius: 50px;
+      margin-bottom: 28px;
+      animation: fadeUp 0.7s ease both;
+      animation-delay: 0.2s;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 22px;
+      animation: fadeUp 0.7s ease both;
+      animation-delay: 0.4s;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--secondary);
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.8;
+      max-width: 470px;
+      margin-bottom: 36px;
+      animation: fadeUp 0.7s ease both;
+      animation-delay: 0.6s;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      animation: fadeUp 0.7s ease both;
+      animation-delay: 0.8s;
+    }
+
+    /* Hero stats — absolute bottom-right */
+    .hero-stats-box {
+      position: absolute;
+      right: max(24px, calc((100vw - 1140px) / 2));
+      bottom: 48px;
+      z-index: 2;
+      display: flex;
+      gap: 2px;
+      animation: fadeUp 0.7s ease both;
+      animation-delay: 1s;
+    }
+
+    .hero-stat {
+      background: rgba(255,255,255,0.07);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 18px 22px;
+      text-align: center;
+      min-width: 110px;
+    }
+
+    .hero-stat:first-child { border-radius: 10px 0 0 10px; }
+    .hero-stat:last-child  { border-radius: 0 10px 10px 0; }
+
+    .hero-stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--secondary);
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+    .hero-stat-label {
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.3px;
+      line-height: 1.3;
+    }
+
+    /* ===== 3. SOBRE ===== */
+    .sobre {
+      padding: 100px 0;
+      background: var(--bg-alt);
+    }
+
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .sobre-img-wrapper {
+      position: relative;
+      border-radius: 6px;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+    }
+
+    .sobre-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .sobre-img-wrapper:hover img { transform: scale(1.06); }
+
+    .sobre-img-badge {
+      position: absolute;
+      bottom: 28px;
+      right: -20px;
+      background: var(--secondary);
+      color: var(--dark);
+      padding: 16px 22px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-align: center;
+      box-shadow: 0 8px 28px rgba(201,169,110,0.38);
+    }
+
+    .sobre-img-badge strong {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.65rem;
+      margin-bottom: 2px;
+    }
+
+    .sobre-desc {
+      font-size: 0.97rem;
+      color: #665550;
+      line-height: 1.85;
+      margin-bottom: 18px;
+    }
+
+    .sobre-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sobre-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .sobre-list li::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 1.5px;
+      background: var(--secondary);
+      flex-shrink: 0;
+    }
+
+    /* ===== 4. NOSSO COMPROMISSO ===== */
+    .compromisso {
+      padding: 90px 0;
+      background: var(--primary);
+    }
+
+    .compromisso-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .compromisso-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 14px;
+    }
+
+    .compromisso-tag::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: rgba(255,255,255,0.4);
+    }
+
+    .compromisso h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 52px;
+    }
+
+    .compromisso-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      text-align: left;
+    }
+
+    .compromisso-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 6px;
+      padding: 28px 24px;
+      transition: background 0.25s;
+    }
+
+    .compromisso-item:hover { background: rgba(255,255,255,0.13); }
+
+    .compromisso-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .compromisso-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .compromisso-item p {
+      font-size: 0.97rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.65;
+      padding-top: 10px;
+    }
+
+    /* ===== 5. SERVIÇOS ===== */
+    .servicos {
+      padding: 100px 0;
+      background: var(--bg);
+    }
+
+    .servicos-header {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto 56px;
+    }
+
+    .servicos-header .section-tag {
+      justify-content: center;
+    }
+
+    .servicos-header .section-tag::after { display: none; }
+
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .servico-card {
+      background: var(--bg-alt);
+      border-radius: 6px;
+      overflow: hidden;
+      border-top: 3px solid var(--secondary);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .servico-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 22px 52px rgba(139,94,82,0.18);
+    }
+
+    .servico-card-img {
+      aspect-ratio: 16/10;
+      overflow: hidden;
+    }
+
+    .servico-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .servico-card:hover .servico-card-img img { transform: scale(1.06); }
+
+    .servico-card-body {
+      padding: 26px 24px 28px;
+    }
+
+    .servico-badge {
+      display: inline-block;
+      background: var(--secondary);
+      color: var(--dark);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+
+    .servico-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    .servico-card p {
+      font-size: 0.88rem;
+      color: #887268;
+      line-height: 1.72;
+      margin-bottom: 16px;
+    }
+
+    /* ===== 6. BANNER NOIVAS ===== */
+    .banner-noivas {
+      position: relative;
+      padding: 120px 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .banner-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      z-index: 0;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(45,26,20,0.78);
+      z-index: 1;
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .banner-content .section-tag {
+      color: rgba(201,169,110,0.9);
+      justify-content: center;
+    }
+
+    .banner-content .section-tag::after { display: none; }
+
+    .banner-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .banner-content p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.78;
+      margin-bottom: 38px;
+    }
+
+    /* ===== 7. EXPERIÊNCIA — mosaico ===== */
+    .experiencia {
+      padding: 100px 0;
+      background: var(--bg-alt);
+    }
+
+    .experiencia-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .mosaico {
+      position: relative;
+      min-height: 500px;
+    }
+
+    .mosaico-img1 {
+      width: 78%;
+      aspect-ratio: 4/5;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .mosaico-img1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .mosaico-img1:hover img { transform: scale(1.06); }
+
+    .mosaico-img2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 52%;
+      aspect-ratio: 4/5;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 5px solid var(--bg-alt);
+      box-shadow: 0 12px 36px rgba(45,26,20,0.18);
+    }
+
+    .mosaico-img2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .mosaico-img2:hover img { transform: scale(1.06); }
+
+    .experiencia-text .section-tag { margin-bottom: 10px; }
+    .experiencia-text .section-title { margin-bottom: 14px; }
+
+    .experiencia-intro {
+      font-size: 0.97rem;
+      color: #665550;
+      line-height: 1.85;
+      margin-bottom: 36px;
+    }
+
+    .features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px;
+      border-radius: 6px;
+      background: var(--bg);
+      border-left: 3px solid var(--secondary);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .feature-item:hover {
+      transform: translateX(4px);
+      box-shadow: 0 6px 20px rgba(139,94,82,0.1);
+    }
+
+    .feature-icon-box {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      background: var(--secondary);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feature-icon-box svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--dark);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .feature-item h4 {
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+
+    .feature-item p {
+      font-size: 0.85rem;
+      color: #887268;
+      line-height: 1.6;
+    }
+
+    /* ===== 8. NOSSA COMUNIDADE ===== */
+    .comunidade {
+      padding: 100px 0;
+      background: var(--bg);
+    }
+
+    .comunidade-header {
+      text-align: center;
+      max-width: 580px;
+      margin: 0 auto 56px;
+    }
+
+    .comunidade-header .section-tag {
+      justify-content: center;
+    }
+
+    .comunidade-header .section-tag::after { display: none; }
+
+    .comunidade-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 44px;
+    }
+
+    .comunidade-card {
+      background: var(--bg-alt);
+      border-radius: 6px;
+      padding: 44px 32px 36px;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .comunidade-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--secondary);
+    }
+
+    .comunidade-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 48px rgba(139,94,82,0.15);
+    }
+
+    .comunidade-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .comunidade-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--primary);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .comunidade-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--secondary);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .comunidade-card h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 8px;
+      letter-spacing: 0.3px;
+    }
+
+    .comunidade-card p {
+      font-size: 0.84rem;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+
+    .comunidade-cta {
+      text-align: center;
+    }
+
+    .comunidade-cta p {
+      font-size: 0.92rem;
+      color: #887268;
+      margin-bottom: 18px;
+    }
+
+    .btn-ig {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.25s;
+    }
+
+    .btn-ig:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(220,39,67,0.35);
+    }
+
+    /* ===== 9. HORÁRIOS + LOCALIZAÇÃO ===== */
+    .horarios-localizacao {
+      padding: 100px 0;
+      background: var(--bg-alt);
+    }
+
+    .hl-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+    }
+
+    .hl-left .section-tag { margin-bottom: 10px; }
+
+    .hl-schedule {
+      margin: 28px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .hl-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      border-radius: 4px;
+      background: var(--bg);
+      border-left: 3px solid var(--secondary);
+    }
+
+    .hl-row-day {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .hl-row-time {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.12rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .hl-info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .hl-info-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: #665550;
+      line-height: 1.55;
+    }
+
+    .hl-info-icon {
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: var(--secondary);
+    }
+
+    .hl-info-icon svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--secondary);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .hl-right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hl-right .section-tag { margin-bottom: 10px; }
+
+    .mapa-container {
+      flex: 1;
+      border-radius: 6px;
+      overflow: hidden;
+      min-height: 320px;
+      margin-top: 24px;
+      border: 1px solid var(--border);
+    }
+
+    .mapa-container iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      border: 0;
+    }
+
+    /* ===== 10. FOOTER ===== */
+    footer {
+      background: #2d1a14;
+      padding: 64px 0 32px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1.2fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 28px;
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.55rem;
+      font-style: italic;
+      color: var(--secondary);
+      margin-bottom: 14px;
+    }
+
+    .footer-desc {
+      font-size: 0.86rem;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.78;
+      margin-bottom: 18px;
+    }
+
+    .footer-ig {
+      font-size: 0.84rem;
+      color: rgba(255,255,255,0.44);
+    }
+
+    .footer-ig a {
+      color: var(--secondary);
+      transition: opacity 0.2s;
+    }
+
+    .footer-ig a:hover { opacity: 0.8; }
+
+    .footer-col-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 20px;
+    }
+
+    .footer-nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-nav-list a {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.48);
+      transition: color 0.2s;
+    }
+
+    .footer-nav-list a:hover { color: var(--secondary); }
+
+    .footer-contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-contact-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.86rem;
+      color: rgba(255,255,255,0.46);
+      line-height: 1.5;
+    }
+
+    .footer-contact-list li a {
+      color: rgba(255,255,255,0.46);
+      transition: color 0.2s;
+    }
+
+    .footer-contact-list li a:hover { color: var(--secondary); }
+
+    .footer-contact-list .fc-icon svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--secondary);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .footer-copy {
+      text-align: center;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.26);
+    }
+
+    /* ===== WHATSAPP FLOAT ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 62px;
+      height: 62px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 22px rgba(37,211,102,0.5);
+      z-index: 9999;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 32px rgba(37,211,102,0.62);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .sobre-grid,
+      .experiencia-grid,
+      .hl-grid { gap: 44px; }
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 16px; }
+      .nav-links { display: none; }
+
+      .hero-content {
+        margin-left: 0;
+        padding: 0 20px;
+      }
+
+      .hero-stats-box {
+        right: 20px;
+        bottom: 24px;
+      }
+
+      .hero-stat {
+        padding: 12px 14px;
+        min-width: auto;
+      }
+
+      .hero-stat-number { font-size: 1.4rem; }
+
+      .sobre,
+      .compromisso,
+      .servicos,
+      .banner-noivas,
+      .experiencia,
+      .comunidade,
+      .horarios-localizacao { padding: 70px 0; }
+
+      .sobre-grid,
+      .experiencia-grid,
+      .hl-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .sobre-img-badge { right: 0; }
+
+      .compromisso-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .servicos-grid,
+      .comunidade-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .mosaico { min-height: 360px; }
+      .mosaico-img2 { width: 56%; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2.4rem; }
+      .hero-ctas { flex-direction: column; }
+      .hero-stats-box { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== 1. NAV ===== -->
+  <nav>
+    <a href="#" class="nav-logo">Salão Adriana</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#noivas">Noivas</a></li>
+      <li><a href="#comunidade">Comunidade</a></li>
+      <li><a href="#horarios">Horários</a></li>
+      <li>
+        <a href="tel:+5512997946928" class="nav-cta">Agendar: (12) 99794-6928</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ===== 2. HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">✂️ Vila Industrial · São José dos Campos</div>
+      <h1>Beleza que transforma,<br><em style="color:var(--secondary)">cuidado que se lembra</em></h1>
+      <p class="hero-sub">Cortes, colorações e o penteado perfeito para o seu grande dia.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5512997946928?text=Olá%20Adriana!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20horário" class="btn btn-primary" target="_blank" rel="noopener">
+          Agendar pelo WhatsApp →
+        </a>
+        <a href="#servicos" class="btn btn-outline">Ver serviços</a>
+      </div>
+    </div>
+    <div class="hero-stats-box">
+      <div class="hero-stat">
+        <div class="hero-stat-number">665</div>
+        <div class="hero-stat-label">Fãs<br>Facebook</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number">103</div>
+        <div class="hero-stat-label">Check-ins<br>no local</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number">👰</div>
+        <div class="hero-stat-label">Especialista<br>noivas</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. SOBRE ===== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <!-- Imagem esquerda -->
+        <div class="reveal">
+          <div class="sobre-img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=800&q=80"
+              alt="Salão de Beleza Adriana — atendimento personalizado"
+              loading="lazy"
+            >
+          </div>
+          <div class="sobre-img-badge">
+            <strong>+665</strong>
+            clientes fiéis
+          </div>
+        </div>
+        <!-- Texto direita -->
+        <div class="sobre-text reveal reveal-d2">
+          <span class="section-tag">Quem somos</span>
+          <h2 class="section-title">Um salão <em>feito com amor para mulheres reais</em></h2>
+          <p class="sobre-desc">
+            Na Vila Industrial, em São José dos Campos, o Salão de Beleza Adriana é um espaço onde cada cliente é tratada com atenção individualizada. Adriana construiu seu nome atendendo com técnica apurada e cuidado genuíno — sem pressa, sem padrão.
+          </p>
+          <p class="sobre-desc">
+            Especializada em penteados para noivas, ela tem orgulho de fazer parte dos momentos mais importantes da vida das suas clientes. Confira os resultados reais acompanhando <strong>@sdbelezaadriana</strong> no Instagram — com posts de noivas em maio/2026.
+          </p>
+          <div class="divider"></div>
+          <ul class="sobre-list">
+            <li>Cortes femininos modernos e clássicos</li>
+            <li>Colorações e mechas com técnicas avançadas</li>
+            <li>Penteados para noivas e madrinhas</li>
+            <li>Tratamentos capilares e reconstrução</li>
+            <li>Agendamento fácil e rápido pelo WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. NOSSO COMPROMISSO ===== -->
+  <section class="compromisso">
+    <div class="container">
+      <div class="compromisso-inner">
+        <span class="compromisso-tag">Nosso compromisso</span>
+        <h2>O que você pode esperar da Adriana</h2>
+        <div class="compromisso-grid">
+
+          <div class="compromisso-item reveal reveal-d1">
+            <div class="compromisso-icon">
+              <!-- Ícone: ouvido / escuta -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2C8.686 2 6 4.686 6 8v4c0 2.21 1.343 4.118 3.273 4.844L9 18a3 3 0 003 3v0a3 3 0 003-3v-1.184A6.003 6.003 0 0018 12V8c0-3.314-2.686-6-6-6z"/>
+                <circle cx="12" cy="8" r="2"/>
+              </svg>
+            </div>
+            <p>"Escuta o que você quer antes de começar"</p>
+          </div>
+
+          <div class="compromisso-item reveal reveal-d2">
+            <div class="compromisso-icon">
+              <!-- Ícone: estrela -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <p>"Usa produtos de qualidade comprovada"</p>
+          </div>
+
+          <div class="compromisso-item reveal reveal-d3">
+            <div class="compromisso-icon">
+              <!-- Ícone: coração -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+              </svg>
+            </div>
+            <p>"Resultado que você leva para casa — e que dura"</p>
+          </div>
+
+          <div class="compromisso-item reveal reveal-d4">
+            <div class="compromisso-icon">
+              <!-- Ícone: escudo -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <p>"Ambiente acolhedor — você se sente em casa"</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. SERVIÇOS ===== -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <div class="servicos-header reveal">
+        <span class="section-tag">O que fazemos</span>
+        <h2 class="section-title">Nossos <em>serviços</em></h2>
+        <p style="font-size:0.96rem;color:#887268;line-height:1.75;">Cuidado completo para o seu cabelo e beleza — do dia a dia ao grande dia.</p>
+      </div>
+      <div class="servicos-grid">
+
+        <!-- Card 1 — Cortes & Styling -->
+        <div class="servico-card reveal reveal-d1">
+          <div class="servico-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1522337520-bd2a1fbf6b76?auto=format&fit=crop&w=600&q=80"
+              alt="Cortes e Styling"
+              loading="lazy"
+            >
+          </div>
+          <div class="servico-card-body">
+            <h3>Cortes & Styling</h3>
+            <p>Do clássico ao contemporâneo, cada corte é planejado para valorizar seu rosto e se encaixar no seu ritmo de vida.</p>
+            <a href="https://wa.me/5512997946928?text=Olá%20Adriana!%20Gostaria%20de%20agendar%20um%20corte" class="btn-link" target="_blank" rel="noopener">Ver mais →</a>
+          </div>
+        </div>
+
+        <!-- Card 2 — Noivas & Madrinhas (badge ESPECIALIDADE) -->
+        <div class="servico-card reveal reveal-d2">
+          <div class="servico-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80"
+              alt="Noivas e Madrinhas"
+              loading="lazy"
+            >
+          </div>
+          <div class="servico-card-body">
+            <span class="servico-badge">👰 Especialidade</span>
+            <h3>Noivas & Madrinhas</h3>
+            <p>Experiência real com noivas. Adriana cria o penteado perfeito para o seu grande dia — com atenção absoluta a cada detalhe.</p>
+            <a href="https://wa.me/5512997946928?text=Olá%20Adriana!%20Estou%20me%20casando%20e%20quero%20agendar%20penteado%20de%20noiva" class="btn-link" target="_blank" rel="noopener">Ver mais →</a>
+          </div>
+        </div>
+
+        <!-- Card 3 — Colorações & Mechas -->
+        <div class="servico-card reveal reveal-d3">
+          <div class="servico-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=600&q=80"
+              alt="Colorações e Mechas"
+              loading="lazy"
+            >
+          </div>
+          <div class="servico-card-body">
+            <h3>Colorações & Mechas</h3>
+            <p>Transformações com técnicas modernas — do balayage ao babylights. Cor com naturalidade e resultado duradouro.</p>
+            <a href="https://wa.me/5512997946928?text=Olá%20Adriana!%20Gostaria%20de%20agendar%20coloração%20ou%20mechas" class="btn-link" target="_blank" rel="noopener">Ver mais →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. BANNER NOIVAS ===== -->
+  <section class="banner-noivas" id="noivas">
+    <div class="banner-bg"></div>
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <span class="section-tag">Penteados para noivas</span>
+      <h2>Seu grande dia merece o penteado perfeito.</h2>
+      <p>Experiência em noivas e madrinhas. Agende sua consulta e descubra como Adriana vai criar o penteado que combina com você, com o seu vestido e com o seu sonho.</p>
+      <a
+        href="https://wa.me/5512997946928?text=Olá%20Adriana!%20Estou%20me%20casando%20e%20gostaria%20de%20agendar%20uma%20consulta%20para%20penteado%20de%20noiva"
+        class="btn btn-primary"
+        target="_blank"
+        rel="noopener"
+      >
+        Sou noiva — quero agendar 💍
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== 7. EXPERIÊNCIA — mosaico + features ===== -->
+  <section class="experiencia">
+    <div class="container">
+      <div class="experiencia-grid">
+
+        <!-- Mosaico -->
+        <div class="mosaico reveal">
+          <div class="mosaico-img1">
+            <img
+              src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+              alt="Trabalhos do Salão de Beleza Adriana"
+              loading="lazy"
+            >
+          </div>
+          <div class="mosaico-img2">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80"
+              alt="Penteados e colorações Salão Adriana"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <!-- Features -->
+        <div class="experiencia-text reveal reveal-d2">
+          <span class="section-tag">Por que nos escolher</span>
+          <h2 class="section-title">O que nos <em>diferencia</em></h2>
+          <p class="experiencia-intro">
+            Além de técnica apurada, o Salão Adriana entrega presença. Você é recebida pelo nome, atendida sem pressa e sai sabendo que voltará.
+          </p>
+          <div class="features-list">
+
+            <div class="feature-item">
+              <div class="feature-icon-box">
+                <!-- Instagram / câmera -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </div>
+              <div>
+                <h4>@sdbelezaadriana — resultados reais no Instagram</h4>
+                <p>Posts de noivas em maio/2026 comprovam a qualidade e atualidade das técnicas. Veja antes de agendar.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-box">
+                <!-- Localização / pin -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <h4>103 check-ins no Facebook — clientes que recomendam</h4>
+                <p>Pessoas que foram, gostaram e fizeram questão de registrar. Provas reais de quem está presente.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-box">
+                <!-- Mapa / bússola -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Vila Industrial, SJC — fácil acesso</h4>
+                <p>Av. Presidente Juscelino K. de Oliveira, 6812. Um endereço acessível para toda a região de São José dos Campos.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. NOSSA COMUNIDADE (prova social alternativa) ===== -->
+  <section class="comunidade" id="comunidade">
+    <div class="container">
+      <div class="comunidade-header reveal">
+        <span class="section-tag">Nossa comunidade</span>
+        <h2 class="section-title">Uma clientela que <em>fala por si</em></h2>
+        <p style="font-size:0.96rem;color:#887268;line-height:1.75;">Sem depoimentos fabricados. Apenas números reais de uma clientela que escolhe e continua escolhendo o Salão Adriana.</p>
+      </div>
+
+      <div class="comunidade-grid">
+
+        <!-- Card 1: Facebook fãs -->
+        <div class="comunidade-card reveal reveal-d1">
+          <div class="comunidade-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+              <path d="M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <div class="comunidade-number">665</div>
+          <h3>Fãs no Facebook</h3>
+          <p>Comunidade engajada que acompanha, curte e divulga o trabalho de Adriana.</p>
+        </div>
+
+        <!-- Card 2: Check-ins -->
+        <div class="comunidade-card reveal reveal-d2">
+          <div class="comunidade-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="comunidade-number" style="color:var(--secondary);">103</div>
+          <h3>Check-ins no local</h3>
+          <p>Clientes que voltam e indicam — registrando presença como forma de recomendar.</p>
+        </div>
+
+        <!-- Card 3: Instagram -->
+        <div class="comunidade-card reveal reveal-d3">
+          <div class="comunidade-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </div>
+          <div class="comunidade-number" style="font-size:1.6rem;padding-top:4px;">@sdbelezaadriana</div>
+          <h3>Instagram ativo</h3>
+          <p>Resultados reais em fotos — posts de noivas em maio/2026 mostram o padrão de qualidade.</p>
+        </div>
+
+      </div>
+
+      <div class="comunidade-cta reveal">
+        <p>Quer ver os resultados antes de agendar?</p>
+        <a href="https://www.instagram.com/sdbelezaadriana" target="_blank" rel="noopener" class="btn-ig">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          Ver nossos trabalhos →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 9. HORÁRIOS + LOCALIZAÇÃO ===== -->
+  <section class="horarios-localizacao" id="horarios">
+    <div class="container">
+      <div class="hl-grid">
+
+        <!-- Esquerda: horários -->
+        <div class="hl-left reveal">
+          <span class="section-tag">Funcionamento</span>
+          <h2 class="section-title">Horários &<br><em>localização</em></h2>
+          <div class="hl-schedule">
+            <div class="hl-row">
+              <span class="hl-row-day">Segunda a Sexta</span>
+              <span class="hl-row-time">09h00 – 18h00</span>
+            </div>
+            <div class="hl-row">
+              <span class="hl-row-day">Sábado</span>
+              <span class="hl-row-time">09h00 – 12h00</span>
+            </div>
+            <div class="hl-row" style="border-left-color:rgba(139,94,82,0.2);">
+              <span class="hl-row-day" style="color:var(--gray);">Domingo</span>
+              <span class="hl-row-time" style="font-size:0.88rem;color:var(--gray);font-family:'Jost';">Fechado</span>
+            </div>
+          </div>
+
+          <ul class="hl-info-list">
+            <li>
+              <span class="hl-info-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+              <span>Av. Presidente Juscelino K. de Oliveira, 6812 — Vila Industrial — São José dos Campos/SP</span>
+            </li>
+            <li>
+              <span class="hl-info-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </span>
+              <span>
+                <a href="https://wa.me/5512997946928" style="color:var(--primary);font-weight:600;" target="_blank" rel="noopener">(12) 99794-6928</a> — WhatsApp
+              </span>
+            </li>
+            <li>
+              <span class="hl-info-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </span>
+              <span>
+                <a href="https://www.instagram.com/sdbelezaadriana" target="_blank" rel="noopener" style="color:var(--primary);font-weight:600;">@sdbelezaadriana</a>
+              </span>
+            </li>
+            <li>
+              <span class="hl-info-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                </svg>
+              </span>
+              <span>
+                <a href="https://www.facebook.com/sdbelezaadriana" target="_blank" rel="noopener" style="color:var(--primary);font-weight:600;">facebook.com/sdbelezaadriana</a>
+                <span style="color:var(--gray);font-size:0.82rem;"> · 665 curtidas · 103 check-ins</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Direita: mapa -->
+        <div class="hl-right reveal reveal-d2">
+          <span class="section-tag">Como chegar</span>
+          <div class="mapa-container">
+            <iframe
+              src="https://maps.google.com/maps?q=Av.+Presidente+Juscelino+Kubitschek+6812+Vila+Industrial+São+José+dos+Campos+SP&output=embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização Salão de Beleza Adriana — Vila Industrial, São José dos Campos/SP">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section style="background:var(--accent);padding:80px 0;text-align:center;">
+    <div class="container">
+      <span class="section-tag" style="justify-content:center;">
+        <span style="margin-right:0;">Pronta para começar?</span>
+      </span>
+      <h2 class="section-title" style="max-width:600px;margin:0 auto 22px;">
+        Pronta para se transformar? 💄
+      </h2>
+      <p style="font-size:0.97rem;color:#665550;line-height:1.8;max-width:480px;margin:0 auto 36px;">
+        Agende pelo WhatsApp agora mesmo. Adriana vai cuidar de você com atenção, técnica e muito carinho.
+      </p>
+      <a
+        href="https://wa.me/5512997946928?text=Olá%20Adriana!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20horário"
+        class="btn btn-primary"
+        target="_blank"
+        rel="noopener"
+        style="font-size:1rem;"
+      >
+        Agendar pelo WhatsApp →
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== 10. FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Col 1 -->
+        <div>
+          <div class="footer-brand">Salão Adriana</div>
+          <p class="footer-desc">
+            Transformando cabelos e presença na Vila Industrial de São José dos Campos. Especialistas em penteados para noivas, colorações e cuidados capilares — com a atenção que você merece.
+          </p>
+          <p class="footer-ig">Instagram: <a href="https://www.instagram.com/sdbelezaadriana" target="_blank" rel="noopener">@sdbelezaadriana</a></p>
+        </div>
+
+        <!-- Col 2: Navegação -->
+        <div>
+          <p class="footer-col-title">Navegação</p>
+          <ul class="footer-nav-list">
+            <li><a href="#sobre">Quem somos</a></li>
+            <li><a href="#servicos">Nossos serviços</a></li>
+            <li><a href="#noivas">Noivas & Madrinhas</a></li>
+            <li><a href="#comunidade">Nossa comunidade</a></li>
+            <li><a href="#horarios">Horários & Localização</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contato + horários -->
+        <div>
+          <p class="footer-col-title">Contato & Horários</p>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="fc-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </span>
+              <a href="https://wa.me/5512997946928" target="_blank" rel="noopener">(12) 99794-6928</a>
+            </li>
+            <li>
+              <span class="fc-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span>Av. Pres. Juscelino K. de Oliveira, 6812 — Vila Industrial — São José dos Campos/SP</span>
+            </li>
+            <li>
+              <span class="fc-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <span>Seg–Sex 09h00–18h00</span>
+            </li>
+            <li>
+              <span class="fc-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <span>Sáb 09h00–12h00 · Dom Fechado</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <p class="footer-copy">
+        © 2026 Salão de Beleza Adriana · Vila Industrial · São José dos Campos/SP · Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a
+    href="https://wa.me/5512997946928?text=Olá%20Adriana!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20um%20horário"
+    class="whatsapp-float"
+    title="Agendar pelo WhatsApp"
+    target="_blank"
+    rel="noopener"
+    aria-label="Agendar pelo WhatsApp"
+  >
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ===== SCROLL REVEAL SCRIPT ===== -->
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!els.length) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>

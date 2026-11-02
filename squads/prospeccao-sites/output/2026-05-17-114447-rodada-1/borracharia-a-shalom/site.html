@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borracharia A Shalom — Atendimento 24h — São José dos Campos/SP</title>
+  <meta name="description" content="Borracharia A Shalom — 22 anos de tradição na Vila Nair. Conserto de pneus, guincho e socorro veicular 24 horas por dia, 7 dias por semana, incluindo feriados e madrugada. São José dos Campos/SP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Borracharia A Shalom",
+    "description": "Borracharia completa com guincho e socorro veicular 24 horas. Conserto de pneus, calibração, troca, alinhamento e balanceamento.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Tremembê, 161",
+      "addressLocality": "São José dos Campos",
+      "addressRegion": "SP",
+      "postalCode": "12231-070",
+      "addressCountry": "BR"
+    },
+    "telephone": "+551239229371",
+    "openingHours": "Mo-Su 00:00-23:59",
+    "url": "https://borrachariashalom.com.br",
+    "areaServed": "São José dos Campos"
+  }
+  </script>
+  <style>
+    :root {
+      --primary: #0f1f3d;
+      --secondary: #e85c0a;
+      --accent: #2d3748;
+      --dark: #080f1e;
+      --text: #1a2a42;
+      --bg: #f4f6f9;
+      --bg-alt: #fff;
+      --gray: #7a8899;
+      --danger: #d32f2f;
+      --border: rgba(15,31,61,0.1);
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { display: block; width: 100%; }
+
+    /* ===========================
+       KEYFRAMES
+    =========================== */
+    @keyframes slowZoom {
+      from { transform: scale(1); }
+      to { transform: scale(1.08); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(211,47,47,0.55); }
+      50% { box-shadow: 0 0 0 12px rgba(211,47,47,0); }
+    }
+
+    @keyframes pulseGreen {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(67,160,71,0.55); }
+      50% { box-shadow: 0 0 0 10px rgba(67,160,71,0); }
+    }
+
+    /* ===========================
+       UTILITIES
+    =========================== */
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 14px;
+    }
+
+    .section-tag::before {
+      content: '';
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      background: var(--secondary);
+      border-radius: 2px;
+    }
+
+    .section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .section-title em {
+      font-style: normal;
+      color: var(--secondary);
+    }
+
+    /* ===========================
+       BUTTONS
+    =========================== */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--secondary);
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(232,92,10,0.4);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: #fff;
+      padding: 15px 32px;
+      border-radius: 6px;
+      border: 2px solid rgba(255,255,255,0.6);
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .btn-outline:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,0.1);
+      border-color: #fff;
+    }
+
+    /* ===========================
+       1. NAV
+    =========================== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(8,15,30,0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 2px solid var(--secondary);
+      padding: 16px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: #fff; }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--secondary);
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 5px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(232,92,10,0.45);
+    }
+
+    /* ===========================
+       2. HERO
+    =========================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      animation: slowZoom 20s ease-in-out infinite alternate;
+      z-index: 0;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(8,15,30,0.92) 0%, rgba(8,15,30,0.5) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+      padding: 80px 48px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--danger);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.2s;
+    }
+
+    .hero-tag .live-dot {
+      width: 9px;
+      height: 9px;
+      background: #fff;
+      border-radius: 50%;
+      flex-shrink: 0;
+      animation: pulse 2s infinite;
+    }
+
+    .hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.8rem, 6.5vw, 5rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.05;
+      margin-bottom: 24px;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.4s;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--secondary);
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.82);
+      max-width: 520px;
+      line-height: 1.75;
+      margin-bottom: 40px;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.6s;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.8s;
+    }
+
+    .hero-stats-box {
+      display: flex;
+      gap: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 1s;
+      width: fit-content;
+    }
+
+    .hero-stat {
+      padding: 18px 28px;
+      background: rgba(255,255,255,0.06);
+      border-right: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+
+    .hero-stat:last-child { border-right: none; }
+
+    .hero-stat .stat-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--secondary);
+      line-height: 1;
+    }
+
+    .hero-stat .stat-label {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.55);
+      font-weight: 500;
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ===========================
+       3. STRIP DE URGÊNCIA
+    =========================== */
+    .urgencia-strip {
+      background: var(--danger);
+      padding: 72px 0;
+    }
+
+    .urgencia-strip .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .urgencia-left h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 0;
+    }
+
+    .urgencia-right {
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .tel-gigante {
+      display: block;
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      transition: opacity 0.2s;
+    }
+
+    .tel-gigante:hover { opacity: 0.85; }
+
+    .urgencia-right small {
+      display: block;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.82);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    /* ===========================
+       4. SOBRE
+    =========================== */
+    .sobre {
+      padding: 120px 0;
+      background: var(--bg);
+    }
+
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .sobre-img {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+
+    .sobre-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .sobre-img:hover img { transform: scale(1.06); }
+
+    .sobre-img-badge {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: var(--secondary);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .sobre-img-badge span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      opacity: 0.85;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 3px;
+    }
+
+    .sobre-body p {
+      color: #4a5568;
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+
+    .sobre-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .sobre-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .sobre-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: var(--secondary);
+      border-radius: 50%;
+    }
+
+    /* ===========================
+       5. NOSSO COMPROMISSO
+    =========================== */
+    .compromisso {
+      padding: 100px 0;
+      background: var(--primary);
+    }
+
+    .compromisso-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .compromisso-header .section-tag {
+      color: var(--secondary);
+    }
+
+    .compromisso-header .section-tag::before {
+      background: var(--secondary);
+    }
+
+    .compromisso-header .section-title {
+      color: #fff;
+    }
+
+    .compromisso-header .section-title em {
+      color: var(--secondary);
+    }
+
+    .compromisso-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .comp-item {
+      display: flex;
+      gap: 22px;
+      align-items: flex-start;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px;
+      padding: 32px 28px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .comp-item:hover {
+      background: rgba(255,255,255,0.08);
+      transform: translateY(-4px);
+    }
+
+    .comp-icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      background: var(--secondary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .comp-text h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+
+    .comp-text p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.65;
+    }
+
+    /* ===========================
+       6. SERVIÇOS
+    =========================== */
+    .servicos {
+      padding: 120px 0;
+      background: var(--bg-alt);
+    }
+
+    .servicos-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 64px;
+    }
+
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .serv-card {
+      background: var(--bg-alt);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--secondary);
+      box-shadow: 0 2px 16px rgba(15,31,61,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .serv-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 48px rgba(15,31,61,0.18);
+    }
+
+    .serv-card-img {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .serv-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .serv-card:hover .serv-card-img img { transform: scale(1.06); }
+
+    .serv-card-img .card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 30%, rgba(8,15,30,0.7) 100%);
+    }
+
+    .serv-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--danger);
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .serv-card-body {
+      padding: 28px 26px 30px;
+    }
+
+    .serv-card-body h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .serv-card-body p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .serv-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--secondary);
+      transition: gap 0.2s;
+    }
+
+    .serv-link:hover { gap: 10px; }
+
+    /* ===========================
+       7. BANNER EMERGÊNCIA
+    =========================== */
+    .banner-urgencia {
+      position: relative;
+      padding: 100px 0;
+      overflow: hidden;
+    }
+
+    .banner-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(8,15,30,0.82);
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .banner-badge {
+      display: inline-block;
+      background: var(--secondary);
+      color: #fff;
+      padding: 7px 18px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .banner-content h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.1;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
+    .banner-tel {
+      display: block;
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 32px;
+      letter-spacing: 2px;
+      transition: color 0.2s;
+    }
+
+    .banner-tel:hover { color: var(--secondary); }
+
+    /* ===========================
+       8. DIFERENCIAIS / MOSAICO
+    =========================== */
+    .diferenciais {
+      padding: 120px 0;
+      background: var(--bg);
+    }
+
+    .diferenciais-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .mosaico {
+      position: relative;
+      padding-bottom: 48px;
+    }
+
+    .mosaico-img1 {
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+
+    .mosaico-img1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .mosaico-img1:hover img { transform: scale(1.06); }
+
+    .mosaico-img2 {
+      position: absolute;
+      bottom: -16px;
+      right: -32px;
+      width: 52%;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 5px solid var(--bg-alt);
+      box-shadow: 0 8px 32px rgba(15,31,61,0.18);
+    }
+
+    .mosaico-img2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+      transition: transform 0.5s ease;
+    }
+
+    .mosaico-img2:hover img { transform: scale(1.06); }
+
+    .features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 40px;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .feature-icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      background: var(--secondary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feature-text h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .feature-text p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+
+    /* ===========================
+       9. POR QUE A SHALOM
+    =========================== */
+    .por-que {
+      padding: 120px 0;
+      background: var(--primary);
+    }
+
+    .por-que-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .por-que-header .section-tag { color: var(--secondary); }
+    .por-que-header .section-tag::before { background: var(--secondary); }
+    .por-que-header .section-title { color: #fff; }
+    .por-que-header .section-title em { color: var(--secondary); }
+
+    .por-que-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .pq-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 44px 32px;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pq-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.25);
+    }
+
+    .pq-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 5rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .pq-num.laranja { color: var(--secondary); }
+    .pq-num.branco { color: #fff; }
+
+    .pq-card h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .pq-card p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+    }
+
+    /* ===========================
+       10. LOCALIZAÇÃO
+    =========================== */
+    .localizacao {
+      padding: 120px 0;
+      background: var(--bg-alt);
+    }
+
+    .localizacao-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .localizacao-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .horarios-card {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 40px 36px;
+      border-left: 4px solid var(--secondary);
+    }
+
+    .horarios-card h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 28px;
+    }
+
+    .horario-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    .horario-row:last-of-type { border-bottom: none; }
+
+    .horario-row .dia { font-weight: 600; color: var(--text); }
+
+    .horario-row .hora {
+      font-weight: 700;
+      color: var(--secondary);
+    }
+
+    .aberto-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #e8f5e9;
+      color: #2e7d32;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-top: 24px;
+    }
+
+    .aberto-dot {
+      width: 8px;
+      height: 8px;
+      background: #43a047;
+      border-radius: 50%;
+      animation: pulseGreen 2s infinite;
+    }
+
+    .endereco-info {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .info-linha {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .info-linha .info-icon {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      background: var(--secondary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-linha .info-text {
+      font-size: 0.92rem;
+      color: #4a5568;
+      line-height: 1.55;
+      padding-top: 6px;
+    }
+
+    .info-linha .info-text strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .mapa-wrap {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(15,31,61,0.1);
+    }
+
+    .mapa-wrap iframe {
+      width: 100%;
+      height: 480px;
+      border: 0;
+      display: block;
+    }
+
+    /* ===========================
+       11. FOOTER
+    =========================== */
+    footer {
+      background: #080f1e;
+      padding: 72px 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1.5fr;
+      gap: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .footer-logo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .footer-desc {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.75;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .footer-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(232,92,10,0.15);
+      border: 1px solid rgba(232,92,10,0.3);
+      color: var(--secondary);
+      padding: 7px 14px;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .footer-nav h4,
+    .footer-contato h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.5px;
+      margin-bottom: 22px;
+    }
+
+    .footer-nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .footer-nav ul a {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.5);
+      transition: color 0.2s;
+    }
+
+    .footer-nav ul a:hover { color: rgba(255,255,255,0.9); }
+
+    .footer-tel-big {
+      display: block;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      transition: color 0.2s;
+    }
+
+    .footer-tel-big:hover { color: var(--secondary); }
+
+    .footer-24h {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+
+    .footer-addr {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.7;
+    }
+
+    .footer-bottom {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-bottom p {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.28);
+    }
+
+    /* ===========================
+       BOTÕES FLUTUANTES
+    =========================== */
+    .float-tel {
+      position: fixed;
+      bottom: 96px;
+      right: 24px;
+      background: var(--danger);
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 18px rgba(211,47,47,0.55);
+      z-index: 999;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .float-tel:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 24px rgba(211,47,47,0.7);
+    }
+
+    .float-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 18px rgba(37,211,102,0.5);
+      z-index: 999;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .float-whatsapp:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 24px rgba(37,211,102,0.65);
+    }
+
+    /* ===========================
+       RESPONSIVE
+    =========================== */
+    @media (max-width: 900px) {
+      .compromisso-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 14px 20px;
+      }
+
+      .nav-links { display: none; }
+
+      .hero-content {
+        padding: 60px 20px;
+      }
+
+      .hero h1 { font-size: 2.8rem; }
+      .hero-stats-box { flex-wrap: wrap; }
+      .hero-stat { padding: 14px 20px; }
+
+      .urgencia-strip .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .sobre-grid,
+      .diferenciais-grid,
+      .localizacao-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .mosaico-img2 {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: 70%;
+        margin: 16px auto 0;
+        border: 3px solid var(--bg-alt);
+      }
+
+      .mosaico { padding-bottom: 0; }
+
+      .servicos-grid { grid-template-columns: 1fr; gap: 20px; }
+
+      .compromisso-grid { grid-template-columns: 1fr; gap: 20px; }
+
+      .por-que-grid { grid-template-columns: 1fr; gap: 20px; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+
+      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+
+      .container { padding: 0 20px; }
+
+      .sobre, .servicos, .diferenciais, .por-que, .localizacao { padding: 72px 0; }
+      .compromisso { padding: 72px 0; }
+
+      .banner-urgencia { padding: 72px 0; }
+
+      .mapa-wrap iframe { height: 280px; }
+
+      .hero-ctas { flex-direction: column; }
+      .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================
+       1. NAV
+  ======================== -->
+  <nav>
+    <a href="#inicio" class="nav-logo">🔧 A Shalom</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+    </ul>
+    <a href="tel:+551239229371" class="nav-cta">
+      (12) 3922-9371 &mdash; 24h
+    </a>
+  </nav>
+
+  <!-- ========================
+       2. HERO
+  ======================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="live-dot"></span>
+        🔴 Atendimento 24 Horas — Todos os Dias
+      </div>
+      <h1>Pneu furado às 3h<br><em style="color:var(--secondary)">da manhã? Ligue agora.</em></h1>
+      <p class="hero-sub">22 anos de tradição na Vila Nair. Borracharia completa com guincho e socorro — qualquer hora.</p>
+      <div class="hero-ctas">
+        <a href="tel:+551239229371" class="btn-primary">📞 Ligar: (12) 3922-9371</a>
+        <a href="https://wa.me/551239229371?text=Olá!%20Vi%20o%20site%20da%20Borracharia%20A%20Shalom%20e%20preciso%20de%20atendimento" class="btn-outline">WhatsApp emergência</a>
+      </div>
+      <div class="hero-stats-box">
+        <div class="hero-stat">
+          <div class="stat-num">22+</div>
+          <div class="stat-label">Anos</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">24h</div>
+          <div class="stat-label">Atendimento</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">7</div>
+          <div class="stat-label">Dias/semana</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       3. STRIP DE URGÊNCIA
+  ======================== -->
+  <section class="urgencia-strip">
+    <div class="container">
+      <div class="urgencia-left">
+        <h2>Está em emergência agora?</h2>
+      </div>
+      <div class="urgencia-right">
+        <a href="tel:+551239229371" class="tel-gigante">(12) 3922-9371</a>
+        <small>Ligue — a gente vai até você. Qualquer hora, qualquer dia.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       4. SOBRE
+  ======================== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-img">
+          <img src="https://images.unsplash.com/photo-1632823469850-2f77dd9c7f93?auto=format&fit=crop&w=800&q=80" alt="Oficina Borracharia A Shalom — atendimento especializado em pneus" loading="lazy">
+          <div class="sobre-img-badge">
+            22+
+            <span>Anos de tradição</span>
+          </div>
+        </div>
+        <div class="sobre-body">
+          <p class="section-tag">Quem somos</p>
+          <h2 class="section-title">22 anos <em>cuidando dos carros da Vila Nair</em></h2>
+          <p>A Borracharia A Shalom está presente na Vila Nair há mais de duas décadas. Fundada com o propósito de oferecer um serviço honesto, rápido e de qualidade — seja na emergência das 3h da manhã ou na manutenção de rotina do seu veículo.</p>
+          <p>Aqui não tem jogo sujo. Diagnóstico transparente, preço fechado antes do serviço começar, e garantia em cada trabalho realizado. A nossa reputação foi construída um cliente de cada vez — e é assim que continuará sendo.</p>
+          <ul class="sobre-list">
+            <li>22 anos de tradição na Vila Nair</li>
+            <li>Atendimento 24h ininterrupto — inclusive madrugada e feriados</li>
+            <li>Guincho 24h — saímos imediatamente para te socorrer</li>
+            <li>Diagnóstico transparente antes de qualquer serviço</li>
+            <li>Preço fechado antes do serviço — sem surpresa na hora de pagar</li>
+            <li>Garantia em todo trabalho realizado</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       5. NOSSO COMPROMISSO
+  ======================== -->
+  <section class="compromisso">
+    <div class="container">
+      <div class="compromisso-header">
+        <p class="section-tag">Transparência acima de tudo</p>
+        <h2 class="section-title" style="color:#fff;">Nosso compromisso <em>com o motorista</em></h2>
+      </div>
+      <div class="compromisso-grid">
+
+        <div class="comp-item">
+          <div class="comp-icon">
+            <!-- Escudo SVG -->
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="comp-text">
+            <h4>Diagnóstico transparente antes de qualquer serviço</h4>
+            <p>Você sabe o que será feito no seu carro antes de qualquer mão na massa. Sem surpresas, sem cobranças extras.</p>
+          </div>
+        </div>
+
+        <div class="comp-item">
+          <div class="comp-icon">
+            <!-- Relógio SVG -->
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="comp-text">
+            <h4>Preço fechado — sem surpresa na hora de pagar</h4>
+            <p>O valor combinado é o valor cobrado. Preço justo, transparente e acordado antes do serviço começar.</p>
+          </div>
+        </div>
+
+        <div class="comp-item">
+          <div class="comp-icon">
+            <!-- Checkmark SVG -->
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="comp-text">
+            <h4>Garantia escrita em todo trabalho realizado</h4>
+            <p>Confiamos no que fazemos. Cada serviço tem garantia — e se algo não ficou certo, resolvemos sem custo adicional.</p>
+          </div>
+        </div>
+
+        <div class="comp-item">
+          <div class="comp-icon">
+            <!-- Estrela SVG -->
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div class="comp-text">
+            <h4>22 anos no bairro — reputação construída cliente a cliente</h4>
+            <p>Mais de duas décadas servindo a Vila Nair. Nossa maior referência é a confiança das famílias que voltam sempre.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       6. SERVIÇOS
+  ======================== -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <div class="servicos-header">
+        <p class="section-tag">O que fazemos</p>
+        <h2 class="section-title">Serviços completos para o seu veículo</h2>
+      </div>
+      <div class="servicos-grid">
+
+        <!-- Card 1 -->
+        <div class="serv-card">
+          <div class="serv-card-img">
+            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80" alt="Borracharia completa — conserto e troca de pneus" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="serv-card-body">
+            <h3>Borracharia Completa</h3>
+            <p>Conserto de pneus furados, calibração, troca de pneus novos e usados para carros, motos e utilitários. Atendimento rápido e preciso.</p>
+            <a href="tel:+551239229371" class="serv-link">Ligar agora →</a>
+          </div>
+        </div>
+
+        <!-- Card 2 — badge 24h -->
+        <div class="serv-card">
+          <div class="serv-card-img">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Guincho e socorro veicular 24 horas — São José dos Campos" loading="lazy">
+            <div class="card-overlay"></div>
+            <span class="serv-badge">🚨 24h</span>
+          </div>
+          <div class="serv-card-body">
+            <h3>Guincho &amp; Socorro Veicular</h3>
+            <p>Socorro na estrada a qualquer horário — de madrugada, feriado ou fim de semana. Atendemos dentro e fora da cidade. Ligou, a gente vai.</p>
+            <a href="tel:+551239229371" class="serv-link">Ligar agora →</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="serv-card">
+          <div class="serv-card-img">
+            <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=600&q=80" alt="Alinhamento e balanceamento profissional" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="serv-card-body">
+            <h3>Alinhamento &amp; Balanceamento</h3>
+            <p>Carro vibrando ou puxando para o lado? Diagnóstico preciso com equipamento moderno. Seu veículo alinhado, estável e mais seguro nas estradas.</p>
+            <a href="tel:+551239229371" class="serv-link">Saiba mais →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       7. BANNER EMERGÊNCIA
+  ======================== -->
+  <section class="banner-urgencia">
+    <div class="banner-bg"></div>
+    <div class="banner-overlay"></div>
+    <div class="container">
+      <div class="banner-content">
+        <span class="banner-badge">DISPONÍVEL AGORA — 24H</span>
+        <h2>Quando você mais precisa, a Shalom está lá.</h2>
+        <a href="tel:+551239229371" class="banner-tel">(12) 3922-9371</a>
+        <a href="tel:+551239229371" class="btn-primary">Ligar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       8. DIFERENCIAIS — MOSAICO
+  ======================== -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="container">
+      <div class="diferenciais-grid">
+        <div class="mosaico">
+          <div class="mosaico-img1">
+            <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80" alt="Equipe Borracharia A Shalom — São José dos Campos" loading="lazy">
+          </div>
+          <div class="mosaico-img2">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=500&q=80" alt="Guincho 24h Borracharia A Shalom" loading="lazy">
+          </div>
+        </div>
+        <div class="diferenciais-body">
+          <p class="section-tag">Por que a Shalom</p>
+          <h2 class="section-title">Mais de duas décadas<br><em>de confiança na região</em></h2>
+          <div class="features-list">
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <!-- Relógio SVG -->
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>24h ininterruptos — nunca fechamos</h4>
+                <p>Enquanto todo mundo dorme, a Shalom está acordada. Emergência de madrugada, feriado, domingo — pode ligar.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <!-- Troféu SVG -->
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="8 21 12 17 16 21"/>
+                  <line x1="12" y1="17" x2="12" y2="11"/>
+                  <path d="M7 4H17v5c0 3.31-2.24 6-5 6S7 12.31 7 9V4z"/>
+                  <path d="M7 4c0 0-2 0-2 3s2 3 2 3"/>
+                  <path d="M17 4c0 0 2 0 2 3s-2 3-2 3"/>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>22 anos de experiência comprovada</h4>
+                <p>Duas décadas cuidando dos veículos da Vila Nair. Experiência que se traduz em diagnóstico certeiro e serviço bem feito na primeira vez.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <!-- Escudo SVG -->
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Orçamento transparente — sem enganação</h4>
+                <p>Você sabe o preço antes do serviço começar. Sem letra miúda, sem cobranças escondidas. Preço justo, sempre.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       9. POR QUE A SHALOM
+  ======================== -->
+  <section class="por-que">
+    <div class="container">
+      <div class="por-que-header">
+        <p class="section-tag">Prova social</p>
+        <h2 class="section-title">Por que escolher <em>a Shalom?</em></h2>
+      </div>
+      <div class="por-que-grid">
+        <div class="pq-card">
+          <div class="pq-num laranja">22+</div>
+          <h3>Anos de tradição na Vila Nair</h3>
+          <p>Mais de duas décadas servindo a comunidade de São José dos Campos com honestidade, qualidade e respeito ao cliente.</p>
+        </div>
+        <div class="pq-card">
+          <div class="pq-num branco">24h</div>
+          <h3>Atendimento todos os dias do ano</h3>
+          <p>Abrimos quando os outros fecham. Madrugada, domingo, Natal, feriado. Se você precisar, a Shalom atende — sempre.</p>
+        </div>
+        <div class="pq-card">
+          <div class="pq-num laranja">0</div>
+          <h3>Surpresa na conta — preço fechado antes</h3>
+          <p>Nenhum cliente sai da Shalom com cobrança inesperada. O preço é fechado e acordado antes de qualquer serviço começar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       10. LOCALIZAÇÃO
+  ======================== -->
+  <section class="localizacao" id="localizacao">
+    <div class="container">
+      <div class="localizacao-header">
+        <p class="section-tag">Onde estamos</p>
+        <h2 class="section-title">Horários &amp; <em>Localização</em></h2>
+      </div>
+      <div class="localizacao-grid">
+        <div>
+          <div class="horarios-card">
+            <h3>Horário de Funcionamento</h3>
+            <div class="horario-row">
+              <span class="dia">Segunda-feira</span>
+              <span class="hora">24 horas</span>
+            </div>
+            <div class="horario-row">
+              <span class="dia">Terça-feira</span>
+              <span class="hora">24 horas</span>
+            </div>
+            <div class="horario-row">
+              <span class="dia">Quarta-feira</span>
+              <span class="hora">24 horas</span>
+            </div>
+            <div class="horario-row">
+              <span class="dia">Quinta-feira</span>
+              <span class="hora">24 horas</span>
+            </div>
+            <div class="horario-row">
+              <span class="dia">Sexta-feira</span>
+              <span class="hora">24 horas</span>
+            </div>
+            <div class="horario-row">
+              <span class="dia">Sábado</span>
+              <span class="hora">24 horas</span>
+            </div>
+            <div class="horario-row">
+              <span class="dia">Domingo &amp; Feriados</span>
+              <span class="hora">24 horas</span>
+            </div>
+            <div class="aberto-badge">
+              <span class="aberto-dot"></span>
+              Aberto agora — sempre aberto
+            </div>
+          </div>
+          <div class="endereco-info">
+            <div class="info-linha">
+              <div class="info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="info-text">
+                <strong>Endereço</strong><br>
+                R. Tremembê, 161 — Vila Nair<br>
+                São José dos Campos/SP — CEP 12231-070
+              </div>
+            </div>
+            <div class="info-linha">
+              <div class="info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+                </svg>
+              </div>
+              <div class="info-text">
+                <strong>Telefone</strong><br>
+                <a href="tel:+551239229371" style="color:var(--secondary);font-weight:700;">(12) 3922-9371</a> — Atendimento 24h
+              </div>
+            </div>
+            <div class="info-linha">
+              <div class="info-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </div>
+              <div class="info-text">
+                <strong>WhatsApp</strong><br>
+                <a href="https://wa.me/551239229371?text=Olá!%20Vi%20o%20site%20da%20Borracharia%20A%20Shalom%20e%20preciso%20de%20atendimento" style="color:var(--secondary);font-weight:700;">Clique para abrir o WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mapa-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=Rua+Tremembê+161+Vila+Nair+São+José+dos+Campos+SP&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização Borracharia A Shalom — Rua Tremembê 161, Vila Nair, São José dos Campos/SP">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       11. FOOTER
+  ======================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">🔧 Borracharia A Shalom</div>
+          <p class="footer-desc">Borracharia completa com guincho e socorro veicular 24 horas por dia, 7 dias por semana, incluindo feriados e madrugada. Tradição de mais de 22 anos na Vila Nair, São José dos Campos/SP. Sem redes sociais — fale direto pelo telefone.</p>
+          <span class="footer-badge">22 anos de tradição</span>
+        </div>
+        <nav class="footer-nav">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#servicos">Borracharia Completa</a></li>
+            <li><a href="#servicos">Guincho 24h</a></li>
+            <li><a href="#servicos">Alinhamento &amp; Balanceamento</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contato">
+          <h4>Contato</h4>
+          <a href="tel:+551239229371" class="footer-tel-big">(12) 3922-9371</a>
+          <p class="footer-24h">Atendimento 24h — todos os dias</p>
+          <p class="footer-addr">
+            R. Tremembê, 161 — Vila Nair<br>
+            São José dos Campos/SP<br>
+            CEP 12231-070
+          </p>
+          <br>
+          <p style="font-size:0.82rem;color:rgba(255,255,255,0.32);">Estamos esperando sua ligação 🔧</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Borracharia A Shalom. Todos os direitos reservados.</p>
+        <p>São José dos Campos/SP — Atendimento 24h — (12) 3922-9371</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================
+       BOTÕES FLUTUANTES
+  ======================== -->
+  <!-- Float telefone -->
+  <a href="tel:+551239229371" class="float-tel" title="Ligar agora — (12) 3922-9371" aria-label="Ligar para a Borracharia A Shalom">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+    </svg>
+  </a>
+
+  <!-- Float WhatsApp -->
+  <a href="https://wa.me/551239229371?text=Olá!%20Vi%20o%20site%20da%20Borracharia%20A%20Shalom%20e%20preciso%20de%20atendimento" class="float-whatsapp" target="_blank" rel="noopener noreferrer" title="Falar no WhatsApp" aria-label="Abrir WhatsApp da Borracharia A Shalom">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+</body>
+</html>

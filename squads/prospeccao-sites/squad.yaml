@@ -1,0 +1,34 @@
+name: "Prospecção de Sites"
+code: "prospeccao-sites"
+description: "Pipeline completo de prospecção e venda de sites para pequenos comércios locais. Busca negócios no Google Maps, investiga presença digital, cria briefing com score, produz site HTML personalizado com deploy ao vivo no Vercel e email de proposta, revisa e gera um kit de envio completo para o usuário enviar manualmente."
+icon: "🏪"
+version: "1.0.0"
+created: "2026-05-17"
+
+input:
+  - name: "cidade"
+    description: "Cidade onde buscar negócios (ex: Campinas, São Paulo - Centro, Belo Horizonte)"
+    required: true
+
+batch_size: 5
+
+skills:
+  - apify
+  # web_search e web_fetch são ferramentas nativas (built-in), não skills instaladas
+  # Deploy dos sites via Vercel CLI local (npx vercel deploy --prod)
+  # Envio é 100% manual: o squad gera o kit e o usuário envia — sem automação de envio
+
+data:
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+  - pipeline/data/tone-of-voice.md
+
+memory:
+  - _memory/memories.md
+  - _memory/contatados.md
+
+pipeline: pipeline/pipeline.yaml
+party: squad-party.csv

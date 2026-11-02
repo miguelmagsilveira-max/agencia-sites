@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurante Irie — Cozinha Japonesa Tradicional desde 1979 | São José dos Campos</title>
+<meta name="description" content="O japonês raiz de São José dos Campos. Comida japonesa autêntica e caseira desde 1979. Sashimi, sukiyaki, lámen e o famoso Teishoku de Anchova.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Restaurante Irie",
+  "servesCuisine": "Japonesa",
+  "priceRange": "$$",
+  "telephone": "+551239417702",
+  "foundingDate": "1979",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua José Mattar, 73",
+    "addressLocality": "São José dos Campos",
+    "addressRegion": "SP",
+    "postalCode": "12245-450",
+    "addressCountry": "BR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "797"
+  }
+}
+</script>
+<style>
+:root{
+  --primary:#1c2b24;
+  --secondary:#c9a96e;
+  --accent:#f8f3ea;
+  --dark:#0d1611;
+  --text:#2a332d;
+  --bg:#ffffff;
+  --bg-alt:#f6f1e8;
+  --gray:#7a8078;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--bg);line-height:1.6;overflow-x:hidden;}
+h1,h2,h3,h4,.display{font-family:'Playfair Display',serif;}
+img{display:block;max-width:100%;}
+a{text-decoration:none;color:inherit;}
+.container{max-width:1180px;margin:0 auto;padding:0 48px;}
+section{padding:96px 0;}
+.section-tag{font-size:0.75rem;text-transform:uppercase;letter-spacing:3px;color:var(--secondary);font-weight:700;display:flex;align-items:center;gap:10px;}
+.section-tag::after{content:"";width:40px;height:1px;background:var(--secondary);}
+.section-title{font-size:2.4rem;font-weight:700;margin:16px 0 8px;color:var(--primary);line-height:1.2;}
+.section-title em{color:var(--secondary);font-style:italic;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,22,17,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:16px 48px;display:flex;align-items:center;justify-content:space-between;transition:background .3s;}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:800;color:#fff;letter-spacing:.5px;}
+.nav-logo span{color:var(--secondary);}
+.nav-links{display:flex;gap:32px;}
+.nav-links a{color:rgba(255,255,255,0.8);font-size:0.9rem;font-weight:500;transition:color .2s;}
+.nav-links a:hover{color:var(--secondary);}
+.nav-cta{background:var(--secondary);color:var(--dark);padding:10px 22px;border-radius:50px;font-weight:700;font-size:0.85rem;transition:transform .2s;}
+.nav-cta:hover{transform:translateY(-2px);}
+
+/* HERO */
+@keyframes slowZoom{from{transform:scale(1);}to{transform:scale(1.08);}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:url('https://source.unsplash.com/1600x1000/?japanese,food,sashimi,traditional') center/cover no-repeat;animation:slowZoom 20s ease-in-out infinite alternate;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(13,22,17,0.88) 0%,rgba(13,22,17,0.45) 100%);}
+.hero-content{position:relative;z-index:1;padding:140px 48px 120px;max-width:1180px;margin:0 auto;width:100%;}
+.hero-tag{display:inline-block;background:rgba(201,169,110,0.2);border:1px solid var(--secondary);color:var(--secondary);padding:7px 18px;border-radius:50px;font-size:0.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;animation:fadeUp .6s ease both;animation-delay:.2s;}
+.hero h1{font-size:4rem;color:#fff;line-height:1.08;margin:24px 0 18px;animation:fadeUp .6s ease both;animation-delay:.4s;}
+.hero h1 em{color:var(--secondary);font-style:italic;}
+.hero p{font-size:1.15rem;color:rgba(255,255,255,0.85);max-width:560px;animation:fadeUp .6s ease both;animation-delay:.6s;}
+.hero-ctas{display:flex;gap:16px;margin-top:36px;flex-wrap:wrap;animation:fadeUp .6s ease both;animation-delay:.8s;}
+.btn-primary{background:var(--secondary);color:var(--dark);padding:16px 32px;border-radius:50px;font-weight:700;font-size:0.95rem;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 24px rgba(201,169,110,0.3);}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(201,169,110,0.45);}
+.btn-outline{border:1.5px solid rgba(255,255,255,0.6);color:#fff;padding:16px 32px;border-radius:50px;font-weight:600;font-size:0.95rem;transition:all .2s;}
+.btn-outline:hover{background:#fff;color:var(--dark);transform:translateY(-3px);}
+.hero-stats-box{position:absolute;bottom:40px;right:48px;display:flex;gap:36px;animation:fadeUp .6s ease both;animation-delay:1s;z-index:1;}
+.hero-stat{text-align:center;color:#fff;}
+.hero-stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:800;display:block;color:var(--secondary);}
+.hero-stat-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;opacity:.75;}
+
+/* SOBRE */
+.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.sobre-img-wrap{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 24px 60px rgba(0,0,0,0.15);}
+.sobre-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease;}
+.sobre-img-wrap:hover img{transform:scale(1.06);}
+.sobre-badge{position:absolute;bottom:24px;left:24px;background:var(--secondary);color:var(--dark);padding:14px 22px;border-radius:12px;font-family:'Playfair Display',serif;font-weight:800;font-size:1.1rem;box-shadow:0 8px 24px rgba(0,0,0,0.2);}
+.sobre-text p{margin:18px 0;color:var(--gray);font-size:1.02rem;}
+.bullet-list{list-style:none;margin-top:24px;}
+.bullet-list li{padding:12px 0;border-bottom:1px solid rgba(0,0,0,0.08);display:flex;gap:12px;align-items:center;font-weight:500;color:var(--text);}
+.bullet-list li::before{content:"—";color:var(--secondary);font-weight:700;}
+
+/* COMPROMISSO */
+.compromisso{padding:72px 0;background:var(--primary);color:#fff;}
+.compromisso .section-tag{color:var(--secondary);}
+.compromisso .section-title{color:#fff;}
+.compromisso-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:36px;}
+.compromisso-item{display:flex;gap:16px;align-items:flex-start;}
+.compromisso-icon{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;color:var(--secondary);flex-shrink:0;}
+.compromisso-item h4{font-size:1rem;font-weight:700;margin-bottom:4px;font-family:'Inter',sans-serif;}
+.compromisso-item p{font-size:0.88rem;opacity:.8;line-height:1.55;}
+
+/* CARDS */
+.cardapio{background:var(--bg-alt);}
+.cards-head{text-align:center;max-width:620px;margin:0 auto 48px;}
+.cards-head .section-tag{justify-content:center;}
+.cards-head .section-tag::before{content:"";width:40px;height:1px;background:var(--secondary);}
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.card{background:#fff;border-radius:16px;overflow:hidden;transition:transform .3s,box-shadow .3s;position:relative;}
+.card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,0.12);}
+.card-featured{border:2px solid var(--secondary);box-shadow:0 8px 32px rgba(201,169,110,0.25);}
+.card-img{height:210px;overflow:hidden;position:relative;}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease;}
+.card:hover .card-img img{transform:scale(1.06);}
+.card-badge{position:absolute;top:14px;right:14px;background:var(--secondary);color:var(--dark);font-size:0.7rem;font-weight:800;padding:5px 14px;border-radius:50px;letter-spacing:.5px;text-transform:uppercase;}
+.card-body{padding:26px;}
+.card-body h3{font-size:1.25rem;margin-bottom:8px;color:var(--primary);}
+.card-body p{font-size:0.9rem;color:var(--gray);line-height:1.6;}
+
+/* BANNER */
+.banner{position:relative;padding:120px 0;text-align:center;overflow:hidden;}
+.banner-bg{position:absolute;inset:0;background:url('https://source.unsplash.com/1600x900/?ramen,japanese,noodles,bowl') center/cover no-repeat;}
+.banner-overlay{position:absolute;inset:0;background:rgba(13,22,17,0.78);}
+.banner-content{position:relative;z-index:1;color:#fff;max-width:680px;margin:0 auto;padding:0 24px;}
+.banner-content h2{font-size:2.6rem;margin-bottom:18px;line-height:1.2;}
+.banner-content h2 em{color:var(--secondary);font-style:italic;}
+.banner-content p{font-size:1.1rem;opacity:.85;margin-bottom:32px;}
+
+/* EXPERIENCIA */
+.experiencia-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.mosaic{position:relative;height:480px;}
+.mosaic-img1{position:absolute;top:0;left:0;width:75%;height:80%;border-radius:16px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,0.15);}
+.mosaic-img2{position:absolute;bottom:0;right:0;width:55%;height:55%;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.25);border:6px solid #fff;}
+.mosaic-img1 img,.mosaic-img2 img{width:100%;height:100%;object-fit:cover;transition:transform .8s;}
+.mosaic:hover .mosaic-img1 img{transform:scale(1.06);}
+.mosaic:hover .mosaic-img2 img{transform:scale(1.06);}
+.features-list{display:flex;flex-direction:column;gap:26px;margin-top:28px;}
+.feature-item{display:flex;gap:16px;align-items:flex-start;}
+.feature-icon{width:48px;height:48px;border-radius:12px;background:var(--primary);color:var(--secondary);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.feature-item h4{font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;margin-bottom:4px;color:var(--primary);}
+.feature-item p{font-size:0.9rem;color:var(--gray);}
+
+/* REVIEWS */
+.reviews{background:var(--bg-alt);}
+.reviews-head{text-align:center;max-width:620px;margin:0 auto 48px;}
+.reviews-head .section-tag{justify-content:center;}
+.reviews-head .section-tag::before{content:"";width:40px;height:1px;background:var(--secondary);}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.review-card{background:#fff;border-radius:16px;padding:30px;border-top:3px solid var(--secondary);box-shadow:0 4px 20px rgba(0,0,0,0.04);}
+.review-stars{color:var(--secondary);font-size:1rem;margin-bottom:16px;letter-spacing:2px;}
+.review-text{font-style:italic;color:#555;line-height:1.7;margin-bottom:22px;font-size:0.96rem;}
+.review-author{display:flex;align-items:center;gap:12px;}
+.review-avatar{width:46px;height:46px;border-radius:50%;background:var(--secondary);color:var(--dark);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;font-family:'Playfair Display',serif;}
+.review-name{font-weight:600;font-size:0.9rem;color:var(--primary);}
+.review-source{font-size:0.76rem;color:var(--gray);}
+
+/* HORARIO + MAPA */
+.horario-mapa-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.horario-box .h-row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(0,0,0,0.08);font-size:0.95rem;}
+.horario-box .h-row span:first-child{font-weight:600;color:var(--primary);}
+.horario-box .h-row span:last-child{color:var(--gray);}
+.contato-info{margin-top:28px;display:flex;flex-direction:column;gap:14px;}
+.contato-info a,.contato-info div{display:flex;align-items:center;gap:12px;font-size:0.95rem;color:var(--text);}
+.contato-info svg{color:var(--secondary);flex-shrink:0;}
+.mapa iframe{width:100%;height:380px;border:0;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.1);}
+
+/* FOOTER */
+footer{background:var(--dark);color:rgba(255,255,255,0.55);padding:64px 0 32px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:40px;}
+.footer-brand h3{color:#fff;font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:12px;}
+.footer-brand h3 span{color:var(--secondary);}
+.footer-brand p{font-size:0.88rem;line-height:1.7;max-width:340px;}
+.footer-nav h4,.footer-contact h4{color:rgba(255,255,255,0.75);font-size:0.72rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;}
+.footer-nav ul{list-style:none;}
+.footer-nav ul li{margin-bottom:10px;}
+.footer-nav ul li a{color:rgba(255,255,255,0.55);font-size:0.9rem;transition:color .2s;}
+.footer-nav ul li a:hover{color:var(--secondary);}
+.footer-contact p{font-size:0.9rem;margin-bottom:10px;line-height:1.6;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;text-align:center;font-size:0.8rem;}
+.footer-disclaimer{margin-top:8px;font-size:0.72rem;opacity:.5;letter-spacing:.3px;}
+
+/* FLOATING CALL */
+.float-call{position:fixed;bottom:24px;right:24px;z-index:200;background:var(--secondary);color:var(--dark);width:auto;padding:14px 22px;border-radius:50px;display:flex;align-items:center;gap:10px;font-weight:700;font-size:0.92rem;box-shadow:0 8px 28px rgba(201,169,110,0.5);transition:transform .2s;}
+.float-call:hover{transform:scale(1.05);}
+
+@media(max-width:768px){
+  .container{padding:0 24px;}
+  nav{padding:14px 24px;}
+  .nav-links{display:none;}
+  .hero h1{font-size:2.6rem;}
+  .hero-content{padding:110px 24px 90px;}
+  .hero-stats-box{position:static;flex-direction:row;justify-content:center;padding:28px 0 0;gap:24px;}
+  .sobre-grid,.experiencia-grid,.horario-mapa-grid,.footer-grid{grid-template-columns:1fr;gap:36px;}
+  .cards-grid,.reviews-grid,.compromisso-grid{grid-template-columns:1fr;}
+  .mosaic{height:340px;}
+  .section-title{font-size:1.9rem;}
+  .banner-content h2{font-size:2rem;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Irie<span>.</span></div>
+  <div class="nav-links">
+    <a href="#sobre">A Casa</a>
+    <a href="#cardapio">Pratos</a>
+    <a href="#avaliacoes">Avaliações</a>
+    <a href="#contato">Contato</a>
+  </div>
+  <a href="tel:+551239417702" class="nav-cta">Reservar: (12) 3941-7702</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-tag">Cozinha Japonesa Raiz · Desde 1979</span>
+    <h1>O japonês <em>de verdade</em><br>de São José dos Campos</h1>
+    <p>Comida japonesa autêntica e caseira, do jeito tradicional — sem ser abrasileirada. Um lugar simples e tranquilo, como uma casa japonesa de verdade.</p>
+    <div class="hero-ctas">
+      <a href="tel:+551239417702" class="btn-primary">Reservar mesa →</a>
+      <a href="#sobre" class="btn-outline">Conheça a história</a>
+    </div>
+  </div>
+  <div class="hero-stats-box">
+    <div class="hero-stat"><span class="hero-stat-num">4.7★</span><span class="hero-stat-label">Nota Google</span></div>
+    <div class="hero-stat"><span class="hero-stat-num">+45</span><span class="hero-stat-label">Anos de história</span></div>
+    <div class="hero-stat"><span class="hero-stat-num">#22</span><span class="hero-stat-label">de 1.212 no TripAdvisor</span></div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-img-wrap">
+        <img src="https://source.unsplash.com/800x1000/?japanese,restaurant,interior,traditional" onerror="this.src='https://picsum.photos/seed/irie-sobre/800/1000'" alt="Ambiente do Restaurante Irie" loading="lazy">
+        <div class="sobre-badge">Desde 1979</div>
+      </div>
+      <div class="sobre-text">
+        <p class="section-tag">Nossa história</p>
+        <h2 class="section-title">Tradição japonesa <em>que atravessa gerações</em></h2>
+        <p>Desde 1979, o Irie serve a verdadeira comida japonesa em São José dos Campos. Aqui não tem rodízio nem prato abrasileirado: tem peixe fresco, pratos preparados com cuidado e o sabor tradicional que conquistou gerações de clientes.</p>
+        <p>O ambiente é simples e acolhedor — mesas comuns e tatames, como em uma casa japonesa típica. Um lugar tranquilo para apreciar comida de verdade, com calma.</p>
+        <ul class="bullet-list">
+          <li>Culinária japonesa "raiz", autêntica e caseira</li>
+          <li>Peixe fresco e pratos preparados na hora</li>
+          <li>Reconhecido pelo TripAdvisor: #22 de 1.212 restaurantes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="compromisso">
+  <div class="container">
+    <p class="section-tag">Como trabalhamos</p>
+    <h2 class="section-title">Nosso <em>compromisso</em> com você</h2>
+    <div class="compromisso-grid">
+      <div class="compromisso-item">
+        <div class="compromisso-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+        <div><h4>Ingredientes frescos</h4><p>Peixe fresco e ingredientes selecionados para cada prato, todos os dias.</p></div>
+      </div>
+      <div class="compromisso-item">
+        <div class="compromisso-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+        <div><h4>Receita tradicional</h4><p>Pratos feitos do jeito japonês de verdade, sem atalhos nem adaptações.</p></div>
+      </div>
+      <div class="compromisso-item">
+        <div class="compromisso-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+        <div><h4>Atendimento acolhedor</h4><p>Um ambiente tranquilo e familiar, para você comer com calma e conforto.</p></div>
+      </div>
+      <div class="compromisso-item">
+        <div class="compromisso-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-2"></path><rect x="6" y="18" width="12" height="4"></rect></svg></div>
+        <div><h4>Décadas de confiança</h4><p>Mais de 45 anos servindo a comunidade — uma reputação construída por gerações.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cardapio" class="cardapio">
+  <div class="container">
+    <div class="cards-head">
+      <p class="section-tag">Da nossa cozinha</p>
+      <h2 class="section-title">Pratos que <em>contam tradição</em></h2>
+    </div>
+    <div class="cards-grid">
+      <div class="card card-featured">
+        <div class="card-img">
+          <span class="card-badge">★ Destaque da Casa</span>
+          <img src="https://source.unsplash.com/600x400/?fish,japanese,grilled,teishoku" onerror="this.src='https://picsum.photos/seed/irie-anchova/600/400'" alt="Teishoku de Anchova" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Teishoku de Anchova</h3>
+          <p>O prato mais elogiado da casa: peixe fresco preparado no estilo tradicional, servido como refeição completa japonesa.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="https://source.unsplash.com/600x400/?sashimi,sushi,fresh,fish" onerror="this.src='https://picsum.photos/seed/irie-sashimi/600/400'" alt="Sashimi" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Sashimi & Temaki</h3>
+          <p>Peixe fresco fatiado com precisão e temaki preparado na hora, do jeito autêntico japonês.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="https://source.unsplash.com/600x400/?sukiyaki,ramen,japanese,hotpot" onerror="this.src='https://picsum.photos/seed/irie-sukiyaki/600/400'" alt="Sukiyaki e Lámen" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Sukiyaki & Lámen</h3>
+          <p>Pratos quentes tradicionais — o sukiyaki na panela e o lámen caseiro, reconfortantes e cheios de sabor.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <div class="banner-bg"></div>
+  <div class="banner-overlay"></div>
+  <div class="banner-content">
+    <h2>Uma refeição <em>tranquila</em>, do jeito japonês</h2>
+    <p>Reserve sua mesa e venha conhecer o japonês raiz que São José dos Campos confia há mais de 45 anos.</p>
+    <a href="tel:+551239417702" class="btn-primary">Falar agora: (12) 3941-7702</a>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="container">
+    <div class="experiencia-grid">
+      <div class="mosaic">
+        <div class="mosaic-img1"><img src="https://source.unsplash.com/800x900/?japanese,cuisine,plating,chef" onerror="this.src='https://picsum.photos/seed/irie-exp1/800/900'" alt="Preparo dos pratos" loading="lazy"></div>
+        <div class="mosaic-img2"><img src="https://source.unsplash.com/600x600/?nigiri,sushi,detail,japanese" onerror="this.src='https://picsum.photos/seed/irie-exp2/600/600'" alt="Detalhe de prato japonês" loading="lazy"></div>
+      </div>
+      <div>
+        <p class="section-tag">Por que o Irie</p>
+        <h2 class="section-title">A experiência de um <em>japonês autêntico</em></h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+            <div><h4>Comida que vale cada visita</h4><p>"Lugar simples com comida maravilhosa" — o que os clientes mais repetem.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+            <div><h4>Ambiente tranquilo</h4><p>Sem badalação. O lugar perfeito para uma refeição calma e em paz.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-2"></path><rect x="6" y="18" width="12" height="4"></rect></svg></div>
+            <div><h4>Tradição reconhecida</h4><p>#22 de 1.212 restaurantes de São José dos Campos no TripAdvisor.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="avaliacoes" class="reviews">
+  <div class="container">
+    <div class="reviews-head">
+      <p class="section-tag">O que dizem os clientes</p>
+      <h2 class="section-title">4.7★ em quase <em>800 avaliações</em></h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Queríamos uma refeição leve para o jantar. O lugar perfeito é o Irie. Não é badalado, mas é um lugar tranquilo."</p>
+        <div class="review-author">
+          <div class="review-avatar">G</div>
+          <div><div class="review-name">Gordinho_Chato</div><div class="review-source">TripAdvisor · nov/2025</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Lugar simples com comida maravilhosa. Vale muito a pena pela qualidade dos pratos."</p>
+        <div class="review-author">
+          <div class="review-avatar">E</div>
+          <div><div class="review-name">Eterno glutão</div><div class="review-source">TripAdvisor · jun/2024</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Há tempos que procuro um restaurante japonês 'raiz' aqui na região. Finalmente encontrei."</p>
+        <div class="review-author">
+          <div class="review-avatar">R</div>
+          <div><div class="review-name">Ricardo Asa</div><div class="review-source">TripAdvisor · jun/2018</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <div class="horario-mapa-grid">
+      <div class="horario-box">
+        <p class="section-tag">Visite o Irie</p>
+        <h2 class="section-title">Horários & <em>contato</em></h2>
+        <div style="margin-top:24px;">
+          <div class="h-row"><span>Terça a Domingo</span><span>Almoço e Jantar</span></div>
+          <div class="h-row"><span>Segunda-feira</span><span>Fechado</span></div>
+        </div>
+        <div class="contato-info">
+          <a href="tel:+551239417702">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>(12) 3941-7702</span>
+          </a>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Rua José Mattar, 73 — São José dos Campos/SP</span>
+          </div>
+          <a href="https://instagram.com/restaurante.irie" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <span>@restaurante.irie</span>
+          </a>
+        </div>
+      </div>
+      <div class="mapa">
+        <iframe src="https://maps.google.com/maps?q=Rua+Jos%C3%A9+Mattar+73+S%C3%A3o+Jos%C3%A9+dos+Campos&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Restaurante Irie"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Restaurante Irie<span>.</span></h3>
+        <p>Cozinha japonesa tradicional em São José dos Campos desde 1979. Comida de verdade, preparada com cuidado, em um ambiente simples e acolhedor.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">A Casa</a></li>
+          <li><a href="#cardapio">Pratos</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p>Rua José Mattar, 73<br>São José dos Campos/SP<br>CEP 12245-450</p>
+        <p>(12) 3941-7702<br>@restaurante.irie</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Restaurante Irie · Cozinha Japonesa Tradicional</p>
+      <p class="footer-disclaimer">Prévia / demonstração — site amostra, não oficial</p>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+551239417702" class="float-call" aria-label="Ligar para reservar">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+  Ligar
+</a>
+
+</body>
+</html>

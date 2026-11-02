@@ -1,0 +1,66 @@
+# NOTA: editado manualmente em 2026-05-31 para modo de envio manual. Recriar o squad via /opensquad sobrescreve este arquivo — revisar se isso acontecer.
+squad_code: "prospeccao-sites"
+purpose: "Pipeline completo de prospecção e venda de sites para pequenos comércios locais. Ao rodar, recebe apenas a cidade como input e processa 5 negócios por rodada, coletando dados públicos, criando sites HTML personalizados (com deploy ao vivo no Vercel), redigindo emails de proposta e preparando um kit de envio manual para o usuário enviar após aprovação."
+domain: "mixed"
+
+company:
+  name: "Agência de Sites"
+  tone: "Acessível e didático, confiante e profissional, foco em resultados práticos"
+  products: "Criação de sites institucionais, landing pages, e-commerce para MEIs e pequenos negócios"
+
+language: "Português (Brasil)"
+
+context:
+  trigger: "Manual — usuário informa a cidade na hora da execução"
+  systems: "Google Maps (via Apify/Playwright), Facebook, Instagram, TripAdvisor, Restaurant Guru, Solutudo, Vercel (deploy do site)"
+  frequency: "Sob demanda"
+  audience: "Pequenos comércios locais, todos os nichos, sem filtro"
+  batch_size: 5
+  execution_mode: "Todos os agentes inline (nenhum subagente em background)"
+
+agents:
+  - id: prospector
+    time_limit_minutes: 15
+  - id: pesquisador
+    time_limit_minutes: 10
+  - id: analista
+    time_limit_minutes: 5
+  - id: dev-designer
+    time_limit_minutes: 15
+  - id: copywriter
+    time_limit_minutes: 5
+  - id: revisor
+    time_limit_minutes: 5
+  - id: enviador
+    time_limit_minutes: 2
+
+time_limit_behavior: "Ao atingir o limite de tempo, o agente avisa o usuário e pergunta: 'Atingi meu limite de tempo. Quer me dar mais tempo ou sigo com o que tenho?'"
+
+checkpoints:
+  - between_every_agent: true
+  - before_enviador: "Resumo completo (briefing + site + email) para aprovação final antes de qualquer envio"
+
+memory:
+  file: "squads/prospeccao-sites/_memory/contatados.md"
+  fields: ["negócio", "cidade", "data_contato", "email_enviado", "resultado"]
+  filter_days: 30
+  update_trigger: "Após confirmação do usuário de que agendou o envio"
+
+output_structure:
+  per_business: "squads/prospeccao-sites/output/{run_id}/{negocio}/briefing.md + site.html + email.md"
+  memory: "squads/prospeccao-sites/_memory/contatados.md"
+  round_report: "squads/prospeccao-sites/output/{run_id}/relatorio-rodada.md"
+
+tools_needed:
+  - apify
+  - web_search
+  - web_fetch
+  - playwright
+
+investigation:
+  enabled: true
+  strategy: "self_directed"
+  instructions: "Pesquisar e analisar: (1) 3 melhores perfis LinkedIn de copywriters/freelancers brasileiros especializados em cold email B2B para pequenos negócios; (2) 2 melhores perfis Behance ou Instagram de designers que criam landing pages para comércios locais. Foco em quem fecha vendas e tem cases reais."
+  profiles: []
+
+target_formats: []

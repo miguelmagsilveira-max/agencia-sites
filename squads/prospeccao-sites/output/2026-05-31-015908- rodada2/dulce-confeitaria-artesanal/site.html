@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dulce Confeitaria Artesanal — Bolos e doces sob encomenda em SJC</title>
+<meta name="description" content="Bolos decorados, brigadeiros gourmet e sobremesas finas sob encomenda em São José dos Campos. Mais de 16 mil seguidores no Instagram. Encomende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Bakery",
+  "name":"Dulce Confeitaria Artesanal",
+  "servesCuisine":"Bolos decorados, doces e sobremesas finas",
+  "address":{"@type":"PostalAddress","addressLocality":"São José dos Campos","addressRegion":"SP","addressCountry":"BR"},
+  "telephone":"+5512996307781",
+  "priceRange":"$$"
+}
+</script>
+<style>
+  :root{
+    --cocoa:#5a3526;
+    --cocoa-dark:#412619;
+    --rose:#d98a93;
+    --rose-deep:#c2697a;
+    --cream:#fdf6f0;
+    --cream-2:#f6e8de;
+    --text:#3d2f29;
+    --muted:#8a766c;
+    --white:#fff;
+    --display:'Fraunces',serif;
+    --body:'Inter',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--body);background:var(--cream);color:var(--text);line-height:1.6;overflow-x:hidden;}
+  img{display:block;max-width:100%;}
+  a{text-decoration:none;color:inherit;}
+  h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.14;}
+  em{font-style:italic;color:var(--rose-deep);}
+  .container{max-width:1180px;margin:0 auto;padding:0 32px;width:100%;}
+  section{padding-top:88px;padding-bottom:88px;}
+  .section-tag{font-family:var(--body);text-transform:uppercase;letter-spacing:4px;font-size:.74rem;color:var(--rose-deep);font-weight:600;margin-bottom:12px;}
+  .section-title{font-size:2.7rem;font-weight:600;margin-bottom:16px;color:var(--cocoa);}
+  .section-intro{color:var(--muted);max-width:560px;font-size:1rem;margin-bottom:48px;}
+
+  @keyframes slowZoom{from{transform:scale(1);}to{transform:scale(1.08);}}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+
+  .btn-primary{
+    display:inline-block;background:var(--rose-deep);color:#fff;
+    padding:16px 32px;border-radius:50px;font-family:var(--body);font-weight:600;
+    font-size:.92rem;letter-spacing:.5px;
+    box-shadow:0 8px 24px rgba(194,105,122,.28);transition:transform .2s,box-shadow .2s,background .2s;
+  }
+  .btn-primary:hover{transform:translateY(-2px);background:var(--cocoa);box-shadow:0 12px 32px rgba(194,105,122,.34);}
+  .btn-outline{
+    display:inline-block;background:transparent;color:var(--cocoa);
+    border:1.5px solid var(--rose);padding:14px 28px;border-radius:50px;
+    font-family:var(--body);font-weight:600;font-size:.9rem;letter-spacing:.5px;
+    transition:background .2s,color .2s,border-color .2s;
+  }
+  .btn-outline:hover{background:var(--rose);color:#fff;border-color:var(--rose);}
+
+  /* Nav */
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(65,38,25,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    padding:15px 32px;display:flex;align-items:center;justify-content:space-between;
+    border-bottom:1px solid rgba(217,138,147,.22);}
+  .nav-logo{font-family:var(--display);font-weight:700;font-size:1.4rem;letter-spacing:.5px;color:var(--cream);}
+  .nav-logo span{color:var(--rose);}
+  .nav-links{display:flex;gap:30px;}
+  .nav-links a{font-size:.84rem;letter-spacing:.5px;color:rgba(253,246,240,.8);font-weight:500;transition:color .2s;}
+  .nav-links a:hover{color:var(--rose);}
+  .nav-cta{font-family:var(--body);background:var(--rose);color:#fff;padding:9px 22px;border-radius:50px;font-size:.82rem;font-weight:600;letter-spacing:.5px;}
+
+  /* Hero */
+  .hero-split{display:grid;grid-template-columns:1.05fr .95fr;min-height:100vh;}
+  .hero-left{background:var(--cocoa);display:flex;align-items:center;padding:130px 56px 70px;position:relative;}
+  .hero-left::after{content:"";position:absolute;top:0;right:0;bottom:0;width:80px;background:linear-gradient(to right,transparent,var(--cocoa));z-index:2;pointer-events:none;}
+  .hero-tag{display:inline-block;font-family:var(--body);text-transform:uppercase;letter-spacing:4px;font-size:.74rem;color:var(--rose);font-weight:600;margin-bottom:22px;animation:fadeUp .6s ease both;animation-delay:.2s;}
+  .hero-left h1{font-size:3.5rem;font-weight:600;color:var(--cream);margin-bottom:22px;animation:fadeUp .6s ease both;animation-delay:.4s;}
+  .hero-left p{color:rgba(253,246,240,.82);font-size:1.06rem;max-width:460px;margin-bottom:34px;animation:fadeUp .6s ease both;animation-delay:.6s;}
+  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:48px;animation:fadeUp .6s ease both;animation-delay:.8s;}
+  .hero-left .btn-primary{background:var(--rose);color:#fff;box-shadow:0 8px 24px rgba(217,138,147,.32);}
+  .hero-left .btn-primary:hover{background:var(--rose-deep);}
+  .hero-left .btn-outline{color:var(--cream);border-color:rgba(253,246,240,.45);}
+  .hero-left .btn-outline:hover{background:rgba(253,246,240,.1);border-color:var(--cream);color:var(--cream);}
+  .hero-stats{display:flex;gap:38px;animation:fadeUp .6s ease both;animation-delay:1s;}
+  .hero-stat-num{font-family:var(--display);font-size:1.9rem;font-weight:700;display:block;color:var(--rose);line-height:1;}
+  .hero-stat-label{font-size:.7rem;text-transform:uppercase;letter-spacing:1.5px;color:rgba(253,246,240,.7);margin-top:6px;}
+  .hero-split-img{position:relative;overflow:hidden;background:var(--cocoa-dark);}
+  .hero-split-img img{width:100%;height:100%;object-fit:cover;animation:slowZoom 22s ease-in-out infinite alternate;}
+  .hero-split-img::after{content:"";position:absolute;inset:0;background:linear-gradient(to right,rgba(90,53,38,.5) 0%,transparent 32%);}
+
+  /* Produtos (cards) */
+  .produtos{background:var(--cream);}
+  .cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .card{position:relative;background:var(--white);border-radius:18px;overflow:hidden;border:1px solid rgba(90,53,38,.08);box-shadow:0 8px 24px rgba(90,53,38,.06);transition:transform .3s,box-shadow .3s;}
+  .card:hover{transform:translateY(-8px);box-shadow:0 24px 48px rgba(90,53,38,.16);}
+  .card-featured{border:1.5px solid var(--rose);box-shadow:0 12px 40px rgba(217,138,147,.22);}
+  .card-badge{position:absolute;top:18px;right:18px;z-index:3;background:var(--rose);color:#fff;font-family:var(--body);font-size:.68rem;font-weight:700;padding:6px 13px;border-radius:50px;letter-spacing:.5px;text-transform:uppercase;}
+  .card-img{position:relative;height:240px;overflow:hidden;}
+  .card-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease;}
+  .card:hover .card-img img{transform:scale(1.06);}
+  .card-body{padding:24px 28px 30px;}
+  .card h3{font-size:1.55rem;color:var(--cocoa);margin-bottom:10px;}
+  .card p{font-size:.92rem;color:var(--muted);line-height:1.65;}
+
+  /* Galeria */
+  .galeria{background:var(--cream-2);}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .gallery-item{position:relative;overflow:hidden;border-radius:14px;aspect-ratio:1/1;background:var(--cream);cursor:zoom-in;}
+  .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease;}
+  .gallery-item:hover img{transform:scale(1.08);}
+  .gallery-item::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(65,38,25,.5),transparent 55%);opacity:0;transition:opacity .3s;}
+  .gallery-item:hover::after{opacity:1;}
+  .gallery-cap{position:absolute;left:14px;bottom:12px;z-index:2;font-family:var(--body);font-weight:600;letter-spacing:.5px;font-size:.78rem;color:#fff;opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s;}
+  .gallery-item:hover .gallery-cap{opacity:1;transform:translateY(0);}
+
+  /* Lightbox */
+  .lightbox{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;padding:28px;cursor:zoom-out;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:92vw;max-height:86vh;border-radius:10px;box-shadow:0 24px 80px rgba(0,0,0,.6);cursor:default;}
+  .lightbox-close{position:absolute;top:16px;right:24px;background:none;border:none;color:#fff;font-size:2.4rem;line-height:1;cursor:pointer;opacity:.8;font-family:var(--body);}
+  .lightbox-close:hover{opacity:1;}
+
+  /* Como encomendar (processo) */
+  .processo{background:var(--cocoa);}
+  .processo .section-tag{color:var(--rose);}
+  .processo .section-title{color:var(--cream);}
+  .processo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px;}
+  .processo-step{background:rgba(253,246,240,.05);border:1px solid rgba(217,138,147,.22);border-radius:18px;padding:30px 26px;transition:transform .3s,border-color .3s;}
+  .processo-step:hover{transform:translateY(-6px);border-color:var(--rose);}
+  .processo-num{font-family:var(--display);font-size:3.3rem;font-weight:700;color:var(--rose);line-height:1;display:block;margin-bottom:12px;}
+  .processo-step h4{font-size:1.3rem;color:var(--cream);margin-bottom:8px;}
+  .processo-step p{font-size:.9rem;color:rgba(253,246,240,.72);line-height:1.6;}
+
+  /* Diferenciais */
+  .diferenciais{background:var(--cream);}
+  .dif-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .dif-item{display:flex;gap:18px;align-items:flex-start;background:var(--white);border:1px solid rgba(90,53,38,.08);border-radius:16px;padding:26px 28px;box-shadow:0 6px 18px rgba(90,53,38,.05);}
+  .dif-icon{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:rgba(217,138,147,.16);display:flex;align-items:center;justify-content:center;color:var(--rose-deep);}
+  .dif-item h4{font-size:1.3rem;color:var(--cocoa);margin-bottom:6px;}
+  .dif-item p{font-size:.92rem;color:var(--muted);line-height:1.6;}
+
+  /* Prova social */
+  .prova{position:relative;text-align:center;background:var(--cream-2);}
+  .prova .big-num{font-family:var(--display);font-size:5.4rem;font-weight:700;color:var(--rose-deep);line-height:1;margin-bottom:6px;}
+  .prova .big-label{font-family:var(--display);font-size:1.6rem;color:var(--cocoa);margin-bottom:16px;}
+  .prova p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:1.02rem;}
+  .prova-row{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;margin-top:8px;}
+  .prova-item .pn{font-family:var(--display);font-size:1.9rem;font-weight:700;color:var(--cocoa);display:block;}
+  .prova-item .pl{font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-top:4px;}
+
+  /* Banner */
+  .banner{position:relative;padding:100px 32px;text-align:center;color:#fff;background-size:cover;background-position:center;}
+  .banner::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(65,38,25,.78),rgba(65,38,25,.86));}
+  .banner-inner{position:relative;z-index:2;max-width:640px;margin:0 auto;}
+  .banner h2{font-size:2.6rem;color:var(--cream);margin-bottom:16px;}
+  .banner p{color:rgba(253,246,240,.85);margin-bottom:28px;font-size:1.05rem;}
+  .banner .btn-primary{background:var(--rose);color:#fff;}
+  .banner .btn-primary:hover{background:var(--rose-deep);}
+
+  /* Instagram */
+  .insta{background:var(--cocoa);text-align:center;}
+  .insta .section-tag{color:var(--rose);}
+  .insta .ig-handle{font-family:var(--display);font-size:2.4rem;color:var(--cream);margin-bottom:10px;}
+  .insta p{color:rgba(253,246,240,.75);max-width:480px;margin:0 auto 30px;}
+  .insta .btn-primary{background:var(--rose);color:#fff;}
+
+  /* Contato */
+  .contato{background:var(--cream);}
+  .contato-card{background:var(--white);border:1px solid rgba(90,53,38,.08);border-radius:18px;padding:42px;box-shadow:0 8px 24px rgba(90,53,38,.06);max-width:620px;margin:0 auto;text-align:center;}
+  .contato-card h3{color:var(--cocoa);font-size:1.9rem;margin-bottom:8px;}
+  .contato-card>p{color:var(--muted);margin-bottom:26px;}
+  .contato-lines{text-align:left;max-width:420px;margin:0 auto 28px;}
+  .contato-line{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid rgba(90,53,38,.08);}
+  .contato-line:last-of-type{border-bottom:none;}
+  .contato-line svg{color:var(--rose-deep);flex-shrink:0;margin-top:2px;}
+  .contato-line .cl-label{font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);}
+  .contato-line .cl-val{font-size:1rem;color:var(--cocoa);font-weight:500;}
+
+  /* Footer */
+  footer{background:var(--cocoa-dark);color:rgba(253,246,240,.6);padding:60px 32px 30px;}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:40px;max-width:1180px;margin-left:auto;margin-right:auto;}
+  .footer-brand h3{font-family:var(--display);color:var(--cream);font-size:1.5rem;letter-spacing:.5px;margin-bottom:14px;}
+  .footer-brand h3 span{color:var(--rose);}
+  .footer-brand p{font-size:.88rem;line-height:1.7;max-width:340px;}
+  .footer-badge{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:6px 14px;border:1px solid rgba(217,138,147,.4);border-radius:50px;color:var(--rose);font-family:var(--body);font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:600;}
+  .footer-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--rose);}
+  .footer-thumbs{display:flex;gap:10px;margin-top:18px;}
+  .footer-thumbs a{display:block;width:62px;height:62px;border-radius:8px;overflow:hidden;opacity:.85;transition:opacity .2s,transform .2s;}
+  .footer-thumbs a:hover{opacity:1;transform:translateY(-2px);}
+  .footer-thumbs img{width:100%;height:100%;object-fit:cover;}
+  .footer-col h4{color:rgba(253,246,240,.75);font-family:var(--body);font-size:.75rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;font-weight:600;}
+  .footer-col ul{list-style:none;}
+  .footer-col ul li{margin-bottom:9px;}
+  .footer-col ul li a{font-size:.9rem;transition:color .2s;}
+  .footer-col ul li a:hover{color:var(--rose);}
+  .footer-bottom{border-top:1px solid rgba(253,246,240,.12);padding-top:24px;text-align:center;font-size:.8rem;max-width:1180px;margin:0 auto;}
+  .footer-disclaimer{margin-top:8px;font-size:.72rem;opacity:.45;}
+
+  /* WhatsApp float */
+  .whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:200;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3);transition:transform .2s;}
+  .whatsapp-float:hover{transform:scale(1.08);}
+  .whatsapp-float svg{width:32px;height:32px;fill:#fff;}
+
+  @media(max-width:900px){
+    .hero-split{grid-template-columns:1fr;}
+    .hero-split-img{min-height:54vh;order:-1;}
+    .hero-left{padding:40px 32px 56px;}
+    .hero-left::after{display:none;}
+    .hero-left h1{font-size:2.6rem;}
+    .cards-grid{grid-template-columns:1fr;}
+    .gallery{grid-template-columns:repeat(2,1fr);}
+    .processo-grid{grid-template-columns:1fr;}
+    .dif-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;gap:30px;}
+    .nav-links{display:none;}
+    .section-title{font-size:2.05rem;}
+    .prova .big-num{font-size:3.8rem;}
+    .banner h2{font-size:1.9rem;}
+    .prova-row{gap:32px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Dulce <span>Confeitaria</span></div>
+  <div class="nav-links">
+    <a href="#produtos">O que fazemos</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#processo">Como encomendar</a>
+    <a href="#contato">Contato</a>
+  </div>
+  <a href="https://wa.me/5512996307781?text=Oi!%20Vim%20pelo%20site%20e%20quero%20fazer%20uma%20encomenda." target="_blank" class="nav-cta">Encomendar</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero-split">
+  <div class="hero-left">
+    <div>
+      <span class="hero-tag">Confeitaria artesanal · São José dos Campos</span>
+      <h1>Doces que deixam<br>sua festa <em>inesquecível</em></h1>
+      <p>Bolos decorados, brigadeiros gourmet e sobremesas finas — tudo feito à mão, sob encomenda e do seu jeito. Sabor e capricho artesanal pra cada ocasião.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5512996307781?text=Oi!%20Vim%20pelo%20site%20e%20quero%20fazer%20uma%20encomenda." target="_blank" class="btn-primary">Encomendar pelo WhatsApp →</a>
+        <a href="#produtos" class="btn-outline">Ver os doces</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="hero-stat-num">Artesanal</span><span class="hero-stat-label">feito à mão</span></div>
+        <div class="hero-stat"><span class="hero-stat-num">Sob medida</span><span class="hero-stat-label">do seu jeito</span></div>
+        <div class="hero-stat"><span class="hero-stat-num">Encomenda</span><span class="hero-stat-label">personalizada</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-split-img">
+    <img src="imagens-insta/img3.jpg" alt="Bolo artesanal decorado com girassóis pintados à mão da Dulce">
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="produtos" id="produtos">
+  <div class="container">
+    <p class="section-tag">O que fazemos</p>
+    <h2 class="section-title">Doçura feita <em>à mão</em></h2>
+    <p class="section-intro">Cada encomenda é única, montada do seu jeito — sabores, recheios e decoração à sua escolha. Tudo artesanal, do bolo principal aos docinhos.</p>
+    <div class="cards-grid">
+      <div class="card card-featured">
+        <div class="card-badge">Mais pedido</div>
+        <div class="card-img"><img src="imagens-insta/img-6.jpg" alt="Bolo decorado vintage feito pela Dulce" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Bolos decorados</h3>
+          <p>Bolos festivos e personalizados pra aniversário, casamento e comemorações. Você escolhe o tema, o sabor e o recheio — a gente decora à mão.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><img src="imagens-insta/img-7.jpg" alt="Brigadeiros gourmet dourados em forma de coração" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Doces gourmet</h3>
+          <p>Brigadeiros e docinhos finos pra mesa de festa ou presente afetivo. Acabamento caprichado e sabor que conquista no primeiro doce.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img"><img src="imagens-insta/img-5.jpg" alt="Macarons artesanais em tom pistache" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Sobremesas finas</h3>
+          <p>Macarons e sobremesas especiais pra quem quer um toque sofisticado. Delicadas, bonitas e do jeitinho que você sonhou.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="galeria" id="galeria">
+  <div class="container">
+    <p class="section-tag">Galeria</p>
+    <h2 class="section-title">Feito com <em>carinho</em></h2>
+    <p class="section-intro">Alguns dos doces e bolos que já saíram da nossa cozinha pra adoçar festas pela cidade. Toque na foto para ampliar.</p>
+    <div class="gallery">
+      <div class="gallery-item"><img src="imagens-insta/img-4.jpg" alt="Bolo de chocolate com brigadeiro" loading="lazy"><span class="gallery-cap">Bolo de chocolate</span></div>
+      <div class="gallery-item"><img src="imagens-insta/img-2.jpg" alt="Bolo temático de aniversário infantil" loading="lazy"><span class="gallery-cap">Bolo temático</span></div>
+      <div class="gallery-item"><img src="imagens-insta/img-1.jpg" alt="Bolo decorado de primeiro aniversário" loading="lazy"><span class="gallery-cap">Festa infantil</span></div>
+      <div class="gallery-item"><img src="imagens-insta/img-8.jpg" alt="Bolo de coco com decoração de creme" loading="lazy"><span class="gallery-cap">Bolo de coco</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO ENCOMENDAR -->
+<section class="processo" id="processo">
+  <div class="container">
+    <p class="section-tag">Como encomendar</p>
+    <h2 class="section-title">Sua encomenda em <em>3 passos</em></h2>
+    <div class="processo-grid">
+      <div class="processo-step">
+        <span class="processo-num">01</span>
+        <h4>Conta sua ideia</h4><p>Manda no WhatsApp o que você quer: tema, sabor, quantidade e a data da festa.</p>
+      </div>
+      <div class="processo-step">
+        <span class="processo-num">02</span>
+        <h4>Orçamento e data</h4><p>A gente te passa o orçamento e confirma a data. Você aprova e reserva sua encomenda.</p>
+      </div>
+      <div class="processo-step">
+        <span class="processo-num">03</span>
+        <h4>Retire ou receba</h4><p>No dia combinado, seus doces saem fresquinhos e prontos pra adoçar a sua festa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="diferenciais">
+  <div class="container">
+    <p class="section-tag">Por que a Dulce</p>
+    <h2 class="section-title">Mais que <em>um doce</em></h2>
+    <div class="dif-grid">
+      <div class="dif-item">
+        <div class="dif-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 19l-4.8 2.5.9-5.4-3.9-3.8 5.4-.8z"></path></svg></div>
+        <div><h4>Feito à mão</h4><p>Cada bolo e docinho é produzido artesanalmente, com atenção a cada detalhe. Nada de produção em massa.</p></div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg></div>
+        <div><h4>Do seu jeito</h4><p>Sabores, recheios e decoração à sua escolha. A encomenda é personalizada pra combinar com a sua festa.</p></div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+        <div><h4>Confiança consolidada</h4><p>Uma comunidade de mais de 16 mil seguidores e milhares de festas adoçadas pela cidade. Uma marca artesanal de confiança na região.</p></div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div>
+        <div><h4>No capricho e no prazo</h4><p>Doces frescos, entregues na data combinada. Você comemora tranquila, sem preocupação.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROVA SOCIAL -->
+<section class="prova">
+  <div class="container">
+    <p class="section-tag">Reputação</p>
+    <div class="big-num">+16 mil</div>
+    <div class="big-label">seguidores acompanham a Dulce no Instagram</div>
+    <p>Uma comunidade que cresce a cada criação — bolos e doces artesanais que já marcaram presença em milhares de festas pela cidade. Confiança que se constrói um doce de cada vez.</p>
+    <div class="prova-row">
+      <div class="prova-item"><span class="pn">Feito à mão</span><span class="pl">100% artesanal</span></div>
+      <div class="prova-item"><span class="pn">Do seu jeito</span><span class="pl">encomenda personalizada</span></div>
+      <div class="prova-item"><span class="pn">Pela cidade</span><span class="pl">milhares de festas adoçadas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER -->
+<section class="banner" style="background-image:url('imagens-insta/img-4.jpg');">
+  <div class="banner-inner">
+    <h2>Tem festa chegando? Garanta seus doces</h2>
+    <p>Encomende com antecedência e deixe a parte mais doce com a gente. Chama no WhatsApp pra começar.</p>
+    <a href="https://wa.me/5512996307781?text=Oi!%20Vim%20pelo%20site%20e%20quero%20fazer%20uma%20encomenda." target="_blank" class="btn-primary">Encomendar pelo WhatsApp →</a>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="insta">
+  <div class="container">
+    <p class="section-tag">Acompanhe</p>
+    <div class="ig-handle">@dulceconfeitariaartesanal</div>
+    <p>Veja as criações mais recentes, sabores e inspirações pra sua próxima festa direto no nosso Instagram.</p>
+    <a href="https://instagram.com/dulceconfeitariaartesanal" target="_blank" class="btn-primary">Seguir no Instagram →</a>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contato" id="contato">
+  <div class="container">
+    <p class="section-tag" style="text-align:center;">Contato</p>
+    <h2 class="section-title" style="text-align:center;">Vamos <em>adoçar?</em></h2>
+    <div class="contato-card">
+      <h3>Faça sua encomenda</h3>
+      <p>Atendemos toda São José dos Campos sob encomenda. Chama no WhatsApp pra orçar, escolher os sabores e marcar a data.</p>
+      <div class="contato-lines">
+        <div class="contato-line">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <div><span class="cl-label">WhatsApp</span><br><span class="cl-val">(12) 99630-7781</span></div>
+        </div>
+        <div class="contato-line">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+          <div><span class="cl-label">Instagram</span><br><span class="cl-val">@dulceconfeitariaartesanal</span></div>
+        </div>
+        <div class="contato-line">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <div><span class="cl-label">Atendimento</span><br><span class="cl-val">São José dos Campos / SP — sob encomenda</span></div>
+        </div>
+      </div>
+      <a href="https://wa.me/5512996307781?text=Oi!%20Vim%20pelo%20site%20e%20quero%20fazer%20uma%20encomenda." target="_blank" class="btn-primary">Falar no WhatsApp →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Dulce <span>Confeitaria</span></h3>
+      <p>Confeitaria artesanal em São José dos Campos. Bolos decorados, brigadeiros gourmet e sobremesas finas, feitos à mão e sob encomenda pra cada ocasião.</p>
+      <span class="footer-badge">Sob encomenda · feito à mão</span>
+      <div class="footer-thumbs">
+        <a href="#galeria" aria-label="Ver a galeria"><img src="imagens-insta/img-6.jpg" alt="Bolo decorado vintage" loading="lazy"></a>
+        <a href="#galeria" aria-label="Ver a galeria"><img src="imagens-insta/img-7.jpg" alt="Brigadeiros gourmet" loading="lazy"></a>
+        <a href="#galeria" aria-label="Ver a galeria"><img src="imagens-insta/img-5.jpg" alt="Macarons artesanais" loading="lazy"></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#produtos">O que fazemos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#processo">Como encomendar</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="https://wa.me/5512996307781" target="_blank">(12) 99630-7781</a></li>
+        <li><a href="https://instagram.com/dulceconfeitariaartesanal" target="_blank">@dulceconfeitariaartesanal</a></li>
+        <li><span>São José dos Campos / SP</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Dulce Confeitaria Artesanal · Todos os direitos reservados</p>
+    <p class="footer-disclaimer">Prévia / demonstração — site amostra, não oficial</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/5512996307781?text=Oi!%20Vim%20pelo%20site%20e%20quero%20fazer%20uma%20encomenda." class="whatsapp-float" aria-label="Falar no WhatsApp" target="_blank">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Foto ampliada">
+  <button class="lightbox-close" aria-label="Fechar">&times;</button>
+  <img src="" alt="">
+</div>
+<script>
+(function(){
+  var lb=document.getElementById('lightbox'),img=lb.querySelector('img');
+  document.querySelectorAll('.gallery-item').forEach(function(item){
+    var t=item.querySelector('img');
+    item.addEventListener('click',function(){img.src=t.src;img.alt=t.alt;lb.classList.add('open');});
+  });
+  lb.addEventListener('click',function(e){if(e.target!==img)lb.classList.remove('open');});
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atelie Dona Costura — Consertos e Reformas sob Medida · Vila Adyana, SJC</title>
+<meta name="description" content="Ateliê de costura em Vila Adyana, São José dos Campos. Consertos, ajustes e reformas de roupa sob medida. Atendimento pessoal desde 2018.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "Atelie Dona Costura",
+  "description": "Ateliê de costura — consertos, ajustes e reformas de roupa sob medida em Vila Adyana, São José dos Campos.",
+  "image": "",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Santa Clara, 1065",
+    "addressLocality": "São José dos Campos",
+    "addressRegion": "SP",
+    "postalCode": "12243-630",
+    "addressCountry": "BR"
+  },
+  "email": "ra.kimberly@hotmail.com",
+  "areaServed": "Vila Adyana e região, São José dos Campos - SP",
+  "foundingDate": "2018-08-14"
+}
+</script>
+<style>
+:root{
+  --primary:#6b4a4a;      /* rosewood */
+  --secondary:#b08d57;    /* dourado fosco */
+  --accent:#f4efe9;       /* off-white quente */
+  --dark:#2a1f1c;
+  --text:#3a2f2c;
+  --bg:#fbf8f4;
+  --bg-alt:#f3ece4;
+  --gray:#8a7a72;
+  --display:'Cormorant Garamond',serif;
+  --body:'Jost',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.6;font-weight:300;}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;color:var(--dark);line-height:1.15;}
+img{display:block;max-width:100%;}
+a{text-decoration:none;color:inherit;}
+.container{max-width:1140px;margin:0 auto;padding:0 32px;}
+section{padding:78px 0;}
+.section-tag{font-size:.72rem;text-transform:uppercase;letter-spacing:3px;color:var(--secondary);font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:12px;}
+.section-tag::before{content:"";width:34px;height:1px;background:var(--secondary);display:inline-block;}
+.section-title{font-size:2.5rem;margin-bottom:18px;}
+.section-title em{font-style:italic;color:var(--secondary);}
+.lead{color:var(--gray);max-width:620px;font-size:1.05rem;}
+
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(42,31,28,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:16px 32px;display:flex;align-items:center;justify-content:space-between;transition:background .3s;}
+.nav-logo{font-family:var(--display);font-size:1.4rem;font-weight:700;color:#fff;letter-spacing:.5px;}
+.nav-logo span{color:var(--secondary);}
+.nav-links{display:flex;gap:30px;list-style:none;}
+.nav-links a{color:rgba(255,255,255,.8);font-size:.9rem;transition:color .2s;}
+.nav-links a:hover{color:var(--secondary);}
+.nav-cta{background:var(--secondary);color:#fff;padding:10px 20px;border-radius:6px;font-size:.85rem;font-weight:500;transition:transform .2s;}
+.nav-cta:hover{transform:translateY(-2px);}
+
+/* Hero tipográfico sóbrio + imagem de nicho (split) */
+.hero{background:linear-gradient(135deg,#2a1f1c 0%,#4a3632 60%,#6b4a4a 100%);color:#fff;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 78% 25%,rgba(176,141,87,.16),transparent 46%);pointer-events:none;}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;min-height:86vh;}
+.hero-content{padding:150px 0 90px;max-width:640px;}
+.hero-figure{align-self:stretch;display:flex;align-items:center;padding:120px 0 70px;}
+@keyframes slowZoom{from{transform:scale(1);}to{transform:scale(1.07);}}
+.hero-figure .frame{width:100%;height:60vh;max-height:560px;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.42);}
+.hero-figure img{width:100%;height:100%;object-fit:cover;animation:slowZoom 22s ease-in-out infinite alternate;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+.hero-tag{display:inline-block;font-size:.78rem;text-transform:uppercase;letter-spacing:3px;color:var(--secondary);border:1px solid rgba(176,141,87,.4);padding:7px 16px;border-radius:50px;margin-bottom:26px;animation:fadeUp .6s ease both;animation-delay:.2s;}
+.hero h1{font-size:4rem;color:#fff;margin-bottom:22px;animation:fadeUp .6s ease both;animation-delay:.4s;}
+.hero h1 em{font-style:italic;color:var(--secondary);}
+.hero p{font-size:1.2rem;color:rgba(255,255,255,.82);max-width:560px;margin-bottom:36px;animation:fadeUp .6s ease both;animation-delay:.6s;font-weight:300;}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;animation:fadeUp .6s ease both;animation-delay:.8s;}
+.hero-quick{margin-top:38px;display:flex;gap:30px;flex-wrap:wrap;animation:fadeUp .6s ease both;animation-delay:1s;}
+.hero-quick div{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.85);font-size:.92rem;}
+.hero-quick svg{color:var(--secondary);flex-shrink:0;}
+
+.btn-primary{background:var(--secondary);color:#fff;padding:16px 32px;border-radius:8px;font-weight:600;font-size:1rem;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s;display:inline-flex;align-items:center;gap:8px;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.3);}
+.btn-outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5);padding:15px 28px;border-radius:8px;font-weight:400;font-size:.95rem;transition:border-color .2s,background .2s;}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08);}
+.btn-dark{background:var(--primary);color:#fff;padding:16px 32px;border-radius:8px;font-weight:600;box-shadow:0 8px 24px rgba(107,74,74,.28);transition:transform .2s;display:inline-flex;align-items:center;gap:8px;}
+.btn-dark:hover{transform:translateY(-2px);}
+
+/* O que faço - serviços */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px;}
+.serv-card{background:#fff;border:1px solid rgba(107,74,74,.1);border-radius:14px;padding:34px 28px;transition:transform .3s,box-shadow .3s;position:relative;}
+.serv-card:hover{transform:translateY(-8px);box-shadow:0 20px 44px rgba(107,74,74,.12);}
+.serv-card.featured{border:2px solid var(--secondary);box-shadow:0 10px 34px rgba(176,141,87,.16);}
+.serv-badge{position:absolute;top:-12px;right:20px;background:var(--secondary);color:#fff;font-size:.68rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;padding:5px 14px;border-radius:50px;}
+.serv-icon{width:52px;height:52px;border-radius:12px;background:var(--bg-alt);color:var(--primary);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.serv-card h3{font-size:1.45rem;margin-bottom:10px;}
+.serv-card p{font-size:.94rem;color:var(--gray);}
+.serv-card ul{list-style:none;margin-top:14px;}
+.serv-card li{font-size:.9rem;color:var(--text);padding:5px 0;display:flex;gap:9px;align-items:center;}
+.serv-card li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--secondary);flex-shrink:0;}
+
+/* Faixa de imagem de nicho — parallax mobile-safe (transform via JS) */
+.media-band{padding:0;}
+.media-band .frame{position:relative;height:420px;overflow:hidden;}
+.media-band .parallax-img{position:absolute;top:0;left:0;width:100%;height:150%;object-fit:cover;object-position:center center;will-change:transform;transform:translate3d(0,0,0);transition:transform .05s linear;}
+.media-band .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,31,28,.55),rgba(42,31,28,.05));z-index:1;}
+.media-band .frame figcaption{position:absolute;left:0;bottom:0;padding:28px 32px;z-index:2;}
+.media-band .frame figcaption span{display:block;font-family:var(--display);font-style:italic;font-size:1.9rem;color:#fff;max-width:520px;line-height:1.2;text-shadow:0 2px 12px rgba(0,0,0,.4);}
+
+/* Área de atendimento */
+.area{background:var(--bg-alt);}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.area-grid iframe{width:100%;height:340px;border:0;border-radius:16px;filter:grayscale(.2) contrast(1.05);}
+.area-list{list-style:none;margin-top:22px;}
+.area-list li{padding:12px 0;border-bottom:1px solid rgba(107,74,74,.12);display:flex;gap:12px;align-items:center;font-size:1rem;}
+.area-list li::before{content:"—";color:var(--secondary);font-weight:700;}
+
+/* Como funciona - passos numerados */
+.processo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;}
+.processo-step{background:#fff;border:1px solid rgba(107,74,74,.1);border-radius:14px;padding:30px 26px;transition:transform .3s,border-color .3s;}
+.processo-step:hover{transform:translateY(-6px);border-color:var(--secondary);}
+.processo-num{font-family:var(--display);font-size:3rem;font-weight:700;color:var(--secondary);line-height:1;display:block;margin-bottom:14px;}
+.processo-step h4{font-size:1.3rem;margin-bottom:8px;}
+.processo-step p{font-size:.92rem;color:var(--gray);}
+
+/* Por que confiar - diferenciais */
+.confiar{background:var(--primary);color:#fff;}
+.confiar .section-title{color:#fff;}
+.confiar .section-tag{color:var(--secondary);}
+.confiar-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;margin-top:38px;}
+.confiar-item{display:flex;gap:16px;align-items:flex-start;}
+.confiar-icon{width:50px;height:50px;border-radius:12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;color:var(--secondary);flex-shrink:0;}
+.confiar-item h4{color:#fff;font-size:1.25rem;margin-bottom:5px;}
+.confiar-item p{font-size:.9rem;color:rgba(255,255,255,.78);}
+
+/* Contato */
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.contato-box{background:#fff;border:1px solid rgba(107,74,74,.12);border-radius:16px;padding:40px;}
+.contato-box h3{font-size:1.9rem;margin-bottom:8px;}
+.contato-line{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(107,74,74,.1);}
+.contato-line svg{color:var(--secondary);flex-shrink:0;}
+.contato-line span{font-size:.95rem;}
+.contato-line small{display:block;color:var(--gray);font-size:.78rem;text-transform:uppercase;letter-spacing:1px;}
+.contato-cta{margin-top:28px;}
+
+/* Footer */
+footer{background:var(--dark);color:rgba(255,255,255,.55);padding:60px 0 30px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:38px;}
+.footer-brand h3{color:#fff;font-size:1.5rem;margin-bottom:12px;}
+.footer-brand h3 span{color:var(--secondary);}
+.footer-brand p{font-size:.88rem;line-height:1.7;max-width:320px;}
+.footer-seal{display:inline-block;margin-top:16px;font-size:.75rem;letter-spacing:1px;text-transform:uppercase;color:var(--secondary);border:1px solid rgba(176,141,87,.4);padding:6px 14px;border-radius:50px;}
+.footer-col h4{color:rgba(255,255,255,.8);font-size:.72rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;}
+.footer-col ul{list-style:none;}
+.footer-col li{margin-bottom:9px;}
+.footer-col a,.footer-col span{color:rgba(255,255,255,.55);font-size:.9rem;transition:color .2s;}
+.footer-col a:hover{color:var(--secondary);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;text-align:center;font-size:.8rem;}
+.footer-disclaimer{margin-top:8px;font-size:.72rem;opacity:.5;letter-spacing:.3px;}
+
+/* Float contato (email) */
+.contact-float{position:fixed;bottom:24px;right:24px;z-index:200;width:58px;height:58px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 22px rgba(0,0,0,.28);transition:transform .2s;}
+.contact-float:hover{transform:scale(1.08);}
+.contact-float svg{width:28px;height:28px;stroke:#fff;}
+
+@media(max-width:860px){
+  .hero-inner{grid-template-columns:1fr;gap:0;min-height:auto;}
+  .hero-content{padding:118px 0 20px;}
+  .hero-figure{padding:0 0 56px;}
+  .hero-figure .frame{height:44vh;max-height:360px;}
+}
+@media(max-width:768px){
+  .nav-links{display:none;}
+  .hero h1{font-size:2.6rem;}
+  .section-title{font-size:2rem;}
+  .serv-grid,.processo-grid,.confiar-grid,.area-grid,.contato-grid,.footer-grid{grid-template-columns:1fr;gap:28px;}
+  section{padding:56px 0;}
+  .media-band .frame{height:300px;}
+  .media-band .frame figcaption span{font-size:1.4rem;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Dona <span>Costura</span></div>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#area">Onde atendo</a></li>
+    <li><a href="#como">Como funciona</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a href="mailto:ra.kimberly@hotmail.com?subject=Orçamento%20-%20Atelie%20Dona%20Costura" class="nav-cta">Pedir orçamento</a>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <span class="hero-tag">Ateliê de costura · Vila Adyana</span>
+      <h1>A roupa que você ama, <em>ajustada pra você</em>.</h1>
+      <p>Consertos, ajustes e reformas sob medida, feitos com cuidado no ateliê da Vila Adyana. Atendimento pessoal, peça por peça.</p>
+      <div class="hero-ctas">
+        <a href="mailto:ra.kimberly@hotmail.com?subject=Orçamento%20-%20Atelie%20Dona%20Costura&body=Olá!%20Gostaria%20de%20um%20orçamento.%20A%20peça%20é:%20" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Pedir orçamento por e-mail
+        </a>
+        <a href="#servicos" class="btn-outline">Ver serviços</a>
+      </div>
+      <div class="hero-quick">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Vila Adyana, São José dos Campos</div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> Atendimento sob medida desde 2018</div>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <div class="frame">
+        <img src="https://images.unsplash.com/photo-1578353022142-09264fd64295?ixid=M3w5NjYwNzh8MHwxfHNlYXJjaHwxfHxzZXdpbmclMjB0YWlsb3IlMjBhdGVsaWVyfGVufDF8MXx8fDE3ODUxNzAzNTN8MA&ixlib=rb-4.1.0&w=900&h=1120&fit=crop&q=80" onerror="this.src='https://picsum.photos/seed/costura1/900/1120'" alt="Detalhe de ateliê de costura — linhas, tesoura e trabalho manual" loading="eager">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="servicos">
+  <div class="container">
+    <p class="section-tag">O que eu faço</p>
+    <h2 class="section-title">Cada peça recebe o <em>ajuste certo</em></h2>
+    <p class="lead">Do reparo rápido à reforma completa, o trabalho é feito à mão, no seu tamanho e do seu jeito.</p>
+    <div class="serv-grid">
+      <div class="serv-card featured">
+        <div class="serv-badge">Mais pedido</div>
+        <div class="serv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4l-9 9"></path><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="18" r="3"></circle><path d="M20 4L8.5 15.5"></path></svg></div>
+        <h3>Consertos e ajustes</h3>
+        <p>O clássico do dia a dia, feito com acabamento caprichado.</p>
+        <ul>
+          <li>Barra de calça, vestido e cortina</li>
+          <li>Ajuste de cintura e largura</li>
+          <li>Troca de zíper e botões</li>
+          <li>Ajuste de manga e ombro</li>
+        </ul>
+      </div>
+      <div class="serv-card">
+        <div class="serv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.5 5.5L19 9l-4 4 1 6-4-3-4 3 1-6-4-4 5.5-1.5z"></path></svg></div>
+        <h3>Reformas sob medida</h3>
+        <p>Aquela peça parada no armário ganha vida nova.</p>
+        <ul>
+          <li>Modelagem e ajuste de caimento</li>
+          <li>Transformação de peças antigas</li>
+          <li>Adaptação ao seu corpo</li>
+        </ul>
+      </div>
+      <div class="serv-card">
+        <div class="serv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18"></path><path d="M8 4v16"></path></svg></div>
+        <h3>Confecção sob medida</h3>
+        <p>Peças feitas do zero, pensadas pra você vestir bem.</p>
+        <ul>
+          <li>Roupa no seu tamanho exato</li>
+          <li>Tecido e modelo à sua escolha</li>
+          <li>Prova e ajuste até ficar perfeito</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="media-band">
+  <figure class="frame">
+    <img class="parallax-img" src="https://images.unsplash.com/photo-1745847655362-fc86d76584b2?ixid=M3w5NjYwNzh8MHwxfHNlYXJjaHw0fHxzZXdpbmclMjB0YWlsb3IlMjBhdGVsaWVyfGVufDF8MXx8fDE3ODUxNzAzNTN8MA&ixlib=rb-4.1.0&w=1600&h=1200&fit=crop&q=80" onerror="this.src='https://picsum.photos/seed/costura2/1600/1200'" alt="Mãos trabalhando na máquina de costura" loading="lazy">
+    <figcaption><span>Cada ponto feito com cuidado, no ritmo do seu tempo.</span></figcaption>
+  </figure>
+</section>
+
+<section id="area" class="area">
+  <div class="container area-grid">
+    <div>
+      <p class="section-tag">Onde eu atendo</p>
+      <h2 class="section-title">No coração da <em>Vila Adyana</em></h2>
+      <p class="lead">O ateliê fica na Rua Santa Clara, 1065, em Vila Adyana — perto de você, com o atendimento pessoal de quem conhece o bairro.</p>
+      <ul class="area-list">
+        <li>Rua Santa Clara, 1065 — Vila Adyana</li>
+        <li>São José dos Campos — SP · CEP 12243-630</li>
+        <li>Atendimento a moradores da Vila Adyana e região</li>
+      </ul>
+    </div>
+    <iframe src="https://www.google.com/maps?q=Rua+Santa+Clara,+1065,+Vila+Adyana,+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização do ateliê"></iframe>
+  </div>
+</section>
+
+<section id="como">
+  <div class="container">
+    <p class="section-tag">Como funciona</p>
+    <h2 class="section-title">Simples, do <em>orçamento à retirada</em></h2>
+    <div class="processo-grid">
+      <div class="processo-step">
+        <span class="processo-num">1</span>
+        <h4>Me conte a peça</h4>
+        <p>Escreva por e-mail o que você precisa (barra, ajuste, reforma) e, se quiser, mande uma foto.</p>
+      </div>
+      <div class="processo-step">
+        <span class="processo-num">2</span>
+        <h4>Combinamos tudo</h4>
+        <p>Respondo com o orçamento e combinamos o dia de você deixar a peça no ateliê.</p>
+      </div>
+      <div class="processo-step">
+        <span class="processo-num">3</span>
+        <h4>Sua peça pronta</h4>
+        <p>Faço o serviço com cuidado e aviso quando estiver pronta pra retirar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="confiar">
+  <div class="container">
+    <p class="section-tag">Por que confiar</p>
+    <h2 class="section-title">Costura de bairro, <em>feita com atenção</em></h2>
+    <div class="confiar-grid">
+      <div class="confiar-item">
+        <div class="confiar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+        <div><h4>Trabalho sob medida</h4><p>Cada peça é ajustada ao seu corpo, não a um padrão. O caimento fica certo.</p></div>
+      </div>
+      <div class="confiar-item">
+        <div class="confiar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+        <div><h4>Atendimento pessoal</h4><p>Você fala direto com quem vai costurar — sem intermediário, do orçamento à entrega.</p></div>
+      </div>
+      <div class="confiar-item">
+        <div class="confiar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+        <div><h4>Pertinho de você</h4><p>Ateliê fixo na Vila Adyana — fácil de deixar e retirar sua peça no bairro.</p></div>
+      </div>
+      <div class="confiar-item">
+        <div class="confiar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18H4a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-2"></path><polyline points="6 9 6 2 18 2 18 9"></polyline><rect x="6" y="18" width="12" height="4"></rect></svg></div>
+        <div><h4>Desde 2018</h4><p>Anos costurando para o bairro, com clientes que voltam sempre.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <div class="contato-grid">
+      <div>
+        <p class="section-tag">Fale com o ateliê</p>
+        <h2 class="section-title">Vamos ajustar a <em>sua peça?</em></h2>
+        <p class="lead">Mande um e-mail contando o que você precisa. Respondo com o orçamento e combinamos o melhor dia. Atendimento com hora marcada — assim dedico o tempo certo à sua peça.</p>
+      </div>
+      <div class="contato-box">
+        <h3>Atelie Dona Costura</h3>
+        <div class="contato-line">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span><small>E-mail</small>ra.kimberly@hotmail.com</span>
+        </div>
+        <div class="contato-line">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span><small>Endereço</small>Rua Santa Clara, 1065 — Vila Adyana, SJC</span>
+        </div>
+        <div class="contato-line">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span><small>Atendimento</small>Com hora marcada — combine por e-mail</span>
+        </div>
+        <div class="contato-cta">
+          <a href="mailto:ra.kimberly@hotmail.com?subject=Orçamento%20-%20Atelie%20Dona%20Costura&body=Olá!%20Gostaria%20de%20um%20orçamento.%20A%20peça%20é:%20" class="btn-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Escrever para o ateliê
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Dona <span>Costura</span></h3>
+        <p>Ateliê de costura em Vila Adyana, São José dos Campos. Consertos, ajustes e reformas de roupa sob medida, com atendimento pessoal.</p>
+        <span class="footer-seal">Sob medida desde 2018</span>
+      </div>
+      <div class="footer-col">
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#area">Onde atendo</a></li>
+          <li><a href="#como">Como funciona</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:ra.kimberly@hotmail.com">ra.kimberly@hotmail.com</a></li>
+          <li><span>Rua Santa Clara, 1065</span></li>
+          <li><span>Vila Adyana — SJC/SP</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Atelie Dona Costura · Vila Adyana, São José dos Campos — SP</p>
+      <p class="footer-disclaimer">Prévia / demonstração — site amostra, não oficial</p>
+    </div>
+  </div>
+</footer>
+
+<a href="mailto:ra.kimberly@hotmail.com?subject=Orçamento%20-%20Atelie%20Dona%20Costura" class="contact-float" aria-label="Enviar e-mail para o ateliê">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+</a>
+
+<script>
+(function(){
+  var imgs = Array.prototype.slice.call(document.querySelectorAll('.media-band .parallax-img'));
+  if(!imgs.length) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ticking = false;
+  function update(){
+    ticking = false;
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    for(var i=0;i<imgs.length;i++){
+      var img = imgs[i], frame = img.parentElement;
+      var rect = frame.getBoundingClientRect();
+      if(rect.bottom < -40 || rect.top > vh + 40) continue;
+      if(reduce){ img.style.transform = 'translate3d(0,-'+((img.offsetHeight-frame.offsetHeight)/2).toFixed(1)+'px,0)'; continue; }
+      var range = img.offsetHeight - frame.offsetHeight;
+      var progress = (vh - rect.top) / (vh + rect.height);
+      progress = progress < 0 ? 0 : (progress > 1 ? 1 : progress);
+      img.style.transform = 'translate3d(0,'+(-progress*range).toFixed(1)+'px,0)';
+    }
+  }
+  function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('load', update);
+  update();
+})();
+</script>
+
+</body>
+</html>

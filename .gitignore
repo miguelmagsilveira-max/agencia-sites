@@ -1,0 +1,25 @@
+# Segredos / variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Dependências
+node_modules/
+
+# Deploy / Vercel (project.json com IDs de projeto/org)
+.vercel/
+
+# Sessões de browser do Opensquad (cookies, localStorage, logins)
+_opensquad/_browser_profile/
+
+# Artefatos de runtime do Playwright
+.playwright-mcp/
+
+# Resultados de teste do dashboard
+dashboard/test-results/
+
+# Estado de execução do pipeline (pode conter dados de prospecção)
+**/state.json
+
+# Sistema
+.DS_Store

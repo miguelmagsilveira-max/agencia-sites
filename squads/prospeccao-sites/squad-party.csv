@@ -1,0 +1,8 @@
+id,name,title,icon,execution,path
+pablo-prospeccao,Pablo Prospecção,Prospector de Negócios Locais,🗺️,inline,./agents/pablo-prospeccao.agent.md
+roberto-rastro,Roberto Rastro,Investigador Digital,🔍,inline,./agents/roberto-rastro.agent.md
+andre-analise,André Análise,Analista de Briefing e Score,📊,inline,./agents/andre-analise.agent.md
+diego-digital,Diego Digital,Dev Designer e Especialista em Marketing,💻,inline,./agents/diego-digital.agent.md
+carlos-carta,Carlos Carta,Copywriter de Propostas,✉️,inline,./agents/carlos-carta.agent.md
+vera-veredito,Vera Veredito,Revisora de Qualidade,✅,inline,./agents/vera-veredito.agent.md
+eduardo-envio,Eduardo Envio,Responsável por Envio,📤,inline,./agents/eduardo-envio.agent.md

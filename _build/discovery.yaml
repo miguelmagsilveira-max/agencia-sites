@@ -1,0 +1,26 @@
+squad_code: "prospect-analyzer"
+purpose: "Pesquisar e analisar perfil de potenciais clientes e leads para a Agência de Sites"
+domain: "research"
+
+company:
+  name: "Agência de Sites"
+  tone: "Acessível, didático e profissional"
+  products: "Criação de sites para pequenas empresas e MEIs"
+
+language: "Português (Brasil)"
+
+context:
+  sources: "Múltiplas (sites públicos, redes sociais, documentos internos)"
+  output_format: "Relatório resumido"
+  frequency: "Sob demanda"
+  topic: "Clientes e leads — perfil de potenciais clientes, presença digital, oportunidades"
+
+tools_needed:
+  - "apify"
+  - "web-browsing"
+
+investigation:
+  enabled: false
+  profiles: []
+
+target_formats: []

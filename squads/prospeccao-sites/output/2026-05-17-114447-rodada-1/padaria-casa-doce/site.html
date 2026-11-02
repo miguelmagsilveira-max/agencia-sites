@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria Casa Doce — 24h · Jardim Aparecida · São José dos Campos</title>
+  <meta name="description" content="Padaria Casa Doce: aberta 24 horas, 7 dias por semana. Pães frescos, café da manhã, marmitex, mercearia e banca de jornais no Jardim Aparecida, São José dos Campos. 4.4★ no Google · 2.250 avaliações.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Padaria Casa Doce",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=80",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Dr. Nelson d'Ávila, 1.093",
+      "addressLocality": "São José dos Campos",
+      "addressRegion": "SP",
+      "postalCode": "12245-031",
+      "addressCountry": "BR",
+      "addressNeighborhood": "Jardim Aparecida"
+    },
+    "telephone": "+551239415685",
+    "openingHours": "Mo-Su 00:00-23:59",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.4",
+      "reviewCount": "2250",
+      "bestRating": "5"
+    },
+    "servesCuisine": "Padaria, Lanchonete",
+    "sameAs": [
+      "https://www.instagram.com/padariacasadoce",
+      "https://www.facebook.com/p/Casa-Doce-Padaria"
+    ]
+  }
+  </script>
+  <style>
+    /* =============================================
+       CSS VARIABLES
+    ============================================= */
+    :root {
+      --primary: #3d5a3e;
+      --secondary: #c8942a;
+      --accent: #e8f0e9;
+      --dark: #1a1208;
+      --text: #2c1f0e;
+      --bg: #f9f4ec;
+      --bg-alt: #fff;
+      --gray: #888;
+      --border: rgba(0,0,0,0.08);
+    }
+
+    /* =============================================
+       RESET & BASE
+    ============================================= */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    /* =============================================
+       ANIMATIONS
+    ============================================= */
+    @keyframes slowZoom {
+      from { transform: scale(1); }
+      to { transform: scale(1.08); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* =============================================
+       1. NAVIGATION — FIXO BLUR
+    ============================================= */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(26, 18, 8, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 16px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(200, 148, 42, 0.18);
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--secondary);
+      letter-spacing: 0.01em;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-cta {
+      background: transparent !important;
+      color: var(--secondary) !important;
+      padding: 9px 20px !important;
+      border-radius: 50px !important;
+      font-weight: 600 !important;
+      font-size: 0.875rem !important;
+      border: 1.5px solid var(--secondary) !important;
+      transition: background 0.2s, color 0.2s, transform 0.2s !important;
+    }
+    .nav-cta:hover {
+      background: var(--secondary) !important;
+      color: var(--dark) !important;
+      transform: translateY(-1px);
+    }
+
+    /* =============================================
+       2. HERO
+    ============================================= */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      animation: slowZoom 20s ease-in-out infinite alternate;
+      transform-origin: center center;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(26,18,8,0.88) 0%, rgba(26,18,8,0.38) 100%);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
+      width: 100%;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200, 148, 42, 0.18);
+      border: 1px solid rgba(200, 148, 42, 0.45);
+      color: var(--secondary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      padding: 8px 18px;
+      border-radius: 50px;
+      margin-bottom: 28px;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.2s;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.12;
+      margin-bottom: 20px;
+      max-width: 620px;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.4s;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.82);
+      max-width: 520px;
+      margin-bottom: 40px;
+      line-height: 1.7;
+      font-weight: 300;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.6s;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.8s;
+    }
+    .btn-primary {
+      background: var(--secondary);
+      color: var(--dark);
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.975rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 24px rgba(200, 148, 42, 0.4);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(200, 148, 42, 0.5);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.975rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1.5px solid rgba(255,255,255,0.45);
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.7);
+      transform: translateY(-2px);
+    }
+    .hero-stats-box {
+      position: absolute;
+      bottom: 48px;
+      right: 48px;
+      background: rgba(26, 18, 8, 0.78);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 20px 28px;
+      display: flex;
+      gap: 32px;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 1s;
+    }
+    .hero-stat {
+      text-align: center;
+    }
+    .hero-stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--secondary);
+      line-height: 1;
+    }
+    .hero-stat-label {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .hero-stat-divider {
+      width: 1px;
+      background: rgba(255,255,255,0.14);
+      align-self: stretch;
+    }
+
+    /* =============================================
+       SECTION COMMONS
+    ============================================= */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 16px;
+    }
+    .section-tag::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1.5px;
+      background: var(--secondary);
+      opacity: 0.5;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+    }
+    .section-title em {
+      font-style: italic;
+      color: var(--primary);
+    }
+
+    /* =============================================
+       3. SOBRE — GRID 2 COLUNAS
+    ============================================= */
+    .sobre {
+      padding: 120px 0;
+      background: var(--bg-alt);
+    }
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .sobre-image-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      aspect-ratio: 4/5;
+    }
+    .sobre-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .sobre-image-wrap:hover img {
+      transform: scale(1.06);
+    }
+    .sobre-badge {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: var(--secondary);
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 10px 20px;
+      border-radius: 50px;
+      letter-spacing: 0.02em;
+    }
+    .sobre-content .section-tag { display: inline-flex; }
+    .sobre-content .section-title { margin-bottom: 20px; }
+    .sobre-text {
+      font-size: 1rem;
+      color: #5c4a35;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .sobre-list {
+      list-style: none;
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .sobre-list li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.95rem;
+      color: var(--text);
+      font-weight: 500;
+    }
+    .sobre-list li::before {
+      content: '—';
+      color: var(--secondary);
+      font-weight: 700;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    /* =============================================
+       4. NOSSO COMPROMISSO
+    ============================================= */
+    .compromisso {
+      padding: 100px 0;
+      background: var(--primary);
+    }
+    .compromisso-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 48px;
+      text-align: center;
+    }
+    .compromisso .section-tag {
+      color: rgba(255,255,255,0.6);
+      justify-content: center;
+    }
+    .compromisso .section-tag::after {
+      background: rgba(255,255,255,0.3);
+    }
+    .compromisso h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 56px;
+    }
+    .compromisso-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      text-align: left;
+    }
+    .compromisso-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 28px 24px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .compromisso-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(200, 148, 42, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .compromisso-icon svg {
+      color: var(--secondary);
+    }
+    .compromisso-text h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .compromisso-text p {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.65;
+    }
+
+    /* =============================================
+       5. CARDÁPIO — 3 CARDS
+    ============================================= */
+    .cardapio {
+      padding: 120px 0;
+      background: var(--bg);
+    }
+    .cardapio-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 64px;
+    }
+    .cardapio-header .section-tag {
+      justify-content: center;
+    }
+    .cardapio-header .section-tag::after { display: none; }
+    .cardapio-header .section-title { margin-bottom: 16px; }
+    .cardapio-sub {
+      font-size: 1rem;
+      color: #7a6349;
+      line-height: 1.7;
+    }
+    .cardapio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .card {
+      background: var(--bg-alt);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px var(--border);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-bottom: 3px solid var(--secondary);
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.13);
+    }
+    .card-img-wrap {
+      height: 210px;
+      overflow: hidden;
+      position: relative;
+    }
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .card:hover .card-img-wrap img {
+      transform: scale(1.06);
+    }
+    .card-featured-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--secondary);
+      color: var(--dark);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 50px;
+      z-index: 2;
+    }
+    .card-body {
+      padding: 26px;
+    }
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #7a6349;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .card-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--secondary);
+      transition: gap 0.2s;
+    }
+    .card:hover .card-cta { gap: 10px; }
+
+    /* =============================================
+       6. BANNER DE PERSUASÃO
+    ============================================= */
+    .banner {
+      position: relative;
+      padding: 110px 0;
+      overflow: hidden;
+    }
+    .banner-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    }
+    .banner-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(26, 18, 8, 0.78);
+    }
+    .banner-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .banner-inner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .banner-inner p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+    .btn-white {
+      background: #fff;
+      color: var(--dark);
+      padding: 18px 42px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+    }
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+    }
+
+    /* =============================================
+       7. EXPERIÊNCIA — MOSAICO + FEATURES
+    ============================================= */
+    .experiencia {
+      padding: 120px 0;
+      background: var(--bg-alt);
+    }
+    .experiencia-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .mosaico {
+      position: relative;
+      height: 540px;
+    }
+    .mosaico-img1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 75%;
+      height: 80%;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .mosaico-img1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .mosaico-img1:hover img { transform: scale(1.06); }
+    .mosaico-img2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 55%;
+      height: 55%;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.18);
+      border: 3px solid #fff;
+    }
+    .mosaico-img2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .mosaico-img2:hover img { transform: scale(1.06); }
+    .experiencia-content .section-tag { display: inline-flex; }
+    .experiencia-content .section-title { margin-bottom: 40px; }
+    .features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .feature-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .feature-icon svg {
+      color: var(--dark);
+    }
+    .feature-text h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .feature-text p {
+      font-size: 0.9rem;
+      color: #7a6349;
+      line-height: 1.65;
+    }
+
+    /* =============================================
+       8. AVALIAÇÕES
+    ============================================= */
+    .avaliacoes {
+      padding: 120px 0;
+      background: var(--bg);
+    }
+    .avaliacoes-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .avaliacoes-header .section-tag { justify-content: center; }
+    .avaliacoes-header .section-tag::after { display: none; }
+    .avaliacoes-header .section-title { margin-bottom: 12px; }
+    .avaliacoes-header .avaliacoes-sub {
+      font-size: 0.97rem;
+      color: #7a6349;
+      line-height: 1.7;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+    /* Layout misto: 2/3 depoimentos + 1/3 stats */
+    .avaliacoes-mixed {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+    .avaliacoes-depoimentos {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .aval-card {
+      background: var(--bg-alt);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 2px 16px var(--border);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      flex: 1;
+    }
+    .aval-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+    }
+    .aval-stars {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      color: var(--secondary);
+    }
+    .aval-text {
+      font-size: 0.97rem;
+      color: #5c4a35;
+      line-height: 1.75;
+      font-style: italic;
+      margin-bottom: 24px;
+    }
+    .aval-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .aval-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--secondary);
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .aval-author-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+    .aval-author-source {
+      font-size: 0.78rem;
+      color: var(--gray);
+      margin-top: 2px;
+    }
+    /* Painel de stats vertical */
+    .aval-stats-panel {
+      background: var(--primary);
+      border-radius: 20px;
+      padding: 36px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+    }
+    .aval-stat-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 24px 0;
+    }
+    .aval-stat-row + .aval-stat-row {
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+    .aval-stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .aval-stat-label {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.45;
+      letter-spacing: 0.01em;
+    }
+
+    /* =============================================
+       9. LOCALIZAÇÃO — GRID 2 COLUNAS
+    ============================================= */
+    .localizacao {
+      padding: 120px 0;
+      background: var(--bg-alt);
+    }
+    .localizacao-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .mapa-wrap {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 32px var(--border);
+    }
+    .mapa-wrap iframe {
+      width: 100%;
+      height: 440px;
+      border: none;
+      display: block;
+    }
+    .localizacao-info .section-tag { display: inline-flex; }
+    .localizacao-info .section-title { margin-bottom: 32px; }
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .info-item:last-of-type { border-bottom: none; }
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .info-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 4px;
+    }
+    .info-value {
+      font-size: 0.97rem;
+      color: var(--text);
+      font-weight: 500;
+      line-height: 1.55;
+    }
+    .info-value a {
+      color: var(--primary);
+      transition: color 0.2s;
+    }
+    .info-value a:hover { color: var(--secondary); }
+    .info-highlight {
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .social-links {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 50px;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }
+    .social-link:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    /* =============================================
+       10. FOOTER — 3 COLUNAS
+    ============================================= */
+    footer {
+      background: #1a1208;
+      padding: 72px 0 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+    .footer-brand-desc {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+      margin-bottom: 8px;
+      max-width: 280px;
+    }
+    .footer-insta {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 20px;
+    }
+    .footer-social {
+      display: flex;
+      gap: 10px;
+    }
+    .footer-social a {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.07);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.6);
+      transition: background 0.2s, color 0.2s;
+    }
+    .footer-social a:hover {
+      background: var(--secondary);
+      color: var(--dark);
+    }
+    .footer-col h4 {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 20px;
+    }
+    .footer-nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-nav a {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: #fff; }
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: rgba(255,255,255,0.55);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .footer-contact-icon { flex-shrink: 0; margin-top: 1px; }
+    .footer-contact-item a {
+      color: rgba(255,255,255,0.55);
+      transition: color 0.2s;
+    }
+    .footer-contact-item a:hover { color: #fff; }
+    .footer-24h-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(200, 148, 42, 0.15);
+      border: 1px solid rgba(200, 148, 42, 0.3);
+      color: var(--secondary);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 4px 12px;
+      border-radius: 50px;
+      margin-top: 4px;
+    }
+    .footer-bottom {
+      padding: 20px 0;
+      text-align: center;
+    }
+    .footer-bottom p {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* =============================================
+       WHATSAPP FLOAT
+    ============================================= */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: #25D366;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 22px 14px 18px;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+      z-index: 999;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 36px rgba(37, 211, 102, 0.55);
+    }
+    .whatsapp-float-text {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.02em;
+    }
+
+    /* =============================================
+       MOBILE RESPONSIVE
+    ============================================= */
+    @media (max-width: 768px) {
+      nav {
+        padding: 14px 20px;
+      }
+      .nav-links {
+        display: none;
+      }
+      .hero-inner {
+        padding: 0 24px;
+      }
+      .hero h1 {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+      }
+      .hero-stats-box {
+        position: static;
+        margin: 40px 24px 0;
+        gap: 16px;
+        padding: 16px 20px;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .hero-ctas {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .container {
+        padding: 0 20px;
+      }
+      .sobre {
+        padding: 72px 0;
+      }
+      .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .sobre-image-wrap {
+        aspect-ratio: 16/10;
+      }
+      .compromisso {
+        padding: 72px 0;
+      }
+      .compromisso-inner {
+        padding: 0 20px;
+      }
+      .compromisso-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .cardapio {
+        padding: 72px 0;
+      }
+      .cardapio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .banner {
+        padding: 72px 0;
+      }
+      .experiencia {
+        padding: 72px 0;
+      }
+      .experiencia-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      .mosaico {
+        height: 360px;
+      }
+      .avaliacoes {
+        padding: 72px 0;
+      }
+      .rating-banner {
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px 20px;
+        text-align: center;
+      }
+      .rating-banner-divider { display: none; }
+      .rating-banner-info { text-align: center; }
+      .avaliacoes-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .localizacao {
+        padding: 72px 0;
+      }
+      .localizacao-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .mapa-wrap iframe {
+        height: 300px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .whatsapp-float {
+        border-radius: 50%;
+        padding: 16px;
+      }
+      .whatsapp-float-text { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =============================================
+       1. NAVIGATION
+  ============================================= -->
+  <nav>
+    <span class="nav-logo">Casa Doce</span>
+    <ul class="nav-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+      <li><a href="tel:+551239415685" class="nav-cta">Ligar: (12) 3941-5685</a></li>
+    </ul>
+  </nav>
+
+  <!-- =============================================
+       2. HERO
+  ============================================= -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <div class="hero-badge">🥖 Aberta 24h · Jardim Aparecida · SJC</div>
+      <h1>O pão de todo dia,<br><em style="color:var(--secondary)">feito com amor de verdade</em></h1>
+      <p>Padaria, mercearia e café 24 horas. Aberta todo dia, toda hora, para o bairro.</p>
+      <div class="hero-ctas">
+        <a href="tel:+551239415685" class="btn-primary">Ligar agora →</a>
+        <a href="#cardapio" class="btn-outline">Ver o cardápio</a>
+      </div>
+    </div>
+    <div class="hero-stats-box">
+      <div class="hero-stat">
+        <div class="hero-stat-num">4.4★</div>
+        <div class="hero-stat-label">Google</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">2.250</div>
+        <div class="hero-stat-label">Avaliações</div>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">24h</div>
+        <div class="hero-stat-label">Aberta sempre</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       3. SOBRE — GRID 2 COLUNAS
+  ============================================= -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80"
+            alt="Pães frescos saindo do forno na Padaria Casa Doce"
+            loading="lazy"
+          >
+          <span class="sobre-badge">Desde sempre</span>
+        </div>
+        <div class="sobre-content">
+          <span class="section-tag">Nossa história</span>
+          <h2 class="section-title">Um pedaço de casa<br><em>no coração do bairro</em></h2>
+          <p class="sobre-text">A Casa Doce é muito mais do que uma padaria — é a primeira parada do dia de muita gente no Jardim Aparecida. O cheiro do pão saindo do forno, o café quentinho de manhã cedo, a marmitex do almoço e o jornal fresquinho: tudo num único lugar, perto de casa.</p>
+          <p class="sobre-text">E o melhor: estamos abertos 24 horas por dia, 7 dias por semana. Não importa se é madrugada, feriado ou final de semana — quando você precisar, a Casa Doce estará aqui. Nossa clientela compra marmitex 2 a 4 vezes por semana e volta porque confia no que a gente serve.</p>
+          <ul class="sobre-list">
+            <li>Pães frescos todo dia, direto do forno</li>
+            <li>Café da manhã completo para começar bem o dia</li>
+            <li>Marmitex e lanches no almoço</li>
+            <li>Mercearia e conveniências no dia a dia</li>
+            <li>Bebidas e produtos de conveniência</li>
+            <li>Banca de jornais e revistas toda manhã</li>
+            <li>Aberta 24h — inclusive madrugadas e feriados</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       4. NOSSO COMPROMISSO (OBRIGATÓRIA)
+  ============================================= -->
+  <section class="compromisso">
+    <div class="compromisso-inner">
+      <span class="section-tag">Nosso compromisso</span>
+      <h2>Nosso compromisso com o bairro</h2>
+      <div class="compromisso-grid">
+        <!-- Item 1 — Checkmark -->
+        <div class="compromisso-item">
+          <div class="compromisso-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="compromisso-text">
+            <h4>Pão fresco todos os dias — sem exceção</h4>
+            <p>Nossa fornada é diária. Sempre pão quentinho, macio e feito com cuidado, de segunda a domingo, sem parar.</p>
+          </div>
+        </div>
+        <!-- Item 2 — Relógio -->
+        <div class="compromisso-item">
+          <div class="compromisso-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="compromisso-text">
+            <h4>Abertos 24h — estamos aqui quando você precisa</h4>
+            <p>Fome de madrugada? Esqueceu alguma coisa? A Casa Doce nunca fecha. Estamos sempre abertos para o bairro.</p>
+          </div>
+        </div>
+        <!-- Item 3 — Coração -->
+        <div class="compromisso-item">
+          <div class="compromisso-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <div class="compromisso-text">
+            <h4>Atendimento como família — cada cliente é especial</h4>
+            <p>Conhecemos nossos clientes pelo nome e pela preferência. Aqui o atendimento é caloroso, humano e de verdade.</p>
+          </div>
+        </div>
+        <!-- Item 4 — Escudo -->
+        <div class="compromisso-item">
+          <div class="compromisso-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="compromisso-text">
+            <h4>Qualidade no simples — sem luxo, mas sem erro</h4>
+            <p>4.4 estrelas e mais de 2.250 avaliações no Google comprovam: a Casa Doce entrega o que promete, sempre.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       5. CARDÁPIO — 3 CARDS
+  ============================================= -->
+  <section class="cardapio" id="cardapio">
+    <div class="container">
+      <div class="cardapio-header">
+        <span class="section-tag">Cardápio</span>
+        <h2 class="section-title">O que você encontra<br>na <em>Casa Doce</em></h2>
+        <p class="cardapio-sub">Do café da manhã até a conveniência do dia a dia — tudo perto de você, no Jardim Aparecida, 24 horas por dia.</p>
+      </div>
+      <div class="cardapio-grid">
+        <!-- Card 1 — Mais Pedido -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <span class="card-featured-badge">⭐ Mais Pedido</span>
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80"
+              alt="Pães e café da manhã na Padaria Casa Doce"
+              loading="lazy"
+            >
+          </div>
+          <div class="card-body">
+            <h3>Pães &amp; Café da Manhã</h3>
+            <p>Pães fresquinhos saindo do forno, croissants, roscas e bolos. O café da manhã completo que o bairro conhece e ama — disponível toda hora, inclusive na madrugada.</p>
+            <span class="card-cta">Ver opções →</span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+              alt="Marmitex e lanches na Padaria Casa Doce"
+              loading="lazy"
+            >
+          </div>
+          <div class="card-body">
+            <h3>Marmitex &amp; Lanches</h3>
+            <p>Refeição quentinha e acessível para o almoço. Marmitex caprichado, salgados frescos e lanches para quem trabalha no bairro ou passa na hora do almoço.</p>
+            <span class="card-cta">Ver opções →</span>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
+              alt="Mercearia e conveniências na Padaria Casa Doce"
+              loading="lazy"
+            >
+          </div>
+          <div class="card-body">
+            <h3>Mercearia &amp; Conveniências</h3>
+            <p>Bebidas, básicos da semana, produtos de conveniência e banca de jornais. Uma parada só para resolver tudo, sem precisar ir longe — aberta 24h para sua comodidade.</p>
+            <span class="card-cta">Ver opções →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       6. BANNER DE PERSUASÃO
+  ============================================= -->
+  <section class="banner">
+    <div class="banner-bg"></div>
+    <div class="banner-overlay"></div>
+    <div class="container">
+      <div class="banner-inner">
+        <h2>Fome às 2h da manhã? A Casa Doce está aberta.</h2>
+        <p>A única padaria 24h do Jardim Aparecida. Sempre abertos para você, em qualquer hora do dia ou da noite.</p>
+        <a href="tel:+551239415685" class="btn-white">Ligar agora: (12) 3941-5685</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       7. EXPERIÊNCIA — MOSAICO + FEATURES
+  ============================================= -->
+  <section class="experiencia">
+    <div class="container">
+      <div class="experiencia-grid">
+        <div class="mosaico">
+          <div class="mosaico-img1">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+              alt="Padaria Casa Doce — ambiente e produtos"
+              loading="lazy"
+            >
+          </div>
+          <div class="mosaico-img2">
+            <img
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=80"
+              alt="Pães frescos da Casa Doce"
+              loading="lazy"
+            >
+          </div>
+        </div>
+        <div class="experiencia-content">
+          <span class="section-tag">Por que a Casa Doce</span>
+          <h2 class="section-title">Uma experiência <em>de bairro</em>, de verdade</h2>
+          <div class="features-list">
+            <!-- Feature 1 — Troféu -->
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="8 7 12 3 16 7"/>
+                  <path d="M8 7H3l2 9h14l2-9H16"/>
+                  <path d="M12 16v5"/>
+                  <path d="M9 21h6"/>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>2.250 avaliações no Google Maps · 4.4★</h4>
+                <p>Um dos estabelecimentos mais avaliados do Jardim Aparecida. Reflexo de uma clientela fiel que confia na Casa Doce há anos.</p>
+              </div>
+            </div>
+            <!-- Feature 2 — Calendário -->
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Aberta 24h — inclusive madrugadas e feriados</h4>
+                <p>Não tem fechado aqui. Sábado, domingo, feriado, madrugada — a Casa Doce está sempre de portas abertas para o bairro.</p>
+              </div>
+            </div>
+            <!-- Feature 3 — Coração -->
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Mercearia + padaria + jornais — uma parada só</h4>
+                <p>Tudo o que você precisa no mesmo lugar: pão, marmitex, bebidas, conveniência e jornal do dia. Praticidade real, sem precisar ir longe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       8. AVALIAÇÕES
+  ============================================= -->
+  <section class="avaliacoes" id="avaliacoes">
+    <div class="container">
+      <div class="avaliacoes-header">
+        <span class="section-tag">O que dizem os clientes</span>
+        <h2 class="section-title">Avaliado por quem <em>visita de verdade</em></h2>
+      </div>
+      <!-- Banner horizontal de destaque -->
+      <div class="rating-banner">
+        <div class="rating-banner-num">4.4★</div>
+        <div class="rating-banner-divider"></div>
+        <div class="rating-banner-info">
+          <div class="rating-banner-stars">⭐⭐⭐⭐⭐</div>
+          <div class="rating-banner-label">2.250 avaliações no Google · Padaria Casa Doce</div>
+        </div>
+      </div>
+      <div class="avaliacoes-grid">
+        <!-- Card 1 — Alexandre (review real) -->
+        <div class="aval-card">
+          <div class="aval-stars">★★★★★</div>
+          <p class="aval-text">"Um lugar simples e com qualidade — ótimo atendimento, muito limpo e ideal para o café da manhã do bairro."</p>
+          <div class="aval-author">
+            <div class="aval-avatar">A</div>
+            <div>
+              <div class="aval-author-name">Alexandre</div>
+              <div class="aval-author-source">TripAdvisor · Avaliação verificada</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 — Cliente Facebook (review real) -->
+        <div class="aval-card">
+          <div class="aval-stars">★★★★★</div>
+          <p class="aval-text">"Boa padaria melhor de São José dos Campos eu recomendo!"</p>
+          <div class="aval-author">
+            <div class="aval-avatar">C</div>
+            <div>
+              <div class="aval-author-name">Vizinha do Jardim Aparecida</div>
+              <div class="aval-author-source">Facebook · Avaliação verificada</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 — Stats de prova social (3 métricas reais verificadas) -->
+        <div class="aval-stats-panel">
+          <div class="aval-stat-row">
+            <span class="aval-stat-num">4.4★</span>
+            <span class="aval-stat-label">Nota no Google Maps</span>
+          </div>
+          <div class="aval-stat-row">
+            <span class="aval-stat-num">2.250</span>
+            <span class="aval-stat-label">Avaliações verificadas</span>
+          </div>
+          <div class="aval-stat-row">
+            <span class="aval-stat-num">24h</span>
+            <span class="aval-stat-label">Aberta todos os dias</span>
+          </div>
+          <a
+            href="https://maps.google.com/maps?q=Av.+Dr.+Nelson+d%27Avila+1093+Jardim+Aparecida+Sao+Jose+dos+Campos+SP"
+            target="_blank"
+            rel="noopener"
+            class="aval-aggregate-link"
+          >Ver no Google Maps →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       9. LOCALIZAÇÃO — GRID 2 COLUNAS
+  ============================================= -->
+  <section class="localizacao" id="localizacao">
+    <div class="container">
+      <div class="localizacao-grid">
+        <div class="mapa-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=Av.+Dr.+Nelson+d%27Avila+1093+Jardim+Aparecida+Sao+Jose+dos+Campos+SP&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa — Padaria Casa Doce">
+          </iframe>
+        </div>
+        <div class="localizacao-info">
+          <span class="section-tag">Como chegar</span>
+          <h2 class="section-title">Venha nos <em>visitar</em></h2>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="info-label">Endereço</div>
+              <div class="info-value">Av. Dr. Nelson d'Ávila, 1.093<br>Jardim Aparecida — São José dos Campos/SP<br>CEP 12245-031</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16a2 2 0 0 1 .27.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="info-label">Telefone</div>
+              <div class="info-value">
+                <a href="tel:+551239415685">(12) 3941-5685</a><br>
+                <a href="tel:+551239136161">(12) 3913-6161</a>
+              </div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <div class="info-label">Horário de funcionamento</div>
+              <div class="info-value">
+                <span class="info-highlight">24h / 7 dias por semana</span><br>
+                Inclusive madrugadas, feriados e finais de semana
+              </div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div>
+              <div class="info-label">Avaliação Google</div>
+              <div class="info-value">4.4★ no Google · 2.250 avaliações</div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/padariacasadoce" target="_blank" rel="noopener" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @padariacasadoce
+            </a>
+            <a href="https://www.facebook.com/p/Casa-Doce-Padaria" target="_blank" rel="noopener" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       10. FOOTER — 3 COLUNAS
+  ============================================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Coluna 1 — Marca -->
+        <div>
+          <div class="footer-brand-name">Casa Doce</div>
+          <p class="footer-brand-desc">Padaria, mercearia e café 24 horas no coração do Jardim Aparecida. Pão fresquinho, atendimento caloroso e sempre abertos para o bairro.</p>
+          <div class="footer-insta">@padariacasadoce</div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/padariacasadoce" target="_blank" rel="noopener" title="Instagram @padariacasadoce">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/p/Casa-Doce-Padaria" target="_blank" rel="noopener" title="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="tel:+551239415685" title="Ligar para a Casa Doce">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16a2 2 0 0 1 .27.92z"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Coluna 2 — Navegação rápida -->
+        <div>
+          <h4>Navegação rápida</h4>
+          <ul class="footer-nav">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+          </ul>
+        </div>
+        <!-- Coluna 3 — Contato -->
+        <div>
+          <h4>Contato</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span>Av. Dr. Nelson d'Ávila, 1.093<br>Jardim Aparecida — São José dos Campos/SP</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16a2 2 0 0 1 .27.92z"/></svg>
+            </span>
+            <span>
+              <a href="tel:+551239415685">(12) 3941-5685</a> &nbsp;·&nbsp;
+              <a href="tel:+551239136161">(12) 3913-6161</a>
+            </span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </span>
+            <span>
+              Horário: <strong style="color:rgba(255,255,255,0.8)">24h / 7 dias</strong>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Padaria Casa Doce · Jardim Aparecida · São José dos Campos/SP · Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =============================================
+       WHATSAPP FLOAT
+  ============================================= -->
+  <a
+    href="https://wa.me/551239415685?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Padaria%20Casa%20Doce%20e%20gostaria%20de%20falar%20com%20voc%C3%AAs"
+    target="_blank"
+    rel="noopener"
+    class="whatsapp-float"
+    title="Ligar / Pedir — Padaria Casa Doce"
+  >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-float-text">Ligar / Pedir</span>
+  </a>
+
+</body>
+</html>

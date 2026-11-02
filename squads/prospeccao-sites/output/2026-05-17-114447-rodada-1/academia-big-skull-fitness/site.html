@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Skull Fitness — Academia em São José dos Campos | Cidade Morumbi</title>
+  <meta name="description" content="Academia Big Skull Fitness no Cidade Morumbi, São José dos Campos. Musculação, Boxe, Jiu-jitsu, Muay Thai, Funcional Kids e mais. A partir de R$69,99/mês. Parceria Wellhub/Gympass. 4.81★ · 303 avaliações.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Academia Big Skull Fitness",
+    "description": "A melhor academia para você e sua família. Musculação, Boxe, Jiu-jitsu, Muay Thai, Ginástica, Dança, Cross Training e Funcional Kids.",
+    "url": "https://bigskullfitnessoficial.com.br",
+    "telephone": "+5512981493364",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. José de Campos, 200",
+      "addressLocality": "São José dos Campos",
+      "addressRegion": "SP",
+      "postalCode": "12236-650",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "06:00",
+        "closes": "22:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "12:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.81",
+      "reviewCount": "303",
+      "bestRating": "5"
+    },
+    "foundingDate": "2021-07",
+    "sameAs": [
+      "https://www.instagram.com/bigskullfitnessoficial",
+      "https://wa.me/5512981493364"
+    ],
+    "priceRange": "A partir de R$69,99/mês"
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #0f0f0f;
+      --secondary: #f5d800;
+      --accent: #e31c1c;
+      --mid: #1a1a1a;
+      --surface: #242424;
+      --text: #f0f0f0;
+      --bg: #141414;
+      --bg-alt: #1a1a1a;
+      --gray: #888;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    /* ============================================================
+       ANIMATIONS
+    ============================================================ */
+    @keyframes slowZoom {
+      from { transform: scale(1); }
+      to   { transform: scale(1.08); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(245, 216, 0, 0.4); }
+      50%       { box-shadow: 0 0 0 12px rgba(245, 216, 0, 0); }
+    }
+
+    @keyframes waSpin {
+      0%   { transform: rotate(0deg) scale(1); }
+      50%  { transform: rotate(8deg) scale(1.08); }
+      100% { transform: rotate(0deg) scale(1); }
+    }
+
+    /* ============================================================
+       LAYOUT HELPERS
+    ============================================================ */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 16px;
+    }
+
+    .section-tag::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: var(--secondary);
+    }
+
+    .section-titulo {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .section-titulo em {
+      font-style: normal;
+      color: var(--secondary);
+    }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--secondary);
+      color: var(--primary);
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 15px 36px;
+      border-radius: 4px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(245, 216, 0, 0.35);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 2px solid rgba(240, 240, 240, 0.4);
+      color: var(--text);
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 13px 36px;
+      border-radius: 4px;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-outline:hover {
+      transform: translateY(-2px);
+      border-color: var(--secondary);
+      background: rgba(245, 216, 0, 0.08);
+    }
+
+    /* ============================================================
+       SECTION 1: NAV
+    ============================================================ */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(15, 15, 15, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 16px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--secondary);
+    }
+
+    .nav-logo {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--secondary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(240, 240, 240, 0.75);
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--secondary); }
+
+    .nav-cta {
+      background: var(--secondary);
+      color: var(--primary);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 10px 24px;
+      border-radius: 4px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245, 216, 0, 0.3);
+    }
+
+    /* ============================================================
+       SECTION 2: HERO
+    ============================================================ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      animation: slowZoom 20s ease-in-out infinite alternate;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.45) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+      padding: 80px 48px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245, 216, 0, 0.12);
+      border: 1px solid rgba(245, 216, 0, 0.3);
+      color: var(--secondary);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border-radius: 40px;
+      margin-bottom: 28px;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.2s;
+    }
+
+    .hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.4s;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--secondary);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: rgba(240, 240, 240, 0.78);
+      max-width: 520px;
+      margin-bottom: 40px;
+      line-height: 1.7;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.6s;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.8s;
+    }
+
+    .hero-stats-box {
+      position: absolute;
+      right: 48px;
+      bottom: 60px;
+      display: flex;
+      gap: 1px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(245, 216, 0, 0.2);
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 1s;
+    }
+
+    .hero-stat {
+      background: rgba(15, 15, 15, 0.88);
+      backdrop-filter: blur(12px);
+      padding: 20px 28px;
+      text-align: center;
+      min-width: 110px;
+    }
+
+    .hero-stat + .hero-stat {
+      border-left: 1px solid rgba(245, 216, 0, 0.2);
+    }
+
+    .hero-stat-value {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--secondary);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .hero-stat-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      color: rgba(240, 240, 240, 0.5);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* ============================================================
+       SECTION 3: SOBRE
+    ============================================================ */
+    .sobre {
+      background: var(--mid);
+      padding: 120px 0;
+    }
+
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .sobre-titulo {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .sobre-titulo em {
+      font-style: normal;
+      color: var(--secondary);
+    }
+
+    .sobre-texto {
+      font-size: 1rem;
+      color: rgba(240, 240, 240, 0.7);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .sobre-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sobre-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: rgba(240, 240, 240, 0.85);
+    }
+
+    .sobre-bullets li::before {
+      content: '▶';
+      color: var(--secondary);
+      font-size: 0.65rem;
+      flex-shrink: 0;
+    }
+
+    .sobre-img-wrapper {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .sobre-img-wrapper::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 2px solid rgba(245, 216, 0, 0.3);
+      border-radius: 8px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .sobre-img-wrapper img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .sobre-img-wrapper:hover img {
+      transform: scale(1.06);
+    }
+
+    .sobre-badge {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: var(--secondary);
+      color: var(--primary);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 4px;
+      z-index: 3;
+    }
+
+    /* ============================================================
+       SECTION 4: NOSSO COMPROMISSO
+    ============================================================ */
+    .compromisso {
+      background: var(--surface);
+      padding: 120px 0;
+    }
+
+    .compromisso-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .compromisso-header .section-tag {
+      justify-content: center;
+    }
+
+    .compromisso-header .section-tag::after { display: none; }
+    .compromisso-header .section-tag::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: var(--secondary);
+    }
+
+    .compromisso-titulo {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.1;
+      color: var(--text);
+    }
+
+    .compromisso-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .compromisso-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+      padding: 28px;
+      transition: border-color 0.3s ease;
+    }
+
+    .compromisso-item:hover {
+      border-color: rgba(245, 216, 0, 0.25);
+    }
+
+    .compromisso-icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      background: var(--secondary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .compromisso-icon svg {
+      stroke: var(--primary);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .compromisso-text h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .compromisso-text p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+
+    /* ============================================================
+       SECTION 5: MODALIDADES
+    ============================================================ */
+    .modalidades {
+      background: var(--bg);
+      padding: 120px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section-header .section-tag {
+      justify-content: center;
+    }
+
+    .section-header .section-tag::after { display: none; }
+
+    .section-header .section-tag::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: var(--secondary);
+    }
+
+    .section-sub {
+      font-size: 1rem;
+      color: var(--gray);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .modal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .modal-card {
+      background: var(--mid);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .modal-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(245, 216, 0, 0.12);
+      border-color: rgba(245, 216, 0, 0.3);
+    }
+
+    .modal-card-img {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .modal-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .modal-card:hover .modal-card-img img {
+      transform: scale(1.06);
+    }
+
+    .modal-card-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+    }
+
+    .modal-card-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--secondary);
+      color: var(--primary);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 40px;
+      z-index: 2;
+    }
+
+    .modal-card-body {
+      padding: 28px;
+    }
+
+    .modal-card-body h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    .modal-card-body p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .modal-card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .modal-tag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 40px;
+      border: 1px solid rgba(245, 216, 0, 0.25);
+      color: rgba(245, 216, 0, 0.75);
+    }
+
+    .modal-card-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--secondary);
+      transition: gap 0.2s;
+    }
+
+    .modal-card-cta:hover {
+      gap: 10px;
+    }
+
+    /* ============================================================
+       SECTION 6: BANNER DE PERSUASÃO
+    ============================================================ */
+    .banner {
+      position: relative;
+      padding: 120px 0;
+      overflow: hidden;
+    }
+
+    .banner-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.82);
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .banner-badge {
+      display: inline-block;
+      background: var(--secondary);
+      color: var(--primary);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 40px;
+      margin-bottom: 28px;
+    }
+
+    .banner h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.05;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      color: var(--text);
+    }
+
+    .banner p {
+      font-size: 1.05rem;
+      color: rgba(240, 240, 240, 0.75);
+      margin-bottom: 40px;
+    }
+
+    /* ============================================================
+       SECTION 7: EXPERIÊNCIA — MOSAICO + FEATURES
+    ============================================================ */
+    .experiencia {
+      background: var(--mid);
+      padding: 120px 0;
+    }
+
+    .experiencia-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .mosaico {
+      position: relative;
+      height: 520px;
+    }
+
+    .mosaico-img1 {
+      position: absolute;
+      top: 0; left: 0;
+      width: 78%;
+      height: 88%;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .mosaico-img1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .mosaico-img1:hover img {
+      transform: scale(1.06);
+    }
+
+    .mosaico-img2 {
+      position: absolute;
+      bottom: 0; right: 0;
+      width: 52%;
+      height: 52%;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 3px solid var(--mid);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    }
+
+    .mosaico-img2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .mosaico-img2:hover img {
+      transform: scale(1.06);
+    }
+
+    .mosaico-accent {
+      position: absolute;
+      top: -12px; left: -12px;
+      width: 80px; height: 80px;
+      border-top: 3px solid var(--secondary);
+      border-left: 3px solid var(--secondary);
+      border-radius: 2px;
+      pointer-events: none;
+    }
+
+    .experiencia-features {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .feature-icon {
+      flex-shrink: 0;
+      width: 52px; height: 52px;
+      background: var(--secondary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feature-icon svg {
+      stroke: var(--primary);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .feature-text h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .feature-text p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+
+    /* ============================================================
+       SECTION 8: NOSSA REPUTAÇÃO (PROVA SOCIAL ALTERNATIVA)
+    ============================================================ */
+    .reputacao {
+      background: var(--mid);
+      padding: 120px 0;
+    }
+
+    .reputacao-inner {
+      text-align: center;
+    }
+
+    .reputacao-inner .section-tag {
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .reputacao-inner .section-tag::after { display: none; }
+    .reputacao-inner .section-tag::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: var(--secondary);
+    }
+
+    .rating-destaque {
+      margin-bottom: 64px;
+    }
+
+    .rating-numero {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(4rem, 10vw, 8rem);
+      font-weight: 700;
+      color: var(--secondary);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .rating-stars {
+      font-size: 1.8rem;
+      color: var(--secondary);
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+
+    .rating-plataforma {
+      font-size: 1rem;
+      color: var(--gray);
+      letter-spacing: 1px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      margin: 0 auto 64px;
+      max-width: 900px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .stat-box {
+      background: var(--surface);
+      padding: 36px 24px;
+      text-align: center;
+    }
+
+    .stat-box-value {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--secondary);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-box-label {
+      font-size: 0.78rem;
+      color: var(--gray);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .bio-quote {
+      border: 1px solid rgba(245, 216, 0, 0.18);
+      border-radius: 12px;
+      padding: 20px 28px;
+      margin-bottom: 28px;
+      display: inline-block;
+      max-width: 520px;
+    }
+
+    .bio-quote-text {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0.5px;
+      color: rgba(240, 240, 240, 0.7);
+      margin-bottom: 10px;
+    }
+
+    .bio-quote-text strong {
+      color: var(--secondary);
+    }
+
+    .bio-quote-source {
+      font-size: 0.82rem;
+      color: var(--gray);
+      letter-spacing: 1px;
+    }
+
+    .insta-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: rgba(240, 240, 240, 0.6);
+      transition: color 0.2s;
+    }
+
+    .insta-link:hover { color: var(--secondary); }
+
+    /* ============================================================
+       SECTION 9: HORÁRIOS + LOCALIZAÇÃO
+    ============================================================ */
+    .horarios-mapa {
+      background: var(--bg-alt);
+      padding: 120px 0;
+    }
+
+    .horarios-mapa-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .horarios-col .section-tag { justify-content: flex-start; }
+
+    .horario-titulo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+
+    .horario-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .horario-table tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .horario-table tr:last-child { border-bottom: none; }
+
+    .horario-table td {
+      padding: 18px 0;
+      font-size: 0.95rem;
+    }
+
+    .horario-table td:first-child {
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .horario-table td:last-child {
+      text-align: right;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+
+    .horario-table tr.fechado td:last-child {
+      color: var(--gray);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .preco-box {
+      margin-top: 36px;
+      background: rgba(245, 216, 0, 0.07);
+      border: 1px solid rgba(245, 216, 0, 0.2);
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .preco-valor {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--secondary);
+      white-space: nowrap;
+    }
+
+    .preco-desc {
+      font-size: 0.85rem;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+
+    .mapa-col .section-tag { justify-content: flex-start; }
+
+    .mapa-titulo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .mapa-frame-wrap {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      margin-bottom: 24px;
+    }
+
+    .mapa-frame-wrap iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      display: block;
+    }
+
+    .mapa-infos {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .mapa-info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: rgba(240, 240, 240, 0.7);
+    }
+
+    .mapa-info-row svg { flex-shrink: 0; margin-top: 2px; }
+
+    /* ============================================================
+       SECTION 10: FOOTER
+    ============================================================ */
+    footer {
+      background: #0a0a0a;
+      padding: 72px 0 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 64px;
+      margin-bottom: 48px;
+    }
+
+    .footer-logo {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 16px;
+    }
+
+    .footer-desc {
+      font-size: 0.88rem;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .footer-insta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(240, 240, 240, 0.5);
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+
+    .footer-insta:hover { color: var(--secondary); }
+
+    .footer-col-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    .footer-nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-nav a {
+      font-size: 0.88rem;
+      color: var(--gray);
+      transition: color 0.2s;
+    }
+
+    .footer-nav a:hover { color: var(--secondary); }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--gray);
+    }
+
+    .footer-contact-item svg { flex-shrink: 0; margin-top: 2px; }
+
+    .footer-contact-item a {
+      color: var(--gray);
+      transition: color 0.2s;
+    }
+
+    .footer-contact-item a:hover { color: var(--secondary); }
+
+    .footer-preco {
+      margin-top: 20px;
+      background: rgba(245, 216, 0, 0.07);
+      border: 1px solid rgba(245, 216, 0, 0.2);
+      border-radius: 6px;
+      padding: 14px 16px;
+    }
+
+    .footer-preco-val {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--secondary);
+    }
+
+    .footer-preco-label {
+      font-size: 0.78rem;
+      color: var(--gray);
+      margin-top: 2px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: rgba(136, 136, 136, 0.6);
+    }
+
+    .footer-wellhub {
+      font-size: 0.78rem;
+      color: rgba(136, 136, 136, 0.6);
+    }
+
+    /* ============================================================
+       WHATSAPP FLOAT
+    ============================================================ */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: #25D366;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+      z-index: 999;
+      animation: pulse 2.5s ease-in-out infinite;
+      transition: transform 0.2s ease;
+    }
+
+    .whatsapp-float:hover {
+      animation: waSpin 0.4s ease;
+      transform: scale(1.1);
+    }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+      .hero-content { padding: 60px 20px; }
+      .hero h1 { font-size: 2.6rem; }
+      .hero-stats-box {
+        position: static;
+        margin: 0 20px;
+        flex-wrap: wrap;
+      }
+      .hero-stat { min-width: auto; flex: 1; }
+      .container { padding: 0 20px; }
+      .sobre-grid,
+      .experiencia-grid,
+      .horarios-mapa-grid { grid-template-columns: 1fr; gap: 48px; }
+      .sobre-img-wrapper img { height: 320px; }
+      .compromisso-grid { grid-template-columns: 1fr; }
+      .modal-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .mosaico { height: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====================================================
+       SECTION 1: NAV FIXO COM BLUR
+  ===================================================== -->
+  <nav>
+    <a href="#inicio" class="nav-logo">BIG SKULL</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#modalidades">Modalidades</a></li>
+      <li><a href="#reputacao">Reputação</a></li>
+      <li><a href="#horarios">Horários</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+    </ul>
+    <a href="https://wa.me/5512981493364?text=Olá!%20Vi%20o%20site%20da%20Big%20Skull%20e%20quero%20saber%20sobre%20os%20planos" class="nav-cta" target="_blank" rel="noopener">
+      Começar agora
+    </a>
+  </nav>
+
+  <!-- ====================================================
+       SECTION 2: HERO
+  ===================================================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        💪 Cidade Morumbi · São José dos Campos
+      </div>
+
+      <h1>
+        A academia que<br>
+        <em style="color:var(--secondary)">sua família merecia</em>
+      </h1>
+
+      <p>
+        Musculação, artes marciais, funcional kids e mais. A partir de <strong style="color:var(--secondary)">R$69,99/mês</strong>.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="https://wa.me/5512981493364?text=Olá!%20Vi%20o%20site%20da%20Big%20Skull%20e%20quero%20saber%20sobre%20os%20planos" class="btn-primary" target="_blank" rel="noopener">
+          Começar agora →
+        </a>
+        <a href="#modalidades" class="btn-outline">
+          Ver modalidades
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats-box">
+      <div class="hero-stat">
+        <div class="hero-stat-value">4.81★</div>
+        <div class="hero-stat-label">Wellhub</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">303</div>
+        <div class="hero-stat-label">Avaliações</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">R$69</div>
+        <div class="hero-stat-label">A partir de</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 3: SOBRE
+  ===================================================== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+
+        <div class="sobre-texto-col">
+          <span class="section-tag">Nossa academia</span>
+          <h2 class="sobre-titulo">
+            Onde o <em>esforço vira resultado</em>
+          </h2>
+          <p class="sobre-texto">
+            Fundada em julho de 2021, a Big Skull Fitness nasceu no coração do Cidade Morumbi para ser mais do que uma academia — é um espaço para toda a família evoluir junto. Localizada próximo à Faculdade Anhanguera, em São José dos Campos, oferecemos infraestrutura completa, profissionais qualificados e oito modalidades diferentes para todos os objetivos e faixas etárias. Nossa missão é simples: ser a melhor academia para você e sua família.
+          </p>
+          <ul class="sobre-bullets">
+            <li>8 modalidades completas para todos os objetivos</li>
+            <li>Funcional Kids exclusivo para os pequenos</li>
+            <li>Parceiro oficial Wellhub / Gympass</li>
+            <li>Desde julho de 2021 no Cidade Morumbi</li>
+            <li>Próximo à Faculdade Anhanguera — fácil acesso</li>
+            <li>Planos a partir de R$69,99/mês</li>
+            <li>4.81★ · 303 avaliações verificadas no Wellhub</li>
+            <li>Profissionais especializados em cada modalidade</li>
+          </ul>
+        </div>
+
+        <div class="sobre-img-wrapper">
+          <img
+            src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"
+            alt="Treino na Big Skull Fitness"
+            loading="lazy">
+          <div class="sobre-badge">Desde 2021</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 4: NOSSO COMPROMISSO
+  ===================================================== -->
+  <section class="compromisso" id="compromisso">
+    <div class="container">
+
+      <div class="compromisso-header">
+        <span class="section-tag">Por que nos escolher</span>
+        <h2 class="compromisso-titulo">Nosso compromisso com seus resultados</h2>
+      </div>
+
+      <div class="compromisso-grid">
+
+        <div class="compromisso-item">
+          <div class="compromisso-icon">
+            <!-- Estrela / Avaliação -->
+            <svg width="26" height="26" viewBox="0 0 24 24">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div class="compromisso-text">
+            <h4>Avaliação física na entrada</h4>
+            <p>Começamos do jeito certo. Cada aluno passa por avaliação inicial para que o treino seja personalizado desde o primeiro dia.</p>
+          </div>
+        </div>
+
+        <div class="compromisso-item">
+          <div class="compromisso-icon">
+            <!-- Troféu -->
+            <svg width="26" height="26" viewBox="0 0 24 24">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+              <path d="M4 22h16"/>
+              <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+              <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/>
+            </svg>
+          </div>
+          <div class="compromisso-text">
+            <h4>Treino adaptado ao seu nível</h4>
+            <p>Seja iniciante ou atleta avançado, o programa de treino é elaborado conforme seu objetivo e condicionamento físico atual.</p>
+          </div>
+        </div>
+
+        <div class="compromisso-item">
+          <div class="compromisso-icon">
+            <!-- Coração -->
+            <svg width="26" height="26" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <div class="compromisso-text">
+            <h4>Academia para toda a família</h4>
+            <p>Do Funcional Kids para as crianças às artes marciais e musculação para os adultos. Aqui a família inteira treina junta.</p>
+          </div>
+        </div>
+
+        <div class="compromisso-item">
+          <div class="compromisso-icon">
+            <!-- Escudo -->
+            <svg width="26" height="26" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="compromisso-text">
+            <h4>Ambiente seguro e supervisionado</h4>
+            <p>Instrutores qualificados em todas as modalidades garantem que cada treino seja seguro, eficiente e motivador.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 5: MODALIDADES
+  ===================================================== -->
+  <section class="modalidades" id="modalidades">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag">O que oferecemos</span>
+        <h2 class="section-titulo">Modalidades completas</h2>
+        <p class="section-sub">Uma academia para toda a família — crianças, adultos e todos os objetivos de treino.</p>
+      </div>
+
+      <div class="modal-grid">
+
+        <!-- Card 1 — Mais Popular -->
+        <div class="modal-card">
+          <div class="modal-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80"
+              alt="Musculação e Cross Training"
+              loading="lazy">
+            <div class="modal-card-img-overlay"></div>
+            <div class="modal-card-badge">⭐ Mais Popular</div>
+          </div>
+          <div class="modal-card-body">
+            <h3>Musculação &amp; Cross Training</h3>
+            <p>Equipamentos modernos para hipertrofia, definição e condicionamento físico. Treinos para iniciantes e atletas avançados, com programação individualizada.</p>
+            <div class="modal-card-tags">
+              <span class="modal-tag">Musculação</span>
+              <span class="modal-tag">Cross Training</span>
+              <span class="modal-tag">Funcional</span>
+            </div>
+            <a href="https://wa.me/5512981493364?text=Olá!%20Quero%20saber%20mais%20sobre%20Musculação%20e%20Cross%20Training" class="modal-card-cta" target="_blank" rel="noopener">
+              Conhecer →
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 — Artes Marciais -->
+        <div class="modal-card">
+          <div class="modal-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1608138404239-d2ee34596c24?auto=format&fit=crop&w=600&q=80"
+              alt="Artes Marciais"
+              loading="lazy">
+            <div class="modal-card-img-overlay"></div>
+          </div>
+          <div class="modal-card-body">
+            <h3>Artes Marciais</h3>
+            <p>Boxe, Jiu-jitsu e Muay Thai com professores especializados. Técnica, disciplina e condicionamento físico para defesa pessoal e competição.</p>
+            <div class="modal-card-tags">
+              <span class="modal-tag">Boxe</span>
+              <span class="modal-tag">Jiu-jitsu</span>
+              <span class="modal-tag">Muay Thai</span>
+            </div>
+            <a href="https://wa.me/5512981493364?text=Olá!%20Quero%20saber%20mais%20sobre%20Artes%20Marciais" class="modal-card-cta" target="_blank" rel="noopener">
+              Conhecer →
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 — Exclusivo -->
+        <div class="modal-card">
+          <div class="modal-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1623492701902-3a3efb9562e1?auto=format&fit=crop&w=600&q=80"
+              alt="Funcional Kids"
+              loading="lazy">
+            <div class="modal-card-img-overlay"></div>
+            <div class="modal-card-badge">🌟 Exclusivo</div>
+          </div>
+          <div class="modal-card-body">
+            <h3>Funcional Kids</h3>
+            <p>O grande diferencial da Big Skull. Crianças ativas, saudáveis e felizes com aulas desenvolvidas especialmente para os pequenos se movimentarem com alegria e segurança.</p>
+            <div class="modal-card-tags">
+              <span class="modal-tag">Funcional Kids</span>
+              <span class="modal-tag">Ginástica</span>
+              <span class="modal-tag">Dança</span>
+            </div>
+            <a href="https://wa.me/5512981493364?text=Olá!%20Quero%20saber%20mais%20sobre%20Funcional%20Kids" class="modal-card-cta" target="_blank" rel="noopener">
+              Conhecer →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 6: BANNER DE PERSUASÃO
+  ===================================================== -->
+  <section class="banner">
+    <div class="banner-bg"></div>
+    <div class="banner-overlay"></div>
+    <div class="container">
+      <div class="banner-content">
+        <span class="banner-badge">WELLHUB · GYMPASS · TOTALPASS</span>
+        <h2>Sem desculpa. Comece hoje.</h2>
+        <p>Planos a partir de R$69,99/mês. Parceria com Wellhub disponível.</p>
+        <a href="https://wa.me/5512981493364?text=Olá!%20Vi%20o%20site%20da%20Big%20Skull%20e%20quero%20saber%20sobre%20os%20planos" class="btn-primary" target="_blank" rel="noopener">
+          Quero começar agora →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 7: EXPERIÊNCIA — MOSAICO + FEATURES
+  ===================================================== -->
+  <section class="experiencia">
+    <div class="container">
+      <div class="experiencia-grid">
+
+        <div class="mosaico">
+          <div class="mosaico-accent"></div>
+          <div class="mosaico-img1">
+            <img
+              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"
+              alt="Treino na Big Skull Fitness"
+              loading="lazy">
+          </div>
+          <div class="mosaico-img2">
+            <img
+              src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=500&q=80"
+              alt="Musculação na Big Skull Fitness"
+              loading="lazy">
+          </div>
+        </div>
+
+        <div class="experiencia-features">
+          <span class="section-tag">A diferença que se sente</span>
+          <h2 class="section-titulo" style="text-align:left; margin-bottom:12px;">
+            Uma experiência <em>diferente</em>
+          </h2>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <!-- Estrela -->
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>4.81★ no Wellhub · 303 avaliações verificadas</h4>
+              <p>Uma das academias melhor avaliadas da região. 303 avaliações verificadas comprovam a qualidade do nosso atendimento e estrutura.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <!-- Coração -->
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Academia ideal para toda a família</h4>
+              <p>Do Funcional Kids exclusivo para as crianças às artes marciais e musculação para os adultos. Aqui toda a família treina.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <!-- Localização / Pin -->
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Próximo à Faculdade Anhanguera — Cidade Morumbi</h4>
+              <p>Localização estratégica em São José dos Campos para quem quer treinar antes ou depois da faculdade, do trabalho ou de casa.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 8: NOSSA REPUTAÇÃO (PROVA SOCIAL ALTERNATIVA)
+  ===================================================== -->
+  <section class="reputacao" id="reputacao">
+    <div class="container">
+      <div class="reputacao-inner">
+
+        <span class="section-tag">Nossa reputação</span>
+
+        <div class="rating-destaque">
+          <div class="rating-numero">4.81</div>
+          <div class="rating-stars">★★★★★</div>
+          <div class="rating-plataforma">no Wellhub / 303 avaliações verificadas</div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-box-value">4.81★</div>
+            <div class="stat-box-label">Nota Wellhub</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-value">303</div>
+            <div class="stat-box-label">Avaliações</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-value">1.764</div>
+            <div class="stat-box-label">Seguidores</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-value">8</div>
+            <div class="stat-box-label">Modalidades</div>
+          </div>
+        </div>
+
+        <div class="bio-quote">
+          <div class="bio-quote-text">
+            "<strong>A MELHOR ACADEMIA</strong> PARA VOCÊ E SUA FAMÍLIA"
+          </div>
+          <div class="bio-quote-source">Bio oficial do Instagram · @bigskullfitnessoficial</div>
+        </div>
+
+        <a href="https://www.instagram.com/bigskullfitnessoficial" class="insta-link" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Ver no Instagram →
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 9: HORÁRIOS + LOCALIZAÇÃO
+  ===================================================== -->
+  <section class="horarios-mapa" id="horarios">
+    <div class="container">
+      <div class="horarios-mapa-grid">
+
+        <div class="horarios-col">
+          <span class="section-tag">Funcionamento</span>
+          <h2 class="horario-titulo">Nossos horários</h2>
+
+          <table class="horario-table">
+            <tbody>
+              <tr>
+                <td>Segunda – Sexta</td>
+                <td>06h00 – 22h30</td>
+              </tr>
+              <tr>
+                <td>Sábado</td>
+                <td>08h00 – 12h00</td>
+              </tr>
+              <tr class="fechado">
+                <td>Domingo</td>
+                <td>Fechado</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="preco-box">
+            <div class="preco-valor">R$69,99</div>
+            <div class="preco-desc">
+              Planos a partir de <strong style="color:var(--secondary)">R$69,99/mês</strong> via Wellhub/Gympass.<br>
+              Consulte também nossos planos diretos.
+            </div>
+          </div>
+
+          <div style="margin-top:32px;">
+            <a href="https://wa.me/5512981493364?text=Olá!%20Vi%20o%20site%20da%20Big%20Skull%20e%20quero%20saber%20sobre%20os%20planos" class="btn-primary" target="_blank" rel="noopener" style="width:100%; justify-content:center;">
+              Sua família nos espera 💪
+            </a>
+          </div>
+        </div>
+
+        <div class="mapa-col" id="localizacao">
+          <span class="section-tag">Onde estamos</span>
+          <h2 class="mapa-titulo">Localização</h2>
+
+          <div class="mapa-frame-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=Academia+Big+Skull+Fitness+R.+José+de+Campos+200+Jardim+Morumbi+São+José+dos+Campos+SP&output=embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização Academia Big Skull Fitness — R. José de Campos, 200 — Cidade Morumbi, São José dos Campos">
+            </iframe>
+          </div>
+
+          <div class="mapa-infos">
+            <div class="mapa-info-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>R. José de Campos, 200 — Cidade Morumbi — São José dos Campos/SP — CEP 12236-650</span>
+            </div>
+            <div class="mapa-info-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              <span>
+                <a href="tel:+5512981493364">(12) 98149-3364</a>
+              </span>
+            </div>
+            <div class="mapa-info-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <a href="https://www.instagram.com/bigskullfitnessoficial" target="_blank" rel="noopener">@bigskullfitnessoficial</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 10: FOOTER
+  ===================================================== -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-logo">BIG SKULL</div>
+          <p class="footer-desc">
+            A melhor academia para você e sua família em São José dos Campos. Musculação, artes marciais, funcional, ginástica, dança e Funcional Kids desde 2021. Parceiro Wellhub/Gympass.
+          </p>
+          <a href="https://www.instagram.com/bigskullfitnessoficial" class="footer-insta" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            @bigskullfitnessoficial
+          </a>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navegação</div>
+          <ul class="footer-nav">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#compromisso">Compromisso</a></li>
+            <li><a href="#modalidades">Modalidades</a></li>
+            <li><a href="#reputacao">Reputação</a></li>
+            <li><a href="#horarios">Horários</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contato</div>
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              <span>
+                <a href="tel:+5512981493364">(12) 98149-3364</a>
+              </span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="color:#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <a href="https://wa.me/5512981493364?text=Olá!%20Vi%20o%20site%20da%20Big%20Skull%20e%20quero%20saber%20sobre%20os%20planos" target="_blank" rel="noopener">WhatsApp · wa.me/5512981493364</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>R. José de Campos, 200 — Cidade Morumbi · São José dos Campos/SP</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Seg–Sex 06h00–22h30 · Sáb 08h00–12h00</span>
+            </div>
+          </div>
+          <div class="footer-preco">
+            <div class="footer-preco-val">A partir de R$69,99/mês</div>
+            <div class="footer-preco-label">Wellhub · Gympass · Totalpass</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 Academia Big Skull Fitness · Cidade Morumbi · São José dos Campos/SP · Fundada em julho de 2021
+        </div>
+        <div class="footer-wellhub">
+          4.81★ · 303 avaliações · Wellhub/Gympass
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ====================================================
+       WHATSAPP FLOAT
+  ===================================================== -->
+  <a
+    href="https://wa.me/5512981493364?text=Olá!%20Vi%20o%20site%20da%20Big%20Skull%20e%20quero%20saber%20sobre%20os%20planos"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    title="Falar no WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+</body>
+</html>

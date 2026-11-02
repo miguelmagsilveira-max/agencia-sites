@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pavoli Sorvetes e Açaí — São José dos Campos</title>
+<meta name="description" content="Sorvetes, açaí e milkshake no Bosque dos Eucaliptos, São José dos Campos. Nota 4,6 no Google. Peça pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"IceCreamShop","name":"Pavoli Sorvetes e Açaí","image":"https://images.unsplash.com/photo-1717853411695-c9f844e1df46","address":{"@type":"PostalAddress","streetAddress":"Av. Ouro Fino, 275 - Bosque dos Eucaliptos","addressLocality":"São José dos Campos","addressRegion":"SP","postalCode":"12233-002","addressCountry":"BR"},"telephone":"+5512992024831","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","bestRating":"5"}}
+</script>
+<style>
+:root{
+  --primary:#e8468a; --primary-d:#cf3576; --accent:#6a2c8f; --accent-d:#57217a;
+  --soft:#fdeef6; --cream:#fff8f1; --ink:#33242e; --muted:#7a6c74; --white:#fff;
+  --shadow:0 18px 46px rgba(232,70,138,.18); --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;overflow-x:hidden}
+h1,h2,h3,.display{font-family:'Fredoka',sans-serif;line-height:1.14;font-weight:600}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.tag{display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:700;color:var(--primary)}
+.tag::before{content:"";width:26px;height:2px;background:var(--accent)}
+.sec{padding:72px 0}
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:'Fredoka',sans-serif;font-weight:600;font-size:16px;padding:14px 26px;border-radius:40px;cursor:pointer;transition:.3s;border:2px solid transparent}
+.btn-p{background:var(--primary);color:#fff;box-shadow:0 10px 24px rgba(232,70,138,.35)}
+.btn-p:hover{background:var(--primary-d);transform:translateY(-2px)}
+.btn-o{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn-o:hover{background:rgba(255,255,255,.15);transform:translateY(-2px)}
+.btn-b{background:var(--accent);color:#fff;box-shadow:0 10px 24px rgba(106,44,143,.3)}
+.btn-b:hover{background:var(--accent-d);transform:translateY(-2px)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,248,241,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(232,70,138,.12)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:'Fredoka',sans-serif;font-weight:700;font-size:24px;color:var(--primary)}
+.logo b{color:var(--accent)}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{font-weight:600;font-size:15px;color:var(--ink);transition:.2s}
+.nav-links a:hover{color:var(--primary)}
+.nav-cta{background:var(--primary);color:#fff!important;padding:9px 20px;border-radius:30px}
+.nav-cta:hover{background:var(--primary-d)}
+@media(max-width:768px){.nav-links a:not(.nav-cta){display:none}}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1717853411695-c9f844e1df46?w=1600&q=80') center/cover;animation:slowZoom 20s infinite alternate ease-in-out}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(87,33,122,.85) 0%,rgba(207,53,118,.55) 60%,rgba(207,53,118,.25) 100%)}
+@keyframes slowZoom{from{transform:scale(1)}to{transform:scale(1.12)}}
+.hero .wrap{position:relative;z-index:2;padding-top:70px}
+.hero h1{font-size:clamp(2.4rem,5.5vw,4.1rem);max-width:760px;text-shadow:0 2px 20px rgba(0,0,0,.25)}
+.hero h1 em{color:#ffe08a;font-style:italic}
+.hero p{font-size:1.2rem;max-width:540px;margin:20px 0 32px;opacity:.96}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{position:absolute;right:24px;bottom:34px;z-index:3;display:flex;gap:14px}
+.stat{background:rgba(255,255,255,.14);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:14px 20px;text-align:center;color:#fff}
+.stat b{font-family:'Fredoka',sans-serif;font-size:1.7rem;display:block;line-height:1}
+.stat span{font-size:12px;opacity:.9}
+@media(max-width:768px){.hero-stats{position:static;margin-top:30px}.hero .wrap{padding-bottom:40px}}
+.fu{opacity:0;transform:translateY(26px);animation:fadeUp .8s forwards}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+.d1{animation-delay:.2s}.d2{animation-delay:.4s}.d3{animation-delay:.6s}.d4{animation-delay:.8s}.d5{animation-delay:1s}
+.rv{opacity:0;transform:translateY(30px);transition:.7s}.rv.in{opacity:1;transform:none}
+.gtitle{text-align:center;margin-bottom:36px}
+.gtitle h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-top:8px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px}
+.gallery figure{overflow:hidden;border-radius:14px;cursor:pointer;box-shadow:var(--shadow)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.gallery figure:hover img{transform:scale(1.08)}
+.gallery .big{grid-column:span 2;grid-row:span 2}
+@media(max-width:768px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px}.gallery .big{grid-column:span 2;grid-row:span 1}}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-img{border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.about-img img{width:100%;height:440px;object-fit:cover}
+.about h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin:10px 0 18px}
+.about p{color:var(--muted);margin-bottom:16px}
+@media(max-width:768px){.about{grid-template-columns:1fr;gap:34px}.about-img img{height:300px}}
+.serv-head{text-align:center;margin-bottom:44px}
+.serv-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-top:8px}
+.serv-head p{color:var(--muted);max-width:540px;margin:12px auto 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 30px rgba(232,70,138,.1);transition:.35s;position:relative}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.card-img{height:190px;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.card:hover .card-img img{transform:scale(1.06)}
+.card-body{padding:22px 22px 26px}
+.card h3{font-size:1.35rem;margin-bottom:8px;color:var(--accent)}
+.card p{color:var(--muted);font-size:.97rem;margin-bottom:14px}
+.badge{position:absolute;top:14px;left:14px;background:var(--primary);color:#fff;font-family:'Fredoka',sans-serif;font-weight:600;font-size:12px;padding:6px 14px;border-radius:30px;z-index:2;box-shadow:0 6px 16px rgba(232,70,138,.4)}
+.card.feat{outline:3px solid var(--primary);outline-offset:-3px}
+.clink{font-family:'Fredoka',sans-serif;font-weight:600;color:var(--primary);font-size:15px}
+@media(max-width:768px){.cards{grid-template-columns:1fr}}
+.why{background:var(--soft)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:40px}
+.why-item{text-align:center}
+.ic{width:62px;height:62px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 8px 20px rgba(232,70,138,.14)}
+.ic svg{width:28px;height:28px;stroke:var(--primary);fill:none;stroke-width:1.8}
+.why-item h3{font-size:1.15rem;margin-bottom:6px}
+.why-item p{color:var(--muted);font-size:.93rem}
+@media(max-width:768px){.why-grid{grid-template-columns:1fr 1fr;gap:20px}}
+.banner{position:relative;color:#fff;text-align:center;overflow:hidden}
+.banner-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1533324050617-905a80c167eb?w=1400&q=80') center/cover}
+.banner-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(87,33,122,.82),rgba(207,53,118,.8))}
+.banner .wrap{position:relative;z-index:2;padding:78px 24px}
+.banner h2{font-size:clamp(1.9rem,4vw,2.9rem);max-width:680px;margin:0 auto 14px}
+.banner p{max-width:520px;margin:0 auto 28px;opacity:.94;font-size:1.1rem}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+.map-box{border-radius:22px;overflow:hidden;box-shadow:var(--shadow);min-height:360px}
+.map-box iframe{width:100%;height:100%;min-height:360px;border:0}
+.info-card{background:#fff;border-radius:22px;padding:40px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:center}
+.info-card h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:8px}
+.info-row{display:flex;gap:14px;align-items:flex-start;margin:16px 0}
+.info-row svg{width:22px;height:22px;stroke:var(--primary);fill:none;stroke-width:1.8;flex-shrink:0;margin-top:3px}
+.info-row b{display:block;font-family:'Fredoka',sans-serif}
+.info-row span{color:var(--muted);font-size:.95rem}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
+footer{background:var(--ink);color:#d8cdd4;padding:56px 0 26px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot-grid h4{font-family:'Fredoka',sans-serif;color:#fff;margin-bottom:16px;font-size:1.15rem}
+.foot-grid a,.foot-grid p{color:#b7a9b1;font-size:.94rem;margin-bottom:9px;display:block}
+.foot-grid a:hover{color:var(--primary)}
+.foot-logo{font-family:'Fredoka',sans-serif;font-weight:700;font-size:22px;color:#fff}
+.foot-logo b{color:#ff9ec9}
+.foot-bot{border-top:1px solid rgba(255,255,255,.1);margin-top:36px;padding-top:20px;text-align:center;font-size:.85rem;color:#9a8b93}
+.preview{opacity:.5;font-size:.8rem;margin-top:6px}
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:200;background:var(--primary);color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(232,70,138,.5);transition:.3s;animation:pulse 2.4s infinite}
+.wa-float:hover{transform:scale(1.09)}
+.wa-float svg{width:32px;height:32px;fill:#25D366}
+@keyframes pulse{0%,100%{box-shadow:0 10px 30px rgba(232,70,138,.5)}50%{box-shadow:0 10px 30px rgba(232,70,138,.5),0 0 0 12px rgba(232,70,138,.12)}}
+.lb{position:fixed;inset:0;background:rgba(30,10,25,.92);z-index:300;display:none;align-items:center;justify-content:center;padding:30px}
+.lb.open{display:flex}
+.lb img{max-width:92%;max-height:88%;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.lb-close{position:absolute;top:22px;right:30px;color:#fff;font-size:44px;cursor:pointer;line-height:1;font-family:'Fredoka',sans-serif}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a href="#" class="logo">Pavoli<b>.</b></a>
+  <div class="nav-links">
+    <a href="#sabores">Sabores</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+    <a href="https://wa.me/5512992024831" class="nav-cta">Pedir</a>
+  </div>
+</div></nav>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <span class="tag fu d1" style="color:#ffe08a">Sorvetes & Açaí • São José dos Campos</span>
+    <h1 class="fu d2">O melhor jeito de <em>refrescar</em> o seu dia</h1>
+    <p class="fu d3">Sorvete cremoso, açaí na tigela do jeito que você monta e milkshake de verdade — no Bosque dos Eucaliptos.</p>
+    <div class="hero-btns fu d4">
+      <a href="https://wa.me/5512992024831" class="btn btn-p">Pedir no WhatsApp</a>
+      <a href="#sabores" class="btn btn-o">Ver sabores</a>
+    </div>
+    <div class="hero-stats fu d5">
+      <div class="stat"><b>4,6</b><span>★ no Google</span></div>
+      <div class="stat"><b>Açaí</b><span>montado do seu jeito</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="sec" id="galeria">
+  <div class="wrap">
+    <div class="gtitle rv"><span class="tag">Dá água na boca</span><h2>Um gostinho do que te espera</h2></div>
+    <div class="gallery rv">
+      <figure class="big"><img loading="lazy" src="https://images.unsplash.com/photo-1533324050617-905a80c167eb?w=800&q=80" onerror="this.src='https://picsum.photos/seed/pavoli1/800/600'" alt="Açaí na tigela"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1629385744299-74b9cf013f52?w=600&q=80" onerror="this.src='https://picsum.photos/seed/pavoli2/600/400'" alt="Bolas de sorvete"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1654923064926-be7e64267a31?w=600&q=80" onerror="this.src='https://picsum.photos/seed/pavoli3/600/400'" alt="Tigela de açaí"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1629385701021-fcd568a743e8?w=600&q=80" onerror="this.src='https://picsum.photos/seed/pavoli4/600/400'" alt="Casquinha de sorvete"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1602296751206-d611e4b4fe89?w=600&q=80" onerror="this.src='https://picsum.photos/seed/pavoli5/600/400'" alt="Sorveteria colorida"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="sobre" style="background:var(--soft)">
+  <div class="wrap about">
+    <div class="about-img rv"><img loading="lazy" src="https://images.unsplash.com/photo-1602296751206-d611e4b4fe89?w=800&q=80" onerror="this.src='https://picsum.photos/seed/pavoli6/800/600'" alt="Sorveteria Pavoli"></div>
+    <div class="rv">
+      <span class="tag">A Pavoli</span>
+      <h2>A sorveteria querida do bairro</h2>
+      <p>A Pavoli é o ponto de sorvete, açaí e milkshake do Bosque dos Eucaliptos, em São José dos Campos. Um lugar pra sentar, matar a vontade de doce e sair sorrindo.</p>
+      <p>Quem passa por aqui costuma voltar — e isso aparece na nossa nota <strong>4,6 no Google</strong>. Sabor de verdade, do jeitinho que você gosta.</p>
+      <a href="https://wa.me/5512992024831" class="btn btn-b" style="margin-top:8px">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="sabores">
+  <div class="wrap">
+    <div class="serv-head rv"><span class="tag" style="display:block">O cardápio</span><h2>Escolha o seu preferido</h2><p>Sabores e tamanhos a gente passa certinho pelo WhatsApp — é só chamar.</p></div>
+    <div class="cards">
+      <div class="card feat rv"><span class="badge">Mais pedido</span>
+        <div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1654923064926-be7e64267a31?w=600&q=80" onerror="this.src='https://picsum.photos/seed/pavoli7/600/400'" alt="Açaí na tigela"></div>
+        <div class="card-body"><h3>Açaí na tigela</h3><p>Cremoso, do tamanho que você quiser, com os complementos montados do seu jeito.</p><a href="https://wa.me/5512992024831" class="clink">Montar o meu →</a></div>
+      </div>
+      <div class="card rv">
+        <div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1629385744299-74b9cf013f52?w=600&q=80" onerror="this.src='https://picsum.photos/seed/pavoli8/600/400'" alt="Sorvetes"></div>
+        <div class="card-body"><h3>Sorvetes & casquinhas</h3><p>Vários sabores cremosos na casquinha, no copo ou na taça pra dividir.</p><a href="https://wa.me/5512992024831" class="clink">Ver sabores →</a></div>
+      </div>
+      <div class="card rv">
+        <div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1629385701021-fcd568a743e8?w=600&q=80" onerror="this.src='https://picsum.photos/seed/pavoli9/600/400'" alt="Milkshake"></div>
+        <div class="card-body"><h3>Milkshakes</h3><p>Aquele milkshake encorpado, no capricho, pra dar aquela refrescada.</p><a href="https://wa.me/5512992024831" class="clink">Pedir agora →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec why">
+  <div class="wrap">
+    <div class="serv-head rv"><span class="tag" style="display:block">Por que a Pavoli</span><h2>Sabor que rendeu 4,6 no Google</h2></div>
+    <div class="why-grid">
+      <div class="why-item rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg></div><h3>Bem avaliada</h3><p>Nota 4,6 de quem já provou e voltou.</p></div>
+      <div class="why-item rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6 2h12M8 2v3a4 4 0 004 4 4 4 0 004-4V2M12 9v7M8 22h8M10 22v-3h4v3"/></svg></div><h3>Do seu jeito</h3><p>Açaí e sorvete montados como você quiser.</p></div>
+      <div class="why-item rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C1 9 2.5 5.5 6 5.5c2 0 3 1.5 6 4 3-2.5 4-4 6-4 3.5 0 5 3.5 3.5 6.5C19 16.5 12 21 12 21z"/></svg></div><h3>Do bairro</h3><p>Ponto querido no Bosque dos Eucaliptos.</p></div>
+      <div class="why-item rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.5-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg></div><h3>Pedido fácil</h3><p>É só chamar no WhatsApp.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <div class="banner-bg"></div>
+  <div class="wrap">
+    <h2 class="rv">Bateu aquela vontade de sorvete?</h2>
+    <p class="rv">Manda mensagem que a gente já separa o seu.</p>
+    <a href="https://wa.me/5512992024831" class="btn btn-p rv">Pedir agora no WhatsApp</a>
+  </div>
+</section>
+
+<section class="sec" id="contato">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="map-box rv"><iframe loading="lazy" src="https://www.google.com/maps?q=Av.%20Ouro%20Fino,%20275%20-%20Bosque%20dos%20Eucaliptos,%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP&output=embed"></iframe></div>
+      <div class="info-card rv">
+        <span class="tag">Vem tomar um sorvete</span>
+        <h2>Pavoli Sorvetes e Açaí</h2>
+        <div class="info-row"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Endereço</b><span>Av. Ouro Fino, 275 — Bosque dos Eucaliptos, São José dos Campos/SP</span></div></div>
+        <div class="info-row"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.5-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg><div><b>WhatsApp</b><span>(12) 99202-4831 — pedidos e dúvidas</span></div></div>
+        <div class="info-row"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Horários</b><span>Chame no WhatsApp para confirmar o horário de funcionamento.</span></div></div>
+        <a href="https://wa.me/5512992024831" class="btn btn-b" style="margin-top:14px">Pedir agora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Pavoli<b>.</b></div>
+        <p style="margin-top:12px">Sorvetes, açaí e milkshake no Bosque dos Eucaliptos — São José dos Campos/SP.</p>
+        <p>★ 4,6 no Google</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <a href="#sabores">Sabores</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="https://wa.me/5512992024831">WhatsApp (12) 99202-4831</a>
+        <a href="https://instagram.com/pavolisorvetes" target="_blank" rel="noopener">Instagram @pavolisorvetes</a>
+        <p>Av. Ouro Fino, 275 — Bosque dos Eucaliptos</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      © Pavoli Sorvetes e Açaí — São José dos Campos/SP
+      <div class="preview">Prévia / demonstração — site amostra, não oficial.</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5512992024831" class="wa-float" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.5-1.2-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.3.5c-.2.2-.3.3-.1.6.1.3.7 1.1 1.4 1.8.9.8 1.7 1 2 1.2.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.5.3.1.3.1.7-.1 1.3z"/></svg></a>
+
+<div class="lb" id="lb"><span class="lb-close" id="lbclose">×</span><img id="lbimg" src="" alt=""></div>
+
+<script>
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg');
+document.querySelectorAll('.gallery img').forEach(img=>img.addEventListener('click',()=>{lbimg.src=img.src.replace(/w=\d+/,'w=1400');lb.classList.add('open')}));
+function closeLb(){lb.classList.remove('open')}
+document.getElementById('lbclose').addEventListener('click',closeLb);
+lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb()});
+// Rede de segurança: garante que nenhum bloco fique invisível (scroll rápido / observer falho)
+window.addEventListener('load',()=>{setTimeout(()=>{document.querySelectorAll('.rv:not(.in)').forEach(el=>el.classList.add('in'))},1200)});
+</script>
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+</body>
+</html>

@@ -1,0 +1,98 @@
+name: "Pipeline de Prospecção de Sites"
+squad: "prospeccao-sites"
+version: "1.0.0"
+
+steps:
+  - step: 1
+    name: "input-cidade"
+    file: "steps/step-01-input-cidade.md"
+    type: checkpoint
+
+  - step: 2
+    name: "prospeccao"
+    file: "steps/step-02-prospeccao.md"
+    agent: pablo-prospeccao
+    type: agent
+    execution: inline
+
+  - step: 3
+    name: "checkpoint-aprovacao-lista"
+    file: "steps/step-03-checkpoint-aprovacao-lista.md"
+    type: checkpoint
+
+  - step: 4
+    name: "investigacao"
+    file: "steps/step-04-investigacao.md"
+    agent: roberto-rastro
+    type: agent
+    execution: inline
+
+  - step: 5
+    name: "checkpoint-aprovacao-investigacao"
+    file: "steps/step-05-checkpoint-aprovacao-investigacao.md"
+    type: checkpoint
+
+  - step: 6
+    name: "analise-briefing-score"
+    file: "steps/step-06-analise-briefing-score.md"
+    agent: andre-analise
+    type: agent
+    execution: inline
+
+  - step: 7
+    name: "checkpoint-selecao-negocios"
+    file: "steps/step-07-checkpoint-selecao-negocios.md"
+    type: checkpoint
+
+  - step: 8
+    name: "checkpoint-fotos-instagram"
+    file: "steps/step-08-checkpoint-fotos-instagram.md"
+    type: checkpoint
+
+  - step: 9
+    name: "criacao-sites"
+    file: "steps/step-09-criacao-sites.md"
+    agent: diego-digital
+    type: agent
+    execution: inline
+
+  - step: 10
+    name: "copywriting-emails"
+    file: "steps/step-10-copywriting-emails.md"
+    agent: carlos-carta
+    type: agent
+    execution: inline
+
+  - step: 11
+    name: "checkpoint-aprovacao-conteudo"
+    file: "steps/step-11-checkpoint-aprovacao-conteudo.md"
+    type: checkpoint
+
+  - step: 12
+    name: "revisao"
+    file: "steps/step-12-revisao.md"
+    agent: vera-veredito
+    type: agent
+    execution: inline
+    on_reject: 9
+
+  - step: 13
+    name: "checkpoint-aprovacao-final"
+    file: "steps/step-13-checkpoint-aprovacao-final.md"
+    type: checkpoint
+
+  - step: 14
+    name: "preparar-kit-envio"
+    file: "steps/step-14-preparar-kit-envio.md"
+    agent: eduardo-envio
+    type: agent
+    execution: inline
+
+checkpoints:
+  - step-01-input-cidade
+  - step-03-checkpoint-aprovacao-lista
+  - step-05-checkpoint-aprovacao-investigacao
+  - step-07-checkpoint-selecao-negocios
+  - step-08-checkpoint-fotos-instagram
+  - step-11-checkpoint-aprovacao-conteudo
+  - step-13-checkpoint-aprovacao-final

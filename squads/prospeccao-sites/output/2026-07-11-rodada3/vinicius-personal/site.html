@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinícius Personal Trainer — Hipertrofia e Treino Personalizado · São José dos Campos</title>
+<meta name="description" content="Personal trainer em São José dos Campos, especialista em hipertrofia. Treino personalizado presencial e acompanhamento online. Faixa-preta de judô, pós-graduado em Psicologia do Esporte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "additionalType": "https://schema.org/SportsActivityLocation",
+  "name": "Vinícius Personal Trainer",
+  "description": "Personal trainer especialista em hipertrofia — treino personalizado presencial e acompanhamento online em São José dos Campos.",
+  "areaServed": "São José dos Campos - SP e atendimento online",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "São José dos Campos",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "telephone": "+5512982657643",
+  "sameAs": ["https://instagram.com/vinicius_personalsjc"]
+}
+</script>
+<style>
+:root{
+  --primary:#12141a;      /* grafite quase preto */
+  --accent:#2f7bff;       /* azul elétrico (cor da marca) */
+  --accent-2:#4d8dff;
+  --dark:#0b0d12;
+  --text:#2b2f38;
+  --bg:#f6f7f9;
+  --bg-alt:#eef0f4;
+  --gray:#7c828d;
+  --display:'Oswald',sans-serif;
+  --body:'Inter',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.6;font-weight:300;}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;color:var(--dark);line-height:1.1;text-transform:uppercase;letter-spacing:.5px;}
+img{display:block;max-width:100%;}
+a{text-decoration:none;color:inherit;}
+.container{max-width:1160px;margin:0 auto;padding:0 32px;}
+section{padding:76px 0;}
+.section-tag{font-size:.72rem;text-transform:uppercase;letter-spacing:3px;color:var(--accent);font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:12px;}
+.section-tag::before{content:"";width:34px;height:2px;background:var(--accent);display:inline-block;}
+.section-title{font-size:2.6rem;margin-bottom:18px;}
+.section-title em{font-style:normal;color:var(--accent);}
+.lead{color:var(--gray);max-width:640px;font-size:1.05rem;}
+
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(11,13,18,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:15px 32px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:var(--display);font-size:1.5rem;font-weight:700;color:#fff;letter-spacing:1px;text-transform:uppercase;}
+.nav-logo span{color:var(--accent);}
+.nav-links{display:flex;gap:30px;list-style:none;}
+.nav-links a{color:rgba(255,255,255,.82);font-size:.82rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:500;transition:color .2s;}
+.nav-links a:hover{color:var(--accent);}
+.nav-cta{background:var(--accent);color:#fff;padding:11px 22px;border-radius:6px;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;transition:transform .2s;}
+.nav-cta:hover{transform:translateY(-2px);}
+
+/* Hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--dark);}
+.hero-bg{position:absolute;inset:0;z-index:0;}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:slowZoom 20s ease-in-out infinite alternate;}
+@keyframes slowZoom{from{transform:scale(1);}to{transform:scale(1.09);}}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(105deg,rgba(11,13,18,.94) 0%,rgba(11,13,18,.8) 45%,rgba(11,13,18,.4) 100%);}
+.hero-inner{position:relative;z-index:2;padding:150px 0 110px;max-width:720px;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+.hero-tag{display:inline-block;font-size:.76rem;text-transform:uppercase;letter-spacing:3px;color:var(--accent);border:1px solid rgba(47,123,255,.5);padding:7px 16px;border-radius:50px;margin-bottom:24px;animation:fadeUp .6s ease both;animation-delay:.15s;}
+.hero h1{font-size:4.4rem;color:#fff;margin-bottom:20px;animation:fadeUp .6s ease both;animation-delay:.35s;}
+.hero h1 em{font-style:normal;color:var(--accent);}
+.hero p{font-size:1.2rem;color:rgba(255,255,255,.82);max-width:560px;margin-bottom:34px;font-weight:300;animation:fadeUp .6s ease both;animation-delay:.55s;}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;animation:fadeUp .6s ease both;animation-delay:.75s;}
+.hero-stats{position:absolute;right:32px;bottom:44px;z-index:2;display:flex;gap:0;background:rgba(18,20,26,.7);border:1px solid rgba(255,255,255,.12);border-radius:14px;backdrop-filter:blur(6px);overflow:hidden;animation:fadeUp .6s ease both;animation-delay:.95s;}
+.hero-stats div{padding:18px 26px;border-right:1px solid rgba(255,255,255,.1);}
+.hero-stats div:last-child{border-right:0;}
+.hero-stats strong{display:block;font-family:var(--display);font-size:1.15rem;color:var(--accent);text-transform:uppercase;letter-spacing:.5px;}
+.hero-stats span{font-size:.74rem;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:1px;}
+
+.btn-primary{background:var(--accent);color:#fff;padding:16px 32px;border-radius:8px;font-family:var(--display);font-weight:600;font-size:.95rem;text-transform:uppercase;letter-spacing:1px;box-shadow:0 8px 26px rgba(47,123,255,.35);transition:transform .2s,box-shadow .2s;display:inline-flex;align-items:center;gap:9px;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(47,123,255,.45);}
+.btn-outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5);padding:15px 28px;border-radius:8px;font-family:var(--display);font-weight:500;font-size:.9rem;text-transform:uppercase;letter-spacing:1px;transition:border-color .2s,background .2s;}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08);}
+
+/* Galeria */
+.galeria{background:var(--dark);color:#fff;}
+.galeria .section-title{color:#fff;}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;}
+.gal-item{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;aspect-ratio:1/1;background:#1a1d24;}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+.gal-item:hover img{transform:scale(1.07);}
+.gal-item::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,13,18,.5),transparent 55%);opacity:0;transition:opacity .3s;}
+.gal-item:hover::after{opacity:1;}
+.gal-cap{position:absolute;left:14px;bottom:12px;z-index:2;color:#fff;font-size:.82rem;font-weight:500;opacity:0;transform:translateY(6px);transition:opacity .3s,transform .3s;}
+.gal-item:hover .gal-cap{opacity:1;transform:translateY(0);}
+.gal-note{margin-top:22px;font-size:.85rem;color:var(--gray);}
+
+/* Modalidades */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px;}
+.serv-card{background:#fff;border:1px solid rgba(18,20,26,.08);border-radius:14px;padding:34px 28px;transition:transform .3s,box-shadow .3s;position:relative;}
+.serv-card:hover{transform:translateY(-8px);box-shadow:0 20px 44px rgba(18,20,26,.1);}
+.serv-card.featured{border:2px solid var(--accent);box-shadow:0 10px 34px rgba(47,123,255,.16);}
+.serv-badge{position:absolute;top:-12px;right:20px;background:var(--accent);color:#fff;font-size:.66rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:5px 14px;border-radius:50px;}
+.serv-icon{width:54px;height:54px;border-radius:12px;background:var(--bg-alt);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.serv-card h3{font-size:1.4rem;margin-bottom:10px;}
+.serv-card p{font-size:.94rem;color:var(--gray);}
+.serv-card ul{list-style:none;margin-top:14px;}
+.serv-card li{font-size:.9rem;color:var(--text);padding:5px 0;display:flex;gap:9px;align-items:center;}
+.serv-card li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;}
+.serv-price{margin-top:16px;font-family:var(--display);font-size:1.05rem;color:var(--dark);}
+.serv-price small{display:block;font-family:var(--body);font-size:.72rem;color:var(--gray);text-transform:none;letter-spacing:0;}
+
+/* Media band */
+.media-band{padding:0;}
+.media-band .frame{position:relative;height:440px;overflow:hidden;}
+.media-band .parallax-img{position:absolute;top:0;left:0;width:100%;height:150%;object-fit:cover;object-position:center 30%;will-change:transform;transform:translate3d(0,0,0);transition:transform .05s linear;}
+.media-band .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,13,18,.78),rgba(11,13,18,.15));z-index:1;}
+.media-band .frame figcaption{position:absolute;left:0;bottom:0;padding:34px 32px;z-index:2;max-width:640px;}
+.media-band .frame figcaption span{display:block;font-family:var(--display);font-size:2rem;color:#fff;line-height:1.15;text-transform:uppercase;text-shadow:0 2px 14px rgba(0,0,0,.5);}
+.media-band .frame figcaption span em{font-style:normal;color:var(--accent);}
+
+/* Diferenciais */
+.confiar{background:var(--primary);color:#fff;}
+.confiar .section-title{color:#fff;}
+.confiar-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;margin-top:38px;}
+.confiar-item{display:flex;gap:16px;align-items:flex-start;}
+.confiar-icon{width:52px;height:52px;border-radius:12px;background:rgba(47,123,255,.12);border:1px solid rgba(47,123,255,.3);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0;}
+.confiar-item h4{color:#fff;font-size:1.2rem;margin-bottom:5px;}
+.confiar-item p{font-size:.9rem;color:rgba(255,255,255,.75);font-weight:300;}
+
+/* Processo */
+.processo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;}
+.processo-step{background:#fff;border:1px solid rgba(18,20,26,.08);border-radius:14px;padding:32px 26px;transition:transform .3s,border-color .3s;}
+.processo-step:hover{transform:translateY(-6px);border-color:var(--accent);}
+.processo-num{font-family:var(--display);font-size:3rem;font-weight:700;color:var(--accent);line-height:1;display:block;margin-bottom:12px;}
+.processo-step h4{font-size:1.2rem;margin-bottom:8px;}
+.processo-step p{font-size:.92rem;color:var(--gray);}
+
+/* Contato */
+.contato{background:var(--bg-alt);}
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.contato-box{background:#fff;border:1px solid rgba(18,20,26,.1);border-radius:16px;padding:40px;}
+.contato-box h3{font-size:1.7rem;margin-bottom:8px;}
+.contato-line{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(18,20,26,.08);}
+.contato-line svg{color:var(--accent);flex-shrink:0;}
+.contato-line span{font-size:.95rem;}
+.contato-line small{display:block;color:var(--gray);font-size:.72rem;text-transform:uppercase;letter-spacing:1px;}
+.contato-cta{margin-top:26px;}
+.area-list{list-style:none;margin-top:22px;}
+.area-list li{padding:11px 0;border-bottom:1px solid rgba(18,20,26,.1);display:flex;gap:12px;align-items:center;font-size:1rem;}
+.area-list li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);flex-shrink:0;}
+
+/* Footer */
+footer{background:var(--dark);color:rgba(255,255,255,.55);padding:58px 0 28px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:36px;}
+.footer-brand h3{color:#fff;font-size:1.5rem;margin-bottom:12px;}
+.footer-brand h3 span{color:var(--accent);}
+.footer-brand p{font-size:.88rem;line-height:1.7;max-width:320px;font-weight:300;}
+.footer-thumbs{display:flex;gap:8px;margin-top:16px;}
+.footer-thumbs a{width:54px;height:54px;border-radius:8px;overflow:hidden;display:block;}
+.footer-thumbs img{width:100%;height:100%;object-fit:cover;transition:transform .3s;}
+.footer-thumbs a:hover img{transform:scale(1.1);}
+.footer-col h4{color:rgba(255,255,255,.85);font-size:.72rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;}
+.footer-col ul{list-style:none;}
+.footer-col li{margin-bottom:9px;}
+.footer-col a,.footer-col span{color:rgba(255,255,255,.55);font-size:.9rem;transition:color .2s;}
+.footer-col a:hover{color:var(--accent);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;text-align:center;font-size:.8rem;}
+.footer-disclaimer{margin-top:8px;font-size:.72rem;opacity:.5;}
+
+/* WhatsApp float */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:200;width:58px;height:58px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 22px rgba(0,0,0,.3);transition:transform .2s;}
+.wa-float:hover{transform:scale(1.08);}
+.wa-float svg{width:30px;height:30px;fill:#25d366;}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:300;background:rgba(6,7,10,.94);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out;}
+.lb.open{display:flex;}
+.lb img{max-width:92vw;max-height:88vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.6);}
+.lb-close{position:absolute;top:20px;right:26px;color:#fff;font-size:2.4rem;line-height:1;cursor:pointer;font-family:var(--display);}
+
+@media(max-width:900px){
+  .gal-grid{grid-template-columns:repeat(2,1fr);}
+  .hero-stats{position:static;margin-top:34px;display:inline-flex;}
+}
+@media(max-width:768px){
+  .nav-links{display:none;}
+  .hero h1{font-size:2.8rem;}
+  .hero-inner{padding:120px 0 60px;}
+  .section-title{font-size:2rem;}
+  .serv-grid,.processo-grid,.confiar-grid,.contato-grid,.footer-grid{grid-template-columns:1fr;gap:26px;}
+  section{padding:54px 0;}
+  .media-band .frame{height:320px;}
+  .media-band .frame figcaption span{font-size:1.4rem;}
+  .hero-stats{flex-wrap:wrap;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Vinícius <span>Personal</span></div>
+  <ul class="nav-links">
+    <li><a href="#treino">Treino</a></li>
+    <li><a href="#modalidades">Modalidades</a></li>
+    <li><a href="#porque">Por que eu</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a href="https://wa.me/5512982657643?text=Ol%C3%A1%20Vin%C3%ADcius!%20Vi%20seu%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="nav-cta">Agendar avaliação</a>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg">
+    <img src="imagens-insta/2.webp" alt="Vinícius treinando na academia" loading="eager">
+  </div>
+  <div class="container hero-inner">
+    <span class="hero-tag">Personal Trainer · São José dos Campos</span>
+    <h1>Treino que <em>constrói resultado</em>, não só suor.</h1>
+    <p>Acompanhamento personalizado para hipertrofia, emagrecimento e condicionamento — presencial em SJC ou online, com quem entende de treino de verdade.</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/5512982657643?text=Ol%C3%A1%20Vin%C3%ADcius!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20sem%20compromisso." class="btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.8-.9-2.1-1-.28-.1-.48-.15-.68.15-.2.3-.78 1-.96 1.2-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.63-.93-2.23-.24-.58-.5-.5-.68-.51h-.58c-.2 0-.53.07-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.1 3.2 5.1 4.5.7.3 1.26.48 1.7.62.72.22 1.36.2 1.87.12.57-.08 1.8-.73 2.05-1.44.25-.7.25-1.3.18-1.44-.08-.13-.28-.2-.58-.35z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.24A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.6 0-3.1-.44-4.38-1.2l-.31-.18-3.13.73.67-3.05-.2-.32A8.16 8.16 0 0 1 3.8 12 8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Agendar avaliação
+      </a>
+      <a href="#modalidades" class="btn-outline">Ver modalidades</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div><strong>Hipertrofia</strong><span>Especialidade</span></div>
+    <div><strong>Faixa-preta</strong><span>Judô</span></div>
+    <div><strong>Presencial + Online</strong><span>Atendimento</span></div>
+  </div>
+</header>
+
+<section id="treino" class="galeria">
+  <div class="container">
+    <p class="section-tag">Treino de verdade</p>
+    <h2 class="section-title">O trabalho por trás do <em>resultado</em></h2>
+    <p class="lead">Técnica, carga certa e constância. Estas são cenas reais dos treinos — é assim que o acompanhamento acontece, sem filtro.</p>
+    <div class="gal-grid">
+      <div class="gal-item" data-full="imagens-insta/1.webp"><img src="imagens-insta/1.webp" alt="Vinícius em treino de pernas na academia" loading="lazy"><span class="gal-cap">Treino de pernas</span></div>
+      <div class="gal-item" data-full="imagens-insta/2.webp"><img src="imagens-insta/2.webp" alt="Vinícius executando agachamento com barra" loading="lazy"><span class="gal-cap">Agachamento livre</span></div>
+      <div class="gal-item" data-full="imagens-insta/3.webp"><img src="imagens-insta/3.webp" alt="Vinícius em treino de bíceps com barra" loading="lazy"><span class="gal-cap">Foco na execução</span></div>
+      <div class="gal-item" data-full="imagens-insta/4.webp"><img src="imagens-insta/4.webp" alt="Vinícius em treino de pernas em máquina" loading="lazy"><span class="gal-cap">Constância no treino</span></div>
+    </div>
+    <p class="gal-note">Toque em qualquer foto para ampliar.</p>
+  </div>
+</section>
+
+<section id="modalidades">
+  <div class="container">
+    <p class="section-tag">Como treinamos</p>
+    <h2 class="section-title">Escolha o <em>seu formato</em></h2>
+    <p class="lead">Cada aluno tem um objetivo e uma rotina. O treino se adapta a você — não o contrário.</p>
+    <div class="serv-grid">
+      <div class="serv-card featured">
+        <div class="serv-badge">Mais procurado</div>
+        <div class="serv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5l11 11"></path><path d="M21 21l-1-1"></path><path d="M3 3l1 1"></path><path d="M18 22l4-4"></path><path d="M2 6l4-4"></path><path d="M3 10l7-7"></path><path d="M14 21l7-7"></path></svg></div>
+        <h3>Treino presencial</h3>
+        <p>Acompanhamento próximo, correção de execução e ajuste de carga em tempo real.</p>
+        <ul>
+          <li>Foco em hipertrofia e força</li>
+          <li>Correção de técnica na hora</li>
+          <li>Progressão ajustada a cada semana</li>
+        </ul>
+        <p class="serv-price">A partir de R$70 / aula<small>Valor de referência (Superprof) — combine o plano no WhatsApp</small></p>
+      </div>
+      <div class="serv-card">
+        <div class="serv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"></rect><path d="M8 21h8"></path><path d="M12 18v3"></path></svg></div>
+        <h3>Acompanhamento online</h3>
+        <p>Treino montado pra você seguir onde estiver, com ajustes e suporte à distância.</p>
+        <ul>
+          <li>Programa personalizado por objetivo</li>
+          <li>Revisões periódicas</li>
+          <li>Suporte pelo WhatsApp</li>
+        </ul>
+      </div>
+      <div class="serv-card">
+        <div class="serv-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div>
+        <h3>Objetivos atendidos</h3>
+        <p>O plano nasce da sua meta e da sua realidade — do zero ou de quem já treina.</p>
+        <ul>
+          <li>Hipertrofia e ganho de massa</li>
+          <li>Emagrecimento e condicionamento</li>
+          <li>Retomada e reabilitação de treino</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="media-band">
+  <figure class="frame">
+    <img class="parallax-img" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&h=1200&fit=crop&q=80" onerror="this.onerror=null;this.src='https://picsum.photos/seed/gymvini/1600/1200'" alt="Ambiente de academia com pesos" loading="lazy">
+    <figcaption><span>Resultado é <em>constância</em> guiada por quem entende.</span></figcaption>
+  </figure>
+</section>
+
+<section id="porque" class="confiar">
+  <div class="container">
+    <p class="section-tag">Por que treinar comigo</p>
+    <h2 class="section-title">Credencial que <em>sustenta o treino</em></h2>
+    <div class="confiar-grid">
+      <div class="confiar-item">
+        <div class="confiar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5l11 11"></path><path d="M3 10l7-7"></path><path d="M14 21l7-7"></path><path d="M2 6l4-4"></path><path d="M18 22l4-4"></path></svg></div>
+        <div><h4>Especialista em hipertrofia</h4><p>Treino montado com método pra ganho de massa e força — carga e progressão pensadas pra sua evolução.</p></div>
+      </div>
+      <div class="confiar-item">
+        <div class="confiar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 .5-4.5 4 1.5 6L12 15l-6 3.5 1.5-6L3 8.5 9 8z"></path></svg></div>
+        <div><h4>Faixa-preta de judô</h4><p>Base sólida de disciplina e movimento — anos de tatame que se traduzem em treino técnico e seguro.</p></div>
+      </div>
+      <div class="confiar-item">
+        <div class="confiar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v1a3 3 0 0 0-1 5.8V14a4 4 0 0 0 8 0v-2.2A3 3 0 0 0 15 6V5a3 3 0 0 0-3-3z"></path><path d="M8 20h8"></path></svg></div>
+        <div><h4>Pós em Psicologia do Esporte</h4><p>Formação que ajuda a manter motivação e foco — treino não é só corpo, é cabeça no jogo.</p></div>
+      </div>
+      <div class="confiar-item">
+        <div class="confiar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"></path></svg></div>
+        <div><h4>Presencial em SJC + online</h4><p>Treina na cidade ou onde estiver: acompanhamento de perto ou programa remoto com suporte.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="container">
+    <p class="section-tag">Como começar</p>
+    <h2 class="section-title">Do <em>primeiro contato</em> ao treino</h2>
+    <div class="processo-grid">
+      <div class="processo-step">
+        <span class="processo-num">1</span>
+        <h4>Avaliação sem compromisso</h4>
+        <p>Chama no WhatsApp e conta seu objetivo, sua rotina e onde você está hoje.</p>
+      </div>
+      <div class="processo-step">
+        <span class="processo-num">2</span>
+        <h4>Plano feito pra você</h4>
+        <p>Monto o treino certo pro seu objetivo — presencial em SJC ou online, com carga e progressão.</p>
+      </div>
+      <div class="processo-step">
+        <span class="processo-num">3</span>
+        <h4>Treino e evolução</h4>
+        <p>Você treina com acompanhamento e ajustes constantes até o resultado aparecer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contato">
+  <div class="container contato-grid">
+    <div>
+      <p class="section-tag">Bora treinar</p>
+      <h2 class="section-title">Sua avaliação é <em>sem compromisso</em></h2>
+      <p class="lead">Manda uma mensagem contando seu objetivo. A gente conversa, define o formato e monta o treino certo pra você — do jeito que cabe na sua rotina.</p>
+      <ul class="area-list">
+        <li>Atende em São José dos Campos — SP</li>
+        <li>Acompanhamento online para qualquer lugar</li>
+        <li>Instagram @vinicius_personalsjc</li>
+      </ul>
+    </div>
+    <div class="contato-box">
+      <h3>Fale com o Vinícius</h3>
+      <div class="contato-line">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.98.36 1.94.7 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.27a2 2 0 0 1 2.11-.45c.92.34 1.88.57 2.86.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span><small>WhatsApp</small>(12) 98265-7643</span>
+      </div>
+      <div class="contato-line">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <span><small>Onde atende</small>São José dos Campos — SP · e online</span>
+      </div>
+      <div class="contato-line">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"></circle></svg>
+        <span><small>Instagram</small>@vinicius_personalsjc</span>
+      </div>
+      <div class="contato-cta">
+        <a href="https://wa.me/5512982657643?text=Ol%C3%A1%20Vin%C3%ADcius!%20Quero%20come%C3%A7ar%20a%20treinar.%20Meu%20objetivo%20%C3%A9:%20" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.24A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.6 0-3.1-.44-4.38-1.2l-.31-.18-3.13.73.67-3.05-.2-.32A8.16 8.16 0 0 1 3.8 12 8.2 8.2 0 1 1 12 20.2z"></path></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Vinícius <span>Personal</span></h3>
+        <p>Personal trainer em São José dos Campos, especialista em hipertrofia. Treino personalizado presencial e acompanhamento online.</p>
+        <div class="footer-thumbs">
+          <a href="#treino"><img src="imagens-insta/1.webp" alt="Treino" loading="lazy"></a>
+          <a href="#treino"><img src="imagens-insta/2.webp" alt="Treino" loading="lazy"></a>
+          <a href="#treino"><img src="imagens-insta/4.webp" alt="Treino" loading="lazy"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#treino">Treino</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#porque">Por que eu</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5512982657643">WhatsApp (12) 98265-7643</a></li>
+          <li><a href="https://instagram.com/vinicius_personalsjc">@vinicius_personalsjc</a></li>
+          <li><span>São José dos Campos — SP</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Vinícius Personal Trainer · São José dos Campos — SP</p>
+      <p class="footer-disclaimer">Prévia / demonstração — site amostra, não oficial</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5512982657643?text=Ol%C3%A1%20Vin%C3%ADcius!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="wa-float" aria-label="Falar no WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.24A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.6 0-3.1-.44-4.38-1.2l-.31-.18-3.13.73.67-3.05-.2-.32A8.16 8.16 0 0 1 3.8 12 8.2 8.2 0 1 1 12 20.2zm4.5-6.32c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.38-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.41-.56-.42h-.48c-.16 0-.42.06-.64.31-.22.25-.85.83-.85 2.02s.87 2.35 1 2.51c.12.17 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.19 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.47-.28z"/></svg>
+</a>
+
+<div class="lb" id="lb"><span class="lb-close" id="lbClose">&times;</span><img id="lbImg" src="" alt="Foto ampliada"></div>
+
+<script>
+(function(){
+  var items = document.querySelectorAll('.gal-item');
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbClose = document.getElementById('lbClose');
+  items.forEach(function(it){
+    it.addEventListener('click', function(){
+      lbImg.src = it.getAttribute('data-full');
+      lb.classList.add('open');
+    });
+  });
+  function close(){ lb.classList.remove('open'); lbImg.src=''; }
+  lb.addEventListener('click', function(e){ if(e.target===lb||e.target===lbClose) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+(function(){
+  var imgs = Array.prototype.slice.call(document.querySelectorAll('.media-band .parallax-img'));
+  if(!imgs.length) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ticking = false;
+  function update(){
+    ticking = false;
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    for(var i=0;i<imgs.length;i++){
+      var img = imgs[i], frame = img.parentElement;
+      var rect = frame.getBoundingClientRect();
+      if(rect.bottom < -40 || rect.top > vh + 40) continue;
+      if(reduce){ img.style.transform = 'translate3d(0,-'+((img.offsetHeight-frame.offsetHeight)/2).toFixed(1)+'px,0)'; continue; }
+      var range = img.offsetHeight - frame.offsetHeight;
+      var progress = (vh - rect.top) / (vh + rect.height);
+      progress = progress < 0 ? 0 : (progress > 1 ? 1 : progress);
+      img.style.transform = 'translate3d(0,'+(-progress*range).toFixed(1)+'px,0)';
+    }
+  }
+  function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('load', update);
+  update();
+})();
+</script>
+
+</body>
+</html>
