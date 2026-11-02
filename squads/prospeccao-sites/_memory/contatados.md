@@ -46,6 +46,7 @@ Negócios neste arquivo com data nos últimos 30 dias são FILTRADOS automaticam
 | Studio Edu Castor | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente A) | Presencial R. Icatu 1366 (plano A) / WhatsApp (12) 98829-2850 (plano B) | kit gerado |
 | Sanja Presentes | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente A, visual-autoral) | Presencial R. Raimundo Barbosa Nogueira 322 (plano A) / WhatsApp (12) 99722-2588 (plano B) | kit gerado |
 | Pet Shop Penedo | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente A) | Presencial R. Penedo 615/621 (plano A) / WhatsApp (12) 99231-1729 (plano B) | kit gerado |
+| Saddam Burguer | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente A) | Presencial R. Itabaiana 1239 (plano A) / WhatsApp (12) 98702-3847 (plano B — risco de bot) | kit gerado |
 
 <!-- Bloqueio de 30 dias (rodada 1): não prospectar antes de 2026-06-18 (já expirado). -->
 <!-- Rodada 2 (A Família, Classe A, Equilibre-se, Cris): data de envio APROXIMADA (~final de maio/2026, "há mais de 2 semanas" segundo o Miguel) — usada só para o cálculo do bloqueio de 30 dias, não é data exata. Bloqueio de 30 dias já expirado. -->

@@ -1,0 +1,93 @@
+KIT DE ENVIO (plano B — WhatsApp) — Saddam Burguer  ·  [COMÉRCIO]  ·  (Rodada 5, Frente A)
+
+Status: kit gerado — pronto, NÃO enviado. Plano B, caso o presencial não role.
+Canal recomendado: WhatsApp -> (12) 98702-3847
+Link ao vivo: https://saddam-burguer.vercel.app
+Âncora da abertura: nota 4,7 no Google (169 avaliações).
+
+ATENÇÃO — RISCO DE ATENDENTE/BOT: o WhatsApp de hamburgueria costuma cair num atendente/bot de PEDIDO. Na ETAPA 1, peça logo pra falar com o DONO/responsável. Não tente "vender" pro atendente que anota pedido. Se não destravar, prefira o presencial (ver roteiro-presencial.txt).
+
+------------------------------------------------------------
+ETAPA 1 — ABERTURA (a única que você manda primeiro) · copiar e colar
+
+Oi, boa noite! Tudo bem? Aqui é o Miguel, moro aqui pertinho e como no Saddam direto 🙂
+Não é pedido — queria falar rapidinho com o dono/responsável sobre uma ideia pro Saddam. Consigo falar com ele por aqui?
+
+------------------------------------------------------------
+ETAPA 2 — [AGUARDE chegar no dono]
+
+Se vier o atendente de pedidos, reforce: "é com o dono mesmo, sobre o site de vocês". Só siga quando falar com o responsável.
+
+------------------------------------------------------------
+ETAPA 3 — CONTEXTO + DOR + PERMISSÃO (manda pro responsável) · copiar e colar
+
+Fechou! Então: eu mexo com criação de site pra comércio daqui de SJC 🙂
+Reparei que com 4,7 e 169 avaliações vocês têm ótima reputação, mas quem pesquisa "hambúrguer em São José" no Google não acha um site de vocês, com os lanches e o botão de pedido num lugar só — e acha os concorrentes.
+Fiz uma coisa aqui pensando no Saddam. Posso te mandar pra dar uma olhada?
+
+------------------------------------------------------------
+ETAPA 4 — [AGUARDE o "pode mandar"]
+
+Só siga pra ETAPA 5 depois que topar ver.
+
+------------------------------------------------------------
+ETAPA 5 — ENTREGA DO LINK (manda com as telas) · copiar e colar
+
+Show! Então dá uma olhada: é uma prévia do site de vocês. Botei a nota 4,7, fotos dos lanches, o endereço na Itabaiana e um botão que abre direto o WhatsApp.
+As fotos são de exemplo só pra dar o clima — no site de verdade entram as dos seus lanches.
+https://saddam-burguer.vercel.app
+Abre direto no seu celular. O que você achou?
+
+------------------------------------------------------------
+FOLLOW-UP — ATÉ 3 TOQUES (só se ficar sem resposta; olhar os tracinhos: azul = leu, cinza = não leu)
+
+Dia 3 — LEU e não respondeu:
+Oi, tudo bem? Conseguiu dar uma olhada no site que montei pro Saddam? Se não fizer sentido agora, tranquilo, só me avisa 👍
+
+Dia 3 — NÃO LEU:
+Não repetir aqui. Trocar de canal: como é aqui do bairro, passar na loja no começo da noite e falar com o dono.
+
+"Vou ver / depois":
+Combinar uma data. Sem data combinada, retomar no dia 5.
+
+Dia 7 — sem resposta:
+Vou deixar o site guardado aqui. Se um dia quiser colocar no ar, é só me chamar 🤝
+(Depois deste, encerra e o negócio entra no bloqueio de 30 dias.)
+
+------------------------------------------------------------
+DEPOIS QUE ELE VER O SITE (pergunta pós-visualização)
+
+Hoje seus clientes chegam mais por indicação ou pelo Google/iFood?
+
+------------------------------------------------------------
+FECHAMENTO (quando demonstrar interesse ou perguntar o preço) — ao marcar, prefira quarta
+
+Fica R$500, pagamento único, sem mensalidade, e você só paga quando o site estiver no ar. Me manda fotos dos lanches e as informações, e em até 2 dias úteis tá pronto, já com as suas fotos no lugar das de exemplo, mais o domínio .com.br com o nome de vocês (~R$40/ano), registrado no nome de vocês. Posso passar aí [dia] às [hora] pra acertar?
+
+------------------------------------------------------------
+OBJEÇÕES (nunca confrontar; sempre terminar em pergunta)
+
+"Já tenho Instagram / iFood":
+Faz sentido, ajuda bastante. Só por curiosidade: quem procura "hambúrguer em São José" no Google e não te conhece, hoje acha um site seu, ou só os concorrentes?
+
+"Tá caro / agora não dá":
+Entendo, de boa. É uma vez só, sem mensalidade, e você só paga quando estiver no ar. O que pesa mais agora, o valor ou o momento?
+
+"Vou pensar / vou ver com o sócio":
+Claro, tem que ver mesmo. Ficou alguma dúvida que eu possa tirar agora, ou é mais o valor?
+
+(NÃO usar: "então não é pra você", escassez/urgência falsa, desconto inventado.)
+
+------------------------------------------------------------
+ANEXOS — TELAS (enviar JUNTO com a ETAPA 5, logo após o texto)
+squads/prospeccao-sites/output/2026-11-02-rodada5-frente-a/saddam-burguer/screenshots/01-hero.png
+squads/prospeccao-sites/output/2026-11-02-rodada5-frente-a/saddam-burguer/screenshots/02-destaque.png
+squads/prospeccao-sites/output/2026-11-02-rodada5-frente-a/saddam-burguer/screenshots/03-contato.png
+
+------------------------------------------------------------
+INSTRUÇÕES
+1. Ajuste a saudação conforme a hora.
+2. Na ETAPA 1, foque em chegar no DONO (cuidado com o bot de pedidos).
+3. Só depois de falar com o responsável, mande a ETAPA 3. Espere o "pode mandar".
+4. Aí sim mande a ETAPA 5 + as 3 telas. Confira que o link abre sem login.
+5. Me confirme como foi cada etapa, pra eu registrar no contatados.md.

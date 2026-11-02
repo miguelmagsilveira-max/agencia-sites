@@ -14,7 +14,7 @@ Valença Confeitaria      | bolos/doces (VA)   | PRONTO (200)      | https://val
 Studio Edu Castor        | academia           | PRONTO (200)      | https://studio-edu-castor.vercel.app    | studio-edu-castor/kit-envio.txt
 Sanja Presentes          | cestas luxo (VA)   | PRONTO (200)      | https://sanja-presentes.vercel.app      | sanja-presentes/kit-envio.txt
 Pet Shop Penedo          | pet shop           | PRONTO (200)      | https://pet-shop-penedo.vercel.app      | pet-shop-penedo/kit-envio.txt
-Saddam Burguer           | hamburgueria       | A FAZER (último)  | —                                       | —
+Saddam Burguer           | hamburgueria       | PRONTO (200)      | https://saddam-burguer.vercel.app       | saddam-burguer/kit-envio.txt (risco bot)
 Kascão Express           | sorveteria         | PULADO (franquia) | —                                       | —
 
 (VA = visual-autoral, galeria com fotos reais do Instagram.)
@@ -32,7 +32,8 @@ https://vercel.com/miguelmagsilveira-3897/valenca-confeitaria/analytics
 https://vercel.com/miguelmagsilveira-3897/studio-edu-castor/analytics
 https://vercel.com/miguelmagsilveira-3897/sanja-presentes/analytics
 https://vercel.com/miguelmagsilveira-3897/pet-shop-penedo/analytics
-(mais serão adicionados conforme cada site sobe)
+https://vercel.com/miguelmagsilveira-3897/saddam-burguer/analytics
+(Frente A completa. Frente B será adicionada abaixo conforme cada site sobe.)
 
 ------------------------------------------------------------------------
 DECISÕES TOMADAS NA DÚVIDA (conservador)
