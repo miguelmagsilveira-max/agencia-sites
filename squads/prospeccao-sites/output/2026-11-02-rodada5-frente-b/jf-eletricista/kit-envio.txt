@@ -1,0 +1,93 @@
+KIT DE ENVIO (WhatsApp) — JF Eletricista  ·  [PRESTADOR — não-visual]  ·  (Rodada 5, Frente B)
+
+Status: kit gerado — pronto, NÃO enviado.
+Canal: WhatsApp -> (12) 98200-1210
+Link ao vivo: https://jf-eletricista.vercel.app
+Âncora: presta serviço de eletricista em SJC e não tem site próprio (achado no Google Maps, sem site).
+CONFERIR ANTES: o número veio do Google Maps — confirme que o WhatsApp é atual antes de enviar.
+
+ATENÇÃO: formato em etapas. Mande UMA etapa por vez e espere a resposta. Onde estiver [AGUARDE], pare.
+
+------------------------------------------------------------
+ETAPA 1 — ABERTURA (a única que você manda primeiro) · copiar e colar
+
+Oi, boa tarde! Tudo bem? Aqui é o Miguel, sou de São José também 🙂
+Vi que você faz serviço de eletricista aqui na cidade. Eu mexo com criação de site pra quem presta serviço em SJC e montei uma coisa rápida pensando no seu trabalho.
+Você atende mais residência ou pega bastante comércio também?
+
+------------------------------------------------------------
+ETAPA 2 — [AGUARDE a resposta]
+
+Não mande mais nada aqui. Espere responder.
+
+------------------------------------------------------------
+ETAPA 3 — CONTEXTO + DOR + PERMISSÃO (manda depois que responder) · copiar e colar
+
+Ó, vou ser direto 🙂 quem precisa de eletricista hoje pesquisa "eletricista em São José" no Google ou pede indicação no grupo do bairro. Quem tem uma página própria, com os serviços e um botão de WhatsApp, passa mais confiança e fecha mais — e você ainda não tem uma.
+Fiz uma pensando no seu trabalho. Posso te mandar pra dar uma olhada?
+
+------------------------------------------------------------
+ETAPA 4 — [AGUARDE o "pode mandar"]
+
+Só siga pra ETAPA 5 depois que topar ver.
+
+------------------------------------------------------------
+ETAPA 5 — ENTREGA DO LINK (manda) · copiar e colar
+
+Show! Então dá uma olhada: é uma prévia de um site seu, com os serviços (instalação, reparo, manutenção), a área de atendimento e um botão que já abre o WhatsApp pro orçamento.
+https://jf-eletricista.vercel.app
+Abre direto no seu celular. O que você achou?
+
+------------------------------------------------------------
+FOLLOW-UP — ATÉ 3 TOQUES (só se ficar sem resposta; olhar os tracinhos: azul = leu, cinza = não leu)
+
+Dia 3 — LEU e não respondeu:
+Oi, tudo bem? Conseguiu dar uma olhada no site que montei pro seu trabalho? Se não fizer sentido agora, tranquilo, só me avisa 👍
+
+Dia 3 — NÃO LEU:
+Não repetir aqui. Trocar de canal: tentar ligação no (12) 98200-1210.
+
+"Vou ver / depois":
+Combinar uma data. Sem data combinada, retomar no dia 5.
+
+Dia 7 — sem resposta:
+Vou deixar o site guardado aqui. Se um dia quiser colocar no ar, é só me chamar 🤝
+(Depois deste, encerra e o negócio entra no bloqueio de 30 dias.)
+
+------------------------------------------------------------
+DEPOIS QUE ELE VER O SITE (pergunta pós-visualização)
+
+Hoje seus clientes chegam mais por indicação ou pelo Google?
+
+------------------------------------------------------------
+FECHAMENTO (quando demonstrar interesse ou perguntar o preço) — ao marcar, prefira quarta
+
+Fica R$500, pagamento único, sem mensalidade, e você só paga quando o site estiver no ar. Me manda umas fotos de serviços seus e as informações, e em até 2 dias úteis tá pronto, já com as suas fotos no lugar das de exemplo, mais o domínio .com.br com o nome de vocês (~R$40/ano), registrado no nome de vocês. Posso te ligar [dia] às [hora] pra acertar?
+
+------------------------------------------------------------
+OBJEÇÕES (nunca confrontar; sempre terminar em pergunta)
+
+"Já tenho Instagram / anúncio":
+Faz sentido, ajuda. Só por curiosidade: quem procura "eletricista em São José" no Google agora, acha você ou só os concorrentes?
+
+"Tá caro / agora não dá":
+Entendo, de boa. É uma vez só, sem mensalidade, e você só paga quando estiver no ar. O que pesa mais agora, o valor ou o momento?
+
+"Vou pensar":
+Claro, tem que ver mesmo. Ficou alguma dúvida que eu possa tirar agora, ou é mais o valor?
+
+(NÃO usar: "então não é pra você", escassez/urgência falsa, desconto inventado.)
+
+------------------------------------------------------------
+ANEXOS — TELAS
+squads/prospeccao-sites/output/2026-11-02-rodada5-frente-b/jf-eletricista/screenshots/01-hero.png
+squads/prospeccao-sites/output/2026-11-02-rodada5-frente-b/jf-eletricista/screenshots/02-servicos.png
+squads/prospeccao-sites/output/2026-11-02-rodada5-frente-b/jf-eletricista/screenshots/03-contato.png
+
+------------------------------------------------------------
+INSTRUÇÕES
+1. Confirme que o WhatsApp é atual (veio do Maps).
+2. Ajuste a saudação conforme a hora.
+3. Mande a ETAPA 1 e PARE. Espere responder. Siga as etapas.
+4. Confira que o link abre sem login antes de mandar a ETAPA 5.
+5. Me confirme como foi, pra eu registrar no contatados.md.

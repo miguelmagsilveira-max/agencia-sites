@@ -22,7 +22,10 @@ Kascão Express           | sorveteria         | PULADO (franquia) | —        
 ------------------------------------------------------------------------
 TABELA — FRENTE B (7 prestadores novos; só WhatsApp, sem roteiro presencial)
 ------------------------------------------------------------------------
-(a fazer — Pablo prospecta 7: 3-4 visual-autorais + 3-4 não-visuais)
+Prospecção via Google Maps (negócios reais, sem site, WhatsApp público). CONFIRMAR cada número antes de enviar.
+Alvo                | Nicho (grupo)         | Status        | Site                              | WhatsApp
+--------------------|-----------------------|---------------|-----------------------------------|----------------
+JF Eletricista      | eletricista (não-vis) | PRONTO (200)  | https://jf-eletricista.vercel.app | (12) 98200-1210
 
 ------------------------------------------------------------------------
 LINKS DE ANALYTICS — clicar ENABLE em cada um (conta pessoal)
@@ -33,7 +36,8 @@ https://vercel.com/miguelmagsilveira-3897/studio-edu-castor/analytics
 https://vercel.com/miguelmagsilveira-3897/sanja-presentes/analytics
 https://vercel.com/miguelmagsilveira-3897/pet-shop-penedo/analytics
 https://vercel.com/miguelmagsilveira-3897/saddam-burguer/analytics
-(Frente A completa. Frente B será adicionada abaixo conforme cada site sobe.)
+https://vercel.com/miguelmagsilveira-3897/jf-eletricista/analytics
+(Frente A completa. Frente B em andamento.)
 
 ------------------------------------------------------------------------
 DECISÕES TOMADAS NA DÚVIDA (conservador)
