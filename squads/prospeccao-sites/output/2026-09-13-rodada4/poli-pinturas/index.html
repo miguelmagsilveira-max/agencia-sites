@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poli Pinturas — Pintor em São José dos Campos</title>
+<meta name="description" content="Poli Pinturas: pintura residencial e comercial em São José dos Campos e região — Vale, Litoral, São Paulo e Interior. Textura, reboco, gesso e lixamento com acabamento e limpeza. Orçamento sem compromisso pelo WhatsApp.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HousePainter",
+  "name": "Poli Pinturas",
+  "description": "Pintura residencial e comercial, textura, reboco, gesso e lixamento. Acabamento e limpeza para entrega.",
+  "areaServed": "São José dos Campos, Vale do Paraíba, Litoral, São Paulo e Interior",
+  "telephone": "+5512987065217",
+  "email": "politintaspinturas@gmail.com",
+  "address": {"@type": "PostalAddress", "streetAddress": "Rua Lavrinhas, 139", "addressLocality": "São José dos Campos", "addressRegion": "SP", "postalCode": "12225-121"},
+  "openingHours": "Mo-Fr 08:00-17:00"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1d3557; --navy2:#2a4a73; --accent:#e76f51;
+  --off:#f4f5f7; --ink:#22272e; --muted:#5c6570; --white:#fff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--off);line-height:1.7;overflow-x:hidden}
+h1,h2,h3,.display{font-family:'Oswald',sans-serif;line-height:1.12;text-transform:uppercase;letter-spacing:.5px}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.tag{display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:3px;font-size:.72rem;font-weight:700;color:var(--accent);font-family:'Oswald'}
+.tag::before{content:"";width:28px;height:2px;background:var(--accent)}
+.sec{padding:74px 0}
+.btn{display:inline-block;padding:15px 30px;border-radius:6px;font-family:'Oswald';font-weight:600;font-size:1rem;text-transform:uppercase;letter-spacing:1px;transition:transform .3s,box-shadow .3s,background .3s;cursor:pointer;border:none}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 24px rgba(231,111,81,.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(231,111,81,.5)}
+.btn-ghost{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.btn-ghost:hover{transform:translateY(-2px);background:var(--navy);color:#fff}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(12px);background:rgba(29,53,87,.92);border-bottom:1px solid rgba(255,255,255,.1)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:'Oswald';font-weight:700;font-size:1.4rem;color:#fff;letter-spacing:1px}
+.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:26px;align-items:center}
+.navlinks a{font-weight:500;font-size:.95rem;color:#eef2f6;transition:color .3s}
+.navlinks a:hover{color:var(--accent)}
+.navlinks .btn{padding:9px 20px;font-size:.82rem}
+.menu-toggle{display:none;font-size:1.6rem;background:none;border:none;color:#fff}
+/* HERO com imagem + overlay */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;padding-top:70px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:slowZoom 18s ease-in-out infinite alternate}
+@keyframes slowZoom{from{transform:scale(1)}to{transform:scale(1.12)}}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(20,33,61,.92) 0 42%,rgba(29,53,87,.72) 70%,rgba(29,53,87,.55) 100%)}
+.hero-inner{position:relative;z-index:2;padding:60px 0}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin:16px 0 18px;max-width:16ch}
+.hero h1 span{color:var(--accent)}
+.hero p{font-size:1.2rem;max-width:50ch;margin-bottom:16px;font-weight:400;opacity:.95}
+.hero-phone{font-family:'Oswald';font-size:1.6rem;color:#fff;margin:20px 0 24px;display:flex;align-items:center;gap:12px}
+.hero-phone svg{width:26px;height:26px;stroke:var(--accent);fill:none;stroke-width:2}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.fadeUp{opacity:0;transform:translateY(28px);animation:fadeUp .9s forwards}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+.d1{animation-delay:.15s}.d2{animation-delay:.35s}.d3{animation-delay:.55s}.d4{animation-delay:.75s}.d5{animation-delay:.95s}
+.hero-badges{display:flex;gap:26px;margin-top:32px;flex-wrap:wrap}
+.hb{display:flex;flex-direction:column}
+.hb b{font-family:'Oswald';font-size:1.5rem;color:var(--accent);line-height:1.05}
+.hb small{font-size:.78rem;opacity:.85;letter-spacing:.5px;margin-top:4px}
+.sec-head{text-align:center;max-width:660px;margin:0 auto 44px}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.7rem);margin:12px 0}
+.sec-head .tag{justify-content:center}.sec-head .tag::before{display:none}
+.sec-head p{color:var(--muted)}
+/* SOBRE */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+.about-img{border-radius:14px;overflow:hidden;box-shadow:0 18px 40px rgba(29,53,87,.16);min-height:340px}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-txt h2{font-size:clamp(1.8rem,3.6vw,2.5rem);margin:12px 0 14px}
+.about-txt p{color:var(--muted);margin-bottom:14px}
+.about-txt .btn{margin-top:8px}
+/* SERVICOS com imagem */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.serv{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(34,39,46,.07);transition:transform .3s,box-shadow .3s;position:relative}
+.serv:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(34,39,46,.14)}
+.serv-img{height:170px;overflow:hidden}
+.serv-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.serv:hover .serv-img img{transform:scale(1.07)}
+.serv-body{padding:20px 22px 24px}
+.serv-body h3{font-size:1.15rem;margin-bottom:6px;color:var(--navy)}
+.serv-body p{font-size:.92rem;color:var(--muted)}
+.badge{position:absolute;top:12px;left:12px;background:var(--accent);color:#fff;font-family:'Oswald';font-size:.72rem;letter-spacing:1px;text-transform:uppercase;padding:6px 12px;border-radius:20px;z-index:2}
+/* BAND */
+.band{position:relative;height:340px;overflow:hidden}
+.band img{width:100%;height:100%;object-fit:cover}
+.band-ov{position:absolute;inset:0;background:linear-gradient(rgba(20,33,61,.72),rgba(29,53,87,.6));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px;gap:20px}
+.band-ov h2{font-size:clamp(1.7rem,3.6vw,2.5rem);max-width:22ch}
+/* PROVA SOCIAL */
+.reviews{background:#fff}
+.rev-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+.rev{background:var(--off);border-radius:12px;padding:28px;box-shadow:0 8px 24px rgba(34,39,46,.05);display:flex;flex-direction:column}
+.stars{color:var(--accent);font-size:1.1rem;letter-spacing:2px;margin-bottom:12px}
+.rev p{font-size:1.02rem;color:var(--ink);font-style:italic;margin-bottom:18px;flex-grow:1}
+.rev-who{display:flex;align-items:center;gap:12px}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;font-family:'Oswald';display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.rev-who b{display:block;font-size:.95rem}
+.rev-who small{color:var(--muted);font-size:.8rem}
+.rev-src{margin-top:26px;text-align:center;color:var(--muted);font-size:.86rem}
+/* PROCESSO */
+.proc{background:var(--navy);color:#fff}
+.proc .sec-head h2{color:#fff}.proc .sec-head p{color:rgba(255,255,255,.75)}
+.proc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.proc-step{text-align:center;padding:14px}
+.proc-num{font-family:'Oswald';font-size:3.2rem;color:var(--accent);line-height:1;margin-bottom:8px}
+.proc-step h3{font-size:1.35rem;margin-bottom:8px}
+.proc-step p{color:rgba(255,255,255,.78);font-size:.94rem}
+/* POR QUE */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:12px}
+.why-item{text-align:center;padding:10px}
+.why-item svg{width:44px;height:44px;stroke:var(--accent);stroke-width:1.6;fill:none;margin-bottom:12px}
+.why-item h3{font-size:1.25rem;margin-bottom:6px;color:var(--navy)}
+.why-item p{color:var(--muted);font-size:.93rem}
+/* AREA + MAPA */
+.hm-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+.hm-info{background:#fff;border-radius:12px;padding:36px;box-shadow:0 10px 28px rgba(34,39,46,.08)}
+.hm-info h3{font-size:1.6rem;margin-bottom:16px;color:var(--navy)}
+.hm-info p{margin-bottom:12px;display:flex;gap:10px;align-items:flex-start}
+.hm-info svg{width:22px;height:22px;stroke:var(--accent);stroke-width:1.8;fill:none;flex-shrink:0;margin-top:3px}
+.hm-info a.inl{color:var(--navy);font-weight:600}
+.hm-map{border-radius:12px;overflow:hidden;min-height:340px;box-shadow:0 10px 28px rgba(34,39,46,.08)}
+.hm-map iframe{width:100%;height:100%;border:0;min-height:340px}
+footer{background:var(--ink);color:#fff;padding:52px 0 24px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:30px}
+.foot-grid h4{font-family:'Oswald';margin-bottom:14px;font-size:1.1rem;color:var(--accent);text-transform:uppercase}
+.foot-grid a,.foot-grid p{display:block;opacity:.8;margin-bottom:8px;font-size:.94rem}
+.foot-grid a:hover{opacity:1;color:var(--accent)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;text-align:center;font-size:.85rem;opacity:.7}
+.preview-line{margin-top:8px;font-size:.75rem;opacity:.45}
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:200;background:#fff;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(29,53,87,.4);transition:transform .3s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:34px;height:34px;fill:#25D366}
+@media(max-width:768px){
+  .navlinks{display:none}.menu-toggle{display:block}
+  .about-grid,.serv-grid,.proc-grid,.why-grid,.hm-grid,.rev-grid{grid-template-columns:1fr;gap:20px}
+  .about-img{min-height:240px}
+  .foot-grid{grid-template-columns:1fr;gap:24px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <div class="logo">POLI <span>PINTURAS</span></div>
+    <div class="navlinks">
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#area">Atendimento</a>
+      <a class="btn btn-primary" href="https://wa.me/5512987065217" target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+    <button class="menu-toggle" onclick="document.querySelector('.navlinks').style.display='flex';this.style.display='none'">☰</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1688372199140-cade7ae820fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600" onerror="this.src='https://picsum.photos/seed/poli-hero/1600/1000'" alt="Pintor aplicando tinta na parede">
+  </div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="tag fadeUp d1" style="color:#fff">Pintura residencial &amp; comercial · São José dos Campos</span>
+      <h1 class="fadeUp d2">Parede nova, <span>acabamento perfeito</span> e obra limpa</h1>
+      <p class="fadeUp d3">A equipe da Poli Pinturas faz pintura, textura, reboco, gesso e lixamento — em madeira, alvenaria e gesso, no interior ou no exterior. Acabamento e limpeza na entrega, a preço acessível.</p>
+      <div class="hero-phone fadeUp d4">
+        <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.5a16 16 0 006 6l1.1-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>
+        (12) 98706-5217
+      </div>
+      <div class="hero-cta fadeUp d5">
+        <a class="btn btn-primary" href="https://wa.me/5512987065217" target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+        <a class="btn btn-ghost" href="#servicos" style="color:#fff;border-color:#fff">Ver serviços</a>
+      </div>
+      <div class="hero-badges fadeUp d5">
+        <div class="hb"><b>Residencial &amp; Comercial</b><small>CASA, APARTAMENTO E EMPRESA</small></div>
+        <div class="hb"><b>Vale · Litoral · SP</b><small>ÁREA DE COBERTURA</small></div>
+        <div class="hb"><b>Sem compromisso</b><small>ORÇAMENTO GRÁTIS</small></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="sec" id="sobre">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img fadeUp d1">
+        <img src="https://images.unsplash.com/photo-1687075197066-eb8bb5e91b16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=900" onerror="this.src='https://picsum.photos/seed/poli-sobre/800/900'" loading="lazy" alt="Ambiente recém-pintado">
+      </div>
+      <div class="about-txt">
+        <span class="tag">Quem faz</span>
+        <h2>Pintura levada a sério, do reparo ao visual novo</h2>
+        <p>Seja uma propriedade residencial ou comercial, a Poli Pinturas entrega o serviço com acabamento e limpeza — do jeito que dá gosto de receber a chave da obra de volta.</p>
+        <p>Conseguir um acabamento perfeito não é fácil. Por isso a gente cuida de cada etapa: preparação da parede, reboco e lixamento quando precisa, e a pintura ou textura com capricho — dentro e fora de casa.</p>
+        <a class="btn btn-ghost" href="https://wa.me/5512987065217" target="_blank" rel="noopener">Agendar uma visita</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="servicos" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">O que fazemos</span>
+      <h2>Serviços de pintura e acabamento</h2>
+      <p>Do interior ao exterior, em madeira, alvenaria e gesso — com preparo e limpeza inclusos.</p>
+    </div>
+    <div class="serv-grid">
+      <div class="serv">
+        <div class="serv-img"><img src="https://images.unsplash.com/photo-1789841417999-67a24a247c90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" onerror="this.src='https://picsum.photos/seed/poli-s1/700/500'" loading="lazy" alt="Pintura interna com rolo"></div>
+        <div class="serv-body"><h3>Pintura interna</h3><p>Quartos, salas e ambientes comerciais com preparo de parede e acabamento uniforme.</p></div>
+      </div>
+      <div class="serv">
+        <span class="badge">Especialidade</span>
+        <div class="serv-img"><img src="https://images.unsplash.com/photo-1533628635777-112b2239b1c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" onerror="this.src='https://picsum.photos/seed/poli-s2/700/500'" loading="lazy" alt="Parede com textura"></div>
+        <div class="serv-body"><h3>Textura e efeitos</h3><p>Textura, grafiato e efeitos decorativos para dar um visual novo ao ambiente.</p></div>
+      </div>
+      <div class="serv">
+        <div class="serv-img"><img src="https://images.unsplash.com/photo-1631064653398-fe1db29e1ca1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" onerror="this.src='https://picsum.photos/seed/poli-s3/700/500'" loading="lazy" alt="Pintura de fachada externa"></div>
+        <div class="serv-body"><h3>Fachada e área externa</h3><p>Pintura externa e de fachada, preparada para pegar sol e chuva sem descascar cedo.</p></div>
+      </div>
+    </div>
+    <div class="serv-grid" style="margin-top:22px">
+      <div class="serv"><div class="serv-body" style="padding:22px"><h3>Reboco e massa</h3><p>Correção e nivelamento da parede antes da pintura, para um fundo firme e liso.</p></div></div>
+      <div class="serv"><div class="serv-body" style="padding:22px"><h3>Gesso e lixamento</h3><p>Preparo de superfícies em gesso e lixamento para o acabamento ficar perfeito.</p></div></div>
+      <div class="serv"><div class="serv-body" style="padding:22px"><h3>Madeira e alvenaria</h3><p>Pintura sobre madeira e alvenaria, com o produto certo para cada superfície.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <img src="https://images.unsplash.com/photo-1511822148790-e7b58ba14c72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600" onerror="this.src='https://picsum.photos/seed/poli-band/1400/500'" loading="lazy" alt="Pintor trabalhando na parede">
+  <div class="band-ov">
+    <h2>Vai reformar ou dar um visual novo? Chame a Poli.</h2>
+    <a class="btn btn-primary" href="https://wa.me/5512987065217" target="_blank" rel="noopener">Falar agora no WhatsApp</a>
+  </div>
+</section>
+
+<section class="sec reviews" id="avaliacoes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Quem contratou</span>
+      <h2>O que os clientes dizem</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>"Excelentes profissionais, de muita confiança. Executaram além do que esperava, a todo momento se comunica com qualquer imprevisto encontrado durante o serviço."</p>
+        <div class="rev-who"><div class="avatar">R</div><div><b>Renata G.</b><small>Avaliação no Google</small></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>"Excelente."</p>
+        <div class="rev-who"><div class="avatar">C</div><div><b>Carlos Santos</b><small>Avaliação no Google</small></div></div>
+      </div>
+    </div>
+    <p class="rev-src">Avaliações reais publicadas no perfil da Poli Pinturas no Google.</p>
+  </div>
+</section>
+
+<section class="sec proc" id="processo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Como funciona</span>
+      <h2>Do orçamento à entrega limpa</h2>
+      <p>Simples e sem burocracia — é só mandar uma mensagem.</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-step">
+        <div class="proc-num">01</div>
+        <h3>Você chama</h3>
+        <p>Manda pelo WhatsApp o que precisa pintar (fotos ajudam) e a gente combina uma visita.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">02</div>
+        <h3>Orçamento sem compromisso</h3>
+        <p>A gente avalia a superfície, indica o melhor acabamento e passa o valor — sem pressão.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">03</div>
+        <h3>Executa e entrega limpo</h3>
+        <p>Prepara a parede, pinta com capricho e devolve o ambiente limpo e pronto pra usar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Por que a Poli</span>
+      <h2>Acabamento que se nota</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+        <h3>Acabamento e limpeza</h3>
+        <p>Serviço entregue com acabamento caprichado e o ambiente limpo — do jeito certo.</p>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        <h3>Preço acessível</h3>
+        <p>Orçamento justo e sem compromisso, com o melhor acabamento para o seu ambiente.</p>
+      </div>
+      <div class="why-item">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <h3>Atende toda a região</h3>
+        <p>São José dos Campos e todo o Vale, Litoral, São Paulo e Interior.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="area" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Atendimento</span>
+      <h2>Onde e quando a gente atende</h2>
+    </div>
+    <div class="hm-grid">
+      <div class="hm-info">
+        <h3>Poli Pinturas</h3>
+        <p><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Rua Lavrinhas, 139 — São José dos Campos/SP · CEP 12225-121</p>
+        <p><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a15 15 0 010 18M12 3a15 15 0 000 18M3 12h18"/></svg> Cobertura: Vale, Litoral, São Paulo e Interior</p>
+        <p><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Segunda a sexta, das 8h às 17h</p>
+        <p><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.5a16 16 0 006 6l1.1-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg> WhatsApp <a class="inl" href="https://wa.me/5512987065217" target="_blank" rel="noopener">(12) 98706-5217</a></p>
+        <p><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> <a class="inl" href="mailto:politintaspinturas@gmail.com">politintaspinturas@gmail.com</a></p>
+        <a class="btn btn-primary" href="https://wa.me/5512987065217" target="_blank" rel="noopener" style="margin-top:12px">Chamar no WhatsApp</a>
+      </div>
+      <div class="hm-map">
+        <iframe src="https://www.google.com/maps?q=Rua%20Lavrinhas%2C%20139%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20SP&output=embed" loading="lazy" title="Localização Poli Pinturas — Rua Lavrinhas, 139, São José dos Campos"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="font-size:1.3rem">POLI <span>PINTURAS</span></div>
+        <p style="margin-top:10px">Pintura residencial e comercial em São José dos Campos e região. Textura, reboco, gesso e lixamento com acabamento e limpeza.</p>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <a href="#servicos">Serviços</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#area">Atendimento</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="https://wa.me/5512987065217" target="_blank" rel="noopener">WhatsApp (12) 98706-5217</a>
+        <a href="mailto:politintaspinturas@gmail.com">politintaspinturas@gmail.com</a>
+        <p>Rua Lavrinhas, 139 — SJC/SP</p>
+        <p>Seg a sex, 8h às 17h</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © 2026 Poli Pinturas — São José dos Campos/SP
+      <div class="preview-line">Prévia / demonstração — site amostra, não oficial.</div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5512987065217" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2.1c1.8 1 3.9 1.5 6 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.4 1.2 1.2-4.3-.3-.4c-1-1.6-1.6-3.5-1.6-5.5C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 10.5S21.9 25.7 16 25.7zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.5 3.8 6 5.3.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
+</a>
+    <!-- Vercel Web Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

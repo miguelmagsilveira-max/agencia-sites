@@ -1,0 +1,96 @@
+KIT DE ENVIO — Poli Pinturas  ·  [PRESTADOR]  ·  (padrões Rodada 5)
+
+Status: kit gerado (sequência de conversa) — pronto, NÃO enviado. Aguardando sua confirmação de envio.
+Canal recomendado: WhatsApp -> (12) 98706-5217   (email alternativo: politintaspinturas@gmail.com)
+Link ao vivo: https://poli-pinturas.vercel.app
+Horário sugerido: fim de tarde (17h-19h), dia útil (ele atende seg-sex 8h-17h).
+Âncora da abertura: avaliação real da cliente Renata G. ("de muita confiança", "executaram além do que esperava") — literal, do perfil dele.
+Fato verificado da ETAPA 3: a Poli tem página no Ueni (poli-pinturas.ueniweb.com) — reconhecer que ela ajuda e oferecer o passo seguinte (site próprio com as obras e as avaliações). Sem criticar o Ueni.
+
+ATENÇÃO: formato em etapas. Mande UMA etapa por vez e espere a resposta antes da próxima.
+Onde estiver [AGUARDE], pare e espere.
+
+------------------------------------------------------------
+ETAPA 1 — ABERTURA (a única que você manda primeiro) · copiar e colar
+
+Oi, boa tarde! Tudo bem? Aqui é o Miguel, sou de São José também 🙂
+Encontrei a Poli Pinturas procurando pintor aqui na cidade e li uma cliente falando que vocês são "de muita confiança" e que "executaram além do que esperava". Cliente que volta pra escrever isso é sinal de trabalho sério — parabéns.
+Vocês pegam mais pintura residencial ou tem bastante obra comercial também?
+
+------------------------------------------------------------
+ETAPA 2 — [AGUARDE a resposta]
+
+Não mande mais nada aqui. Espere ele responder.
+
+------------------------------------------------------------
+ETAPA 3 — CONTEXTO + DOR + PERMISSÃO (manda depois que ele responder) · copiar e colar
+
+Ó, além de ter curtido o retorno dos clientes de vocês, eu mexo com criação de site pra quem presta serviço aqui em SJC 🙂
+Vi que vocês têm a página no Ueni, que já ajuda. Montei uma versão com a cara da Poli, com as obras e as avaliações de vocês num lugar só. Posso te mandar pra você dar uma olhada?
+
+------------------------------------------------------------
+ETAPA 4 — [AGUARDE o "pode mandar"]
+
+Só siga pra ETAPA 5 depois que ele topar ver.
+
+------------------------------------------------------------
+ETAPA 5 — ENTREGA DO LINK (manda com as telas) · copiar e colar
+
+Show! Então dá uma olhada 👇 é uma prévia que montei de um site próprio pra Poli, só pra você ver como ficaria no ar. Tem os serviços (pintura, textura, fachada), a avaliação real dos clientes, o horário, a cobertura no Vale/Litoral e um botão que abre direto o orçamento no WhatsApp.
+As fotos são de exemplo só pra dar o clima — no site de verdade entram as de obras suas.
+https://poli-pinturas.vercel.app
+Abre direto no seu celular. O que você achou?
+
+------------------------------------------------------------
+FOLLOW-UP — ATÉ 3 TOQUES (só se ficar sem resposta; olhar os tracinhos: azul = leu, cinza = não leu)
+
+Dia 3 — LEU e não respondeu:
+Oi, tudo bem? Conseguiu dar uma olhada no site que montei pra Poli? Se não fizer sentido agora, tranquilo, só me avisa 👍
+
+Dia 3 — NÃO LEU:
+Não repetir aqui. Trocar de canal: ligação no (12) 98706-5217 (ele atende seg-sex 8h-17h).
+
+"Vou ver / depois":
+Combinar uma data. Sem data combinada, retomar no dia 5.
+
+Dia 7 — sem resposta:
+Vou deixar o site guardado aqui. Se um dia quiser colocar no ar, é só me chamar 🤝
+(Depois deste, encerra e o negócio entra no bloqueio de 30 dias.)
+
+------------------------------------------------------------
+DEPOIS QUE ELE VER O SITE (pergunta pós-visualização)
+
+Hoje seus clientes chegam mais por indicação ou pelo Google?
+
+------------------------------------------------------------
+FECHAMENTO (quando ele demonstrar interesse ou perguntar o preço)
+
+Fica R$500, pagamento único, sem mensalidade, e você só paga quando o site estiver no ar. Me manda umas fotos de obras suas e as informações e em até 2 dias úteis tá pronto, já com as suas fotos e avaliações reais no lugar desses de exemplo. O domínio (tipo polipinturas.com.br) fica no seu nome. Posso passar aqui [dia] às [hora] pra acertar?
+
+------------------------------------------------------------
+OBJEÇÕES (nunca confrontar; sempre terminar em pergunta)
+
+"Já tenho o Ueni / já tenho uma página":
+Faz total sentido, o Ueni já ajuda. A ideia é dar um passo a mais: um site com a cara da Poli, com as suas obras e as avaliações num lugar só. Quer que eu te mande pra comparar, sem compromisso?
+
+"Tá caro / agora não dá":
+Entendo, sem problema nenhum. Me fala só uma coisa: um serviço novo por mês pagaria isso pra você?
+
+"Vou pensar / vou ver com um conhecido":
+Claro, tem que ver mesmo. Ficou alguma dúvida que eu possa tirar agora, ou é mais o valor?
+
+(NÃO usar: "então não é pra você", escassez/urgência falsa, desconto inventado.)
+
+------------------------------------------------------------
+ANEXOS — TELAS (enviar JUNTO com a ETAPA 5, logo após o texto)
+squads/prospeccao-sites/output/2026-09-13-rodada4/poli-pinturas/screenshots/01-hero.png
+squads/prospeccao-sites/output/2026-09-13-rodada4/poli-pinturas/screenshots/02-destaque.png
+squads/prospeccao-sites/output/2026-09-13-rodada4/poli-pinturas/screenshots/03-contato.png
+
+------------------------------------------------------------
+INSTRUÇÕES
+1. Ajuste a saudação conforme a hora (bom dia / boa tarde / boa noite).
+2. Mande a ETAPA 1 e PARE. Espere ele responder.
+3. Só depois da resposta, mande a ETAPA 3. Espere o "pode mandar".
+4. Aí sim mande a ETAPA 5 + as 3 telas. Confira que o link abre sem pedir login.
+5. Me confirme como foi cada etapa, pra eu registrar no contatados.md.

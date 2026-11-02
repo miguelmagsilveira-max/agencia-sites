@@ -34,19 +34,19 @@ Negócios neste arquivo com data nos últimos 30 dias são FILTRADOS automaticam
 | Vinícius (personal) | São José dos Campos/SP | ~2026-07 (aprox., rodada 3) | WhatsApp (rodada 3) | enviado |
 | JACI (salgados) | São José dos Campos/SP | ~2026-07 (aprox., rodada 3) | WhatsApp (rodada 3) | reservado-repescagem |
 | Casa dos Salgados | São José dos Campos/SP | ~2026-07 (aprox., rodada 3) | WhatsApp (rodada 3) | enviado |
-| André Pintor (marmorato) | São José dos Campos/SP | ~2026-09 (aprox., rodada 4) | WhatsApp (12) 98861-1055 | em-andamento |
+| André Pintor (marmorato) | São José dos Campos/SP | 2026-11-02 (rodada 5; disse SIM e adiou, 2ª msg lida sem resposta — toque 3 preparado) | WhatsApp (12) 98861-1055 | em-andamento |
 | Meseque (montador) | São José dos Campos/SP | ~2026-09 (aprox., rodada 4) | WhatsApp (rodada 4) | enviado |
 | Blue House (banho e tosa) | São José dos Campos/SP | ~2026-09 (aprox., rodada 4) | WhatsApp (rodada 4) | reservado-repescagem |
 | Pavoli (sorvetes e açaí) | São José dos Campos/SP | ~2026-09 (aprox., rodada 4) | WhatsApp (rodada 4) | enviado |
 | Saint Joe Burgerhouse | São José dos Campos/SP | ~2026-10 (aprox., rodada 4) | WhatsApp (rodada 4 — só etapa 1, caiu no bot/atendente) | reservado-repescagem |
 | Araci (personal organizer) | São José dos Campos/SP | ~2026-09 (aprox., rodada 4) | WhatsApp (rodada 4) | saiu-do-ramo |
-| Poli Pinturas | São José dos Campos/SP | — (kit pronto, ainda NÃO enviado) | WhatsApp (12) 98706-5217 | em-andamento |
+| Poli Pinturas | São José dos Campos/SP | 2026-11-02 (rodada 5; kit novo .txt c/ padrões novos pronto, ainda NÃO enviado) | WhatsApp (12) 98706-5217 | em-andamento |
 
 <!-- Bloqueio de 30 dias (rodada 1): não prospectar antes de 2026-06-18 (já expirado). -->
 <!-- Rodada 2 (A Família, Classe A, Equilibre-se, Cris): data de envio APROXIMADA (~final de maio/2026, "há mais de 2 semanas" segundo o Miguel) — usada só para o cálculo do bloqueio de 30 dias, não é data exata. Bloqueio de 30 dias já expirado. -->
 <!-- Equilibre-se tem site institucional próprio (equilibresectp.com.br): não deve ser reprospectado como "sem site" — foi enviado por engano na rodada 2. -->
 <!-- Status de envio das rodadas 3 e 4 informado por Miguel em 2026-10-27 (ele enviou mas não tinha registrado). Datas por rodada são APROXIMADAS (uso: só cálculo de bloqueio; já expiradas). -->
 <!-- RESERVADOS PRA REPESCAGEM (Pablo NÃO prospecta, exclusão permanente): MIDOG, JACI, Saint Joe, Blue House. São alvos guardados para reabordagem manual do Miguel. -->
-<!-- EM ANDAMENTO: André Pintor (disse SIM e adiou por contas a pagar; 2ª mensagem vista sem resposta) e Poli Pinturas (kit pronto, nunca enviado). -->
+<!-- EM ANDAMENTO (rodada 5, 2026-11-02): André Pintor (disse SIM e adiou por contas a pagar; 2ª mensagem vista sem resposta; toque 3 em 2 versões em andre-pintor/toque-3-rodada5.txt) e Poli Pinturas (kit novo .txt com padrões da rodada 5 pronto, nunca enviado). -->
 <!-- Araci respondeu que saiu do ramo (personal organizer) — lead morto, não reabordar. -->
 <!-- Dona Costura (rodada 3): site preparado mas NÃO enviado — por isso NÃO consta aqui. -->
