@@ -52,6 +52,8 @@ Negócios neste arquivo com data nos últimos 30 dias são FILTRADOS automaticam
 | Chaveiro Vitória 24h | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, não-visual) | WhatsApp (12) 99119-6481 (Maps — confirmar número) | kit gerado |
 | Torres Manutenção | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, não-visual) | WhatsApp (12) 98804-7080 (Maps — confirmar número) | kit gerado |
 | Du Tattoos | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, visual-autoral) | WhatsApp (12) 98102-4628 (Maps — confirmar número) · @dutattooz | kit gerado |
+| Francine Machado (Bolos e Doces) | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, visual-autoral — site com fotos de exemplo) | WhatsApp (12) 99726-1586 (Maps — confirmar número) | kit gerado |
+| Valeriano Nails | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, visual-autoral — site com fotos de exemplo) | WhatsApp (12) 99211-3498 (Maps — confirmar número) | kit gerado |
 
 <!-- Bloqueio de 30 dias (rodada 1): não prospectar antes de 2026-06-18 (já expirado). -->
 <!-- Rodada 2 (A Família, Classe A, Equilibre-se, Cris): data de envio APROXIMADA (~final de maio/2026, "há mais de 2 semanas" segundo o Miguel) — usada só para o cálculo do bloqueio de 30 dias, não é data exata. Bloqueio de 30 dias já expirado. -->

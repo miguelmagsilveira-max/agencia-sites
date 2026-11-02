@@ -1,38 +1,42 @@
 ========================================================================
-RESUMO DA MANHÃ — Rodada 5 (Frentes A e B)   ·   atualizado progressivamente
+RESUMO DA MANHÃ — Rodada 5 (Frentes A e B)   ·   COMPLETO
 ========================================================================
-Última atualização: commit "fase 3 — frente A (parcial)".
-Trabalho autônomo noturno + continuação. Nada foi ENVIADO. Tudo é "kit gerado".
+Trabalho autônomo. Nada foi ENVIADO. Tudo é "kit gerado", pronto pra você validar e enviar.
+Total: 13 sites no ar (6 Frente A + 7 Frente B), todos HTTP 200, na conta pessoal da Vercel.
+Kascão pulado (franquia). Git: tudo commitado e enviado pro repo pessoal.
 
 ------------------------------------------------------------------------
-TABELA — FRENTE A (7 comércios do bairro; presencial plano A + WhatsApp plano B)
+TABELA — FRENTE A (comércios do bairro; presencial plano A + WhatsApp plano B)
 ------------------------------------------------------------------------
-Alvo                     | Nicho              | Status            | Site no ar                              | Kit
--------------------------|--------------------|-------------------|-----------------------------------------|----------------------------------
-CÃOMIAU Mundo Pet        | banho e tosa       | PRONTO (200)      | https://caomiau-mundo-pet.vercel.app    | caomiau-mundo-pet/kit-envio.txt
-Valença Confeitaria      | bolos/doces (VA)   | PRONTO (200)      | https://valenca-confeitaria.vercel.app  | valenca-confeitaria/kit-envio.txt
-Studio Edu Castor        | academia           | PRONTO (200)      | https://studio-edu-castor.vercel.app    | studio-edu-castor/kit-envio.txt
-Sanja Presentes          | cestas luxo (VA)   | PRONTO (200)      | https://sanja-presentes.vercel.app      | sanja-presentes/kit-envio.txt
-Pet Shop Penedo          | pet shop           | PRONTO (200)      | https://pet-shop-penedo.vercel.app      | pet-shop-penedo/kit-envio.txt
-Saddam Burguer           | hamburgueria       | PRONTO (200)      | https://saddam-burguer.vercel.app       | saddam-burguer/kit-envio.txt (risco bot)
-Kascão Express           | sorveteria         | PULADO (franquia) | —                                       | —
-
-(VA = visual-autoral, galeria com fotos reais do Instagram.)
-
-------------------------------------------------------------------------
-TABELA — FRENTE B (7 prestadores novos; só WhatsApp, sem roteiro presencial)
-------------------------------------------------------------------------
-Prospecção via Google Maps (negócios reais, sem site, WhatsApp público). CONFIRMAR cada número antes de enviar.
-Alvo                | Nicho (grupo)         | Status        | Site                              | WhatsApp
---------------------|-----------------------|---------------|-----------------------------------|----------------
-JF Eletricista      | eletricista (não-vis) | PRONTO (200)  | https://jf-eletricista.vercel.app      | (12) 98200-1210
-RD Caça Vazamentos  | vazamento/desent (nv) | PRONTO (200)  | https://rd-caca-vazamentos.vercel.app  | (12) 98161-9504
-Chaveiro Vitória 24h| chaveiro 24h (não-vis)| PRONTO (200)  | https://chaveiro-vitoria-24h.vercel.app| (12) 99119-6481
-Torres Manutenção   | reparos/manut (nv)    | PRONTO (200)  | https://torres-manutencao.vercel.app   | (12) 98804-7080
-Du Tattoos          | tatuagem (VISUAL-aut) | PRONTO (200)  | https://du-tattoos.vercel.app          | (12) 98102-4628 · @dutattooz
+Alvo                 | Nicho              | Status            | Site no ar                              | Pasta do kit
+---------------------|--------------------|-------------------|-----------------------------------------|----------------------------------
+CÃOMIAU Mundo Pet    | banho e tosa       | PRONTO (200)      | https://caomiau-mundo-pet.vercel.app    | caomiau-mundo-pet/
+Valença Confeitaria  | bolos/doces (VA*)  | PRONTO (200)      | https://valenca-confeitaria.vercel.app  | valenca-confeitaria/
+Studio Edu Castor    | academia           | PRONTO (200)      | https://studio-edu-castor.vercel.app    | studio-edu-castor/
+Sanja Presentes      | cestas luxo (VA*)  | PRONTO (200)      | https://sanja-presentes.vercel.app      | sanja-presentes/
+Pet Shop Penedo      | pet shop           | PRONTO (200)      | https://pet-shop-penedo.vercel.app      | pet-shop-penedo/
+Saddam Burguer       | hamburgueria       | PRONTO (200)      | https://saddam-burguer.vercel.app       | saddam-burguer/ (RISCO de bot no WhatsApp)
+Kascão Express       | sorveteria         | PULADO (franquia) | —                                       | —
+(* VA = visual-autoral: galeria com FOTOS REAIS do Instagram do próprio alvo.)
+Cada pasta da Frente A tem: site.html, index.html, roteiro-presencial.txt, kit-envio.txt, screenshots/, link-ao-vivo.txt
 
 ------------------------------------------------------------------------
-LINKS DE ANALYTICS — clicar ENABLE em cada um (conta pessoal)
+TABELA — FRENTE B (prestadores novos; só WhatsApp, sem roteiro presencial)
+------------------------------------------------------------------------
+Prospecção via Google Maps (negócios REAIS, sem site). CONFIRMAR cada número antes de enviar (veio do Maps).
+Alvo                | Grupo        | Status       | Site                                    | WhatsApp
+--------------------|--------------|--------------|-----------------------------------------|----------------
+JF Eletricista      | não-visual   | PRONTO (200) | https://jf-eletricista.vercel.app       | (12) 98200-1210
+RD Caça Vazamentos  | não-visual   | PRONTO (200) | https://rd-caca-vazamentos.vercel.app   | (12) 98161-9504
+Chaveiro Vitória 24h| não-visual   | PRONTO (200) | https://chaveiro-vitoria-24h.vercel.app | (12) 99119-6481
+Torres Manutenção   | não-visual   | PRONTO (200) | https://torres-manutencao.vercel.app    | (12) 98804-7080
+Du Tattoos          | visual-aut.  | PRONTO (200) | https://du-tattoos.vercel.app           | (12) 98102-4628 · @dutattooz · FOTOS REAIS do Insta
+Francine Machado    | visual-aut.  | PRONTO (200) | https://francine-machado.vercel.app     | (12) 99726-1586 · fotos de EXEMPLO (ver nota)
+Valeriano Nails     | visual-aut.  | PRONTO (200) | https://valeriano-nails.vercel.app      | (12) 99211-3498 · fotos de EXEMPLO (ver nota)
+Cada pasta da Frente B tem: site.html, index.html, kit-envio.txt, screenshots/, link-ao-vivo.txt (sem roteiro presencial).
+
+------------------------------------------------------------------------
+LINKS DE ANALYTICS — clicar ENABLE em cada um (conta pessoal miguelmagsilveira-3897)
 ------------------------------------------------------------------------
 https://vercel.com/miguelmagsilveira-3897/caomiau-mundo-pet/analytics
 https://vercel.com/miguelmagsilveira-3897/valenca-confeitaria/analytics
@@ -45,24 +49,30 @@ https://vercel.com/miguelmagsilveira-3897/rd-caca-vazamentos/analytics
 https://vercel.com/miguelmagsilveira-3897/chaveiro-vitoria-24h/analytics
 https://vercel.com/miguelmagsilveira-3897/torres-manutencao/analytics
 https://vercel.com/miguelmagsilveira-3897/du-tattoos/analytics
-(Frente A completa. Frente B: 4 não-visuais prontos; faltam os visual-autorais.)
+https://vercel.com/miguelmagsilveira-3897/francine-machado/analytics
+https://vercel.com/miguelmagsilveira-3897/valeriano-nails/analytics
 
 ------------------------------------------------------------------------
-DECISÕES TOMADAS NA DÚVIDA (conservador)
+DECISÕES TOMADAS NA DÚVIDA (conservador; nada inventado)
 ------------------------------------------------------------------------
-- Kascão Express PULADO: é unidade de franquia (marca tem kascao.com.br; franqueado não pode ter site próprio). Não entrou em descartados.
-- Valença: nota/endereço/horário NÃO informados → ficaram fora do site (sem inventar). Galeria = 4 fotos reais do Insta; resto Unsplash. Instagram confirmado (@valencaconfeitariaartesanal) → linkado.
-- Studio Edu Castor: nota 4,9 (real) exibida; horário não confirmado → "Fale no WhatsApp". Sem Instagram no site (handle não confirmado).
-- Fotos reais só de trabalho próprio (sem repost/promo com texto). Valença: descartei 1 "Feliz Natal" (texto) e 1 vídeo com legenda. Sanja: descartei 1 com legenda "Quer surpreender".
-- Objeção "tá caro": ticket baixo (pet/academia) → usei "o valor ou o momento?"; confeitaria (pedido de festa pode cobrir R$500) → usei o gancho só onde é verdade.
-- Selo LGBTQ+ (CÃOMIAU, Studio): NÃO aparece em nenhum site nem texto.
+- Kascão Express PULADO: franquia (marca tem kascao.com.br; franqueado não pode ter site próprio). NÃO está em descartados.
+- Dados não confirmados (nota/endereço/horário/Instagram) ficaram FORA dos sites — nunca inventados.
+  · Com nota real exibida: Studio (4,9), Sanja (5,0/643), Saddam (4,7/169).
+  · Sem nota: CÃOMIAU (5,0 só nota, sem contagem), Valença, Pet Penedo, Francine, Valeriano, e toda a Frente B.
+- Fotos reais só de trabalho próprio (sem repost/promo com texto): Valença (4), Sanja (4), Du Tattoos (5). Descartadas fotos com legenda/promo e fora-do-trabalho.
+- Frente B visual-autoral: Du Tattoos tem o Instagram acessível (@dutattooz) → galeria com fotos REAIS dele. Francine e Valeriano NÃO têm Instagram linkado/acessível no Maps → sites com fotos de EXEMPLO (Unsplash), sinalizado no próprio site ("no site final entram as fotos reais") e no kit. São negócios reais com WhatsApp verificado; peça as fotos reais no fechamento.
+- Objeção "tá caro": ticket baixo (pet, academia, chaveiro, etc.) → "o valor ou o momento?"; ticket que cobre R$500 (confeitaria de festa, tatuagem) → gancho "um pedido/sessão já cobre".
+- Frente B etapa 1 = "sou de São José também" (não vizinho). Frente A = vizinho. Fechamento em todos: domínio .com.br "mais ~R$40/ano" (fora dos R$500), dia/hora = [dia] às [hora], preferir quarta.
+- Selo LGBTQ+ (CÃOMIAU, Studio Edu Castor): NÃO aparece em nenhum site nem texto.
 
 ------------------------------------------------------------------------
 CONFERIR ANTES DE ENVIAR
 ------------------------------------------------------------------------
-- Abrir cada link no celular e confirmar que carrega sem login.
-- Clicar ENABLE no Analytics de cada projeto (links acima).
-- Nos kits visual-autorais, as fotos reais são de exemplo do que já existe — confirmar com o dono antes de publicar definitivo.
+- FRENTE B: confirmar cada WhatsApp (veio do Google Maps, pode estar desatualizado).
+- SADDAM: o WhatsApp cai em atendente/bot — na etapa 1 peça pra falar com o dono (ver kit).
+- FRANCINE e VALERIANO: fotos do site são de EXEMPLO. Se quiser 100% real antes de enviar, me manda o Instagram/fotos delas que eu troco e republico.
+- Abrir cada link no celular (todos testados 200, sem login).
+- Clicar ENABLE no Analytics de cada projeto (links acima) — é o único passo que ficou só no painel.
 - Preencher [dia]/[hora] no fechamento (preferir quarta).
 
 ------------------------------------------------------------------------
@@ -70,4 +80,5 @@ ORDEM SUGERIDA DE ENVIO
 ------------------------------------------------------------------------
 - WhatsApp: até 3 por dia (não disparar tudo junto).
 - Presencial (Frente A): preferir quartas, no horário de menor movimento de cada nicho (ver cada roteiro-presencial.txt).
-- Começar pelos prontos (CÃOMIAU, Valença, Studio).
+- Sugestão de 1ª leva (mais quentes / fotos reais): CÃOMIAU, Valença, Sanja (Frente A) + Du Tattoos (Frente B).
+- Deixar Francine/Valeriano pra depois de trocar as fotos, se preferir.
