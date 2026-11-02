@@ -13,7 +13,7 @@ CÃOMIAU Mundo Pet        | banho e tosa       | PRONTO (200)      | https://cao
 Valença Confeitaria      | bolos/doces (VA)   | PRONTO (200)      | https://valenca-confeitaria.vercel.app  | valenca-confeitaria/kit-envio.txt
 Studio Edu Castor        | academia           | PRONTO (200)      | https://studio-edu-castor.vercel.app    | studio-edu-castor/kit-envio.txt
 Sanja Presentes          | cestas luxo (VA)   | PRONTO (200)      | https://sanja-presentes.vercel.app      | sanja-presentes/kit-envio.txt
-Pet Shop Penedo          | pet shop           | A FAZER           | —                                       | —
+Pet Shop Penedo          | pet shop           | PRONTO (200)      | https://pet-shop-penedo.vercel.app      | pet-shop-penedo/kit-envio.txt
 Saddam Burguer           | hamburgueria       | A FAZER (último)  | —                                       | —
 Kascão Express           | sorveteria         | PULADO (franquia) | —                                       | —
 
@@ -31,6 +31,7 @@ https://vercel.com/miguelmagsilveira-3897/caomiau-mundo-pet/analytics
 https://vercel.com/miguelmagsilveira-3897/valenca-confeitaria/analytics
 https://vercel.com/miguelmagsilveira-3897/studio-edu-castor/analytics
 https://vercel.com/miguelmagsilveira-3897/sanja-presentes/analytics
+https://vercel.com/miguelmagsilveira-3897/pet-shop-penedo/analytics
 (mais serão adicionados conforme cada site sobe)
 
 ------------------------------------------------------------------------
