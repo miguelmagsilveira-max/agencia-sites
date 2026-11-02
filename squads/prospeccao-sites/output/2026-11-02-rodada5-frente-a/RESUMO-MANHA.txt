@@ -25,7 +25,10 @@ TABELA — FRENTE B (7 prestadores novos; só WhatsApp, sem roteiro presencial)
 Prospecção via Google Maps (negócios reais, sem site, WhatsApp público). CONFIRMAR cada número antes de enviar.
 Alvo                | Nicho (grupo)         | Status        | Site                              | WhatsApp
 --------------------|-----------------------|---------------|-----------------------------------|----------------
-JF Eletricista      | eletricista (não-vis) | PRONTO (200)  | https://jf-eletricista.vercel.app | (12) 98200-1210
+JF Eletricista      | eletricista (não-vis) | PRONTO (200)  | https://jf-eletricista.vercel.app      | (12) 98200-1210
+RD Caça Vazamentos  | vazamento/desent (nv) | PRONTO (200)  | https://rd-caca-vazamentos.vercel.app  | (12) 98161-9504
+Chaveiro Vitória 24h| chaveiro 24h (não-vis)| PRONTO (200)  | https://chaveiro-vitoria-24h.vercel.app| (12) 99119-6481
+Torres Manutenção   | reparos/manut (nv)    | PRONTO (200)  | https://torres-manutencao.vercel.app   | (12) 98804-7080
 
 ------------------------------------------------------------------------
 LINKS DE ANALYTICS — clicar ENABLE em cada um (conta pessoal)
@@ -37,7 +40,10 @@ https://vercel.com/miguelmagsilveira-3897/sanja-presentes/analytics
 https://vercel.com/miguelmagsilveira-3897/pet-shop-penedo/analytics
 https://vercel.com/miguelmagsilveira-3897/saddam-burguer/analytics
 https://vercel.com/miguelmagsilveira-3897/jf-eletricista/analytics
-(Frente A completa. Frente B em andamento.)
+https://vercel.com/miguelmagsilveira-3897/rd-caca-vazamentos/analytics
+https://vercel.com/miguelmagsilveira-3897/chaveiro-vitoria-24h/analytics
+https://vercel.com/miguelmagsilveira-3897/torres-manutencao/analytics
+(Frente A completa. Frente B: 4 não-visuais prontos; faltam os visual-autorais.)
 
 ------------------------------------------------------------------------
 DECISÕES TOMADAS NA DÚVIDA (conservador)
