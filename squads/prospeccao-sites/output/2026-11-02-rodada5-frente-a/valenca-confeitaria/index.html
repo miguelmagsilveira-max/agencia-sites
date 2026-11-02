@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valença Confeitaria Artesanal — Bolos e Doces Personalizados em São José dos Campos</title>
+<meta name="description" content="Valença Confeitaria Artesanal: bolos personalizados, docinhos finos e sobremesas sob encomenda em São José dos Campos. Peça pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Bakery","name":"Valença Confeitaria Artesanal","telephone":"+5512988245984"}
+</script>
+<style>
+:root{
+  --primary:#7a4a2b; --secondary:#c99a3f; --accent:#e0a0ab;
+  --ink:#2c211b; --muted:#6b5a4e; --bg:#fffdf9; --bg-alt:#faf3ea; --line:#efe4d6;
+  --display:'Cormorant Garamond',Georgia,serif; --body:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3{font-family:var(--display);line-height:1.15}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.tag{display:inline-block;font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--primary);font-weight:700}
+.tag::before{content:"";display:inline-block;width:26px;height:2px;background:var(--secondary);vertical-align:middle;margin-right:10px}
+.sec{padding:76px 0}
+.sec h2{font-size:2rem;margin:8px 0 10px}
+.sec .lead{color:var(--muted);max-width:620px}
+.btn{display:inline-block;border-radius:40px;padding:14px 26px;font-weight:600;font-family:var(--display);transition:transform .25s,box-shadow .25s}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{border:2px solid rgba(255,255,255,.75);color:#fff}
+.btn-ghost:hover{transform:translateY(-2px);background:rgba(255,255,255,.12)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+.d2{transition-delay:.15s}.d3{transition-delay:.3s}.d4{transition-delay:.45s}.d5{transition-delay:.6s}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--primary)}
+.brand span{color:var(--secondary)}
+.nav-links{display:flex;gap:28px}
+.nav-links a{font-size:.92rem;font-weight:500}
+.nav-links a:hover{color:var(--primary)}
+.nav-cta{background:var(--primary);color:#fff;padding:9px 18px;border-radius:30px;font-size:.9rem;font-weight:600}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;animation:slowZoom 22s ease-in-out infinite alternate}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(54,32,18,.82),rgba(54,32,18,.40))}
+@keyframes slowZoom{from{transform:scale(1)}to{transform:scale(1.09)}}
+.hero-content{position:relative;z-index:2;padding:120px 0 90px;max-width:640px}
+.hero h1{font-size:3.1rem;margin:14px 0 16px}
+.hero h1 em{color:var(--secondary);font-style:italic}
+.hero p{font-size:1.12rem;opacity:.94;margin-bottom:28px}
+.hero .btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{position:absolute;right:24px;bottom:28px;z-index:2;display:flex;gap:14px}
+.stat{background:rgba(255,255,255,.14);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:14px 18px;text-align:center}
+.stat b{font-family:var(--display);font-size:1.5rem;display:block}
+.stat small{font-size:.72rem;opacity:.85}
+.galeria-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:12px;margin-top:26px}
+.galeria-grid .gi{overflow:hidden;border-radius:14px;cursor:zoom-in}
+.galeria-grid .gi img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.galeria-grid .gi:hover img{transform:scale(1.07)}
+.galeria-grid .g-destaque{grid-column:span 2;grid-row:span 2}
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .3s,box-shadow .3s;position:relative}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(0,0,0,.1)}
+.card .ci{height:180px;overflow:hidden}
+.card .ci img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .ci img{transform:scale(1.06)}
+.card .cb{padding:22px}
+.card h3{font-size:1.2rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.badge{position:absolute;top:14px;left:14px;background:var(--secondary);color:#2a2000;font-family:var(--display);font-weight:700;font-size:.74rem;padding:6px 12px;border-radius:30px;z-index:2}
+.why{background:var(--bg-alt)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:30px}
+.why-item{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:26px 22px;transition:transform .3s}
+.why-item:hover{transform:translateY(-6px)}
+.why-item svg{width:34px;height:34px;stroke:var(--primary);fill:none;stroke-width:1.7;margin-bottom:12px}
+.why-item h3{font-size:1.06rem;margin-bottom:6px}
+.why-item p{color:var(--muted);font-size:.9rem}
+.banner{position:relative;color:#fff;text-align:center;padding:84px 0;overflow:hidden}
+.banner-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.banner-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(122,74,43,.82),rgba(122,74,43,.82))}
+.banner .wrap{position:relative;z-index:2}
+.banner h2{font-size:2.1rem;margin-bottom:12px;color:#fff}
+.banner p{opacity:.92;margin-bottom:24px}
+.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.sobre-grid img{border-radius:20px;height:380px;width:100%;object-fit:cover;box-shadow:0 20px 50px rgba(0,0,0,.14)}
+.sobre p{color:var(--muted);margin-top:12px}
+.contato{background:var(--bg-alt)}
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:26px}
+.contato-grid.one{grid-template-columns:1fr;max-width:640px}
+.contato .row{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px}
+.contato .row svg{width:22px;height:22px;stroke:var(--primary);fill:none;stroke-width:1.8;flex:none;margin-top:2px}
+.contato iframe{width:100%;height:320px;border:0;border-radius:18px}
+footer{background:#2c211b;color:#e7dccf;padding:54px 0 26px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+footer h4{font-family:var(--display);color:#fff;margin-bottom:12px;font-size:1.05rem}
+footer a{display:block;color:#e7dccf;font-size:.92rem;margin-bottom:8px;opacity:.9}
+footer a:hover{opacity:1;color:#fff}
+.footer-thumbs{display:flex;gap:8px;margin-top:12px}
+.footer-thumbs img{width:58px;height:58px;border-radius:10px;object-fit:cover;opacity:.85;transition:opacity .2s}
+.footer-thumbs a:hover img{opacity:1}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:18px;text-align:center;font-size:.85rem;opacity:.8}
+.preview-line{margin-top:8px;font-size:.74rem;opacity:.5}
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;background:var(--primary);color:#fff;border-radius:50px;padding:14px 20px;font-weight:600;font-family:var(--display);display:flex;align-items:center;gap:9px;box-shadow:0 12px 30px rgba(0,0,0,.3);transition:transform .25s}
+.wa:hover{transform:translateY(-3px)}
+.wa svg{width:22px;height:22px;fill:#25D366}
+.lightbox{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;padding:28px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:92vw;max-height:86vh;border-radius:10px;cursor:default}
+.lightbox-close{position:absolute;top:16px;right:24px;background:none;border:none;color:#fff;font-size:2.4rem;cursor:pointer;opacity:.85}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hero h1{font-size:2.2rem}
+  .hero-stats{position:static;justify-content:center;padding:22px 0 0}
+  .hero-content{padding:110px 0 40px}
+  .galeria-grid{grid-template-columns:1fr 1fr;grid-auto-rows:130px}
+  .galeria-grid .g-destaque{grid-column:span 2;grid-row:span 2}
+  .cards-grid,.why-grid,.sobre-grid,.contato-grid,.footer-grid{grid-template-columns:1fr;gap:26px}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <div class="brand">Valença <span>Confeitaria</span></div>
+  <div class="nav-links">
+    <a href="#galeria">Doces</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </div>
+  <a class="nav-cta" href="https://wa.me/5512988245984" target="_blank" rel="noopener">Encomendar</a>
+</div></nav>
+
+<header class="hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-4.1.0&amp;w=1600&amp;h=950&amp;fit=crop&amp;q=80&amp;auto=format')"></div>
+  <div class="wrap hero-content">
+    <span class="tag rv" style="color:var(--secondary)">Confeitaria artesanal · São José dos Campos</span>
+    <h1 class="rv d2">Bolos e doces <em>feitos à mão</em> pra sua festa</h1>
+    <p class="rv d3">Bolos personalizados, docinhos finos e sobremesas sob encomenda, com capricho de confeitaria artesanal — aqui em São José dos Campos.</p>
+    <div class="btns rv d4">
+      <a class="btn btn-primary" href="https://wa.me/5512988245984" target="_blank" rel="noopener">Encomendar no WhatsApp</a>
+      <a class="btn btn-ghost" href="#galeria">Ver os doces</a>
+    </div>
+  </div>
+  
+</header>
+
+<section class="sec" id="galeria">
+  <div class="wrap">
+    <span class="tag rv">Nossos doces</span>
+    <h2 class="rv d2">Um gostinho do que a gente faz</h2>
+    <p class="lead rv d3">Trabalhos reais da Valença. Clique pra ampliar.</p>
+    <div class="galeria-grid">
+      <div class="gi rv"><img src="imagens-insta/1.jpg" onerror="this.src='https://picsum.photos/seed/g1/700/700'" loading="lazy" alt="Trabalho"></div>
+      <div class="gi rv"><img src="imagens-insta/2.jpg" onerror="this.src='https://picsum.photos/seed/g2/700/700'" loading="lazy" alt="Trabalho"></div>
+      <div class="gi rv"><img src="imagens-insta/3.jpg" onerror="this.src='https://picsum.photos/seed/g3/700/700'" loading="lazy" alt="Trabalho"></div>
+      <div class="gi rv"><img src="imagens-insta/4.jpg" onerror="this.src='https://picsum.photos/seed/g4/700/700'" loading="lazy" alt="Trabalho"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="servicos" style="background:var(--bg-alt)">
+  <div class="wrap">
+    <span class="tag rv">O que fazemos</span>
+    <h2 class="rv d2">Encomendas pra adoçar sua festa</h2>
+    <div class="cards-grid">
+      <div class="card rv d2"><div class="ci"><img src="https://images.unsplash.com/photo-1578922864601-79dcc7cbcea9?ixlib=rb-4.1.0&amp;w=600&amp;h=420&amp;fit=crop&amp;q=80&amp;auto=format" onerror="this.src='https://picsum.photos/seed/s1/600/420'" loading="lazy" alt="Bolos personalizados"></div><div class="cb"><h3>Bolos personalizados</h3><p>Bolos sob encomenda pra aniversário, casamento e datas especiais — sabor e decoração do seu jeito.</p></div></div>
+      <div class="card rv d3"><span class="badge">Mais pedido</span><div class="ci"><img src="https://images.unsplash.com/photo-1662230786065-154eafffa3e6?ixlib=rb-4.1.0&amp;w=600&amp;h=420&amp;fit=crop&amp;q=80&amp;auto=format" onerror="this.src='https://picsum.photos/seed/s2/600/420'" loading="lazy" alt="Docinhos finos"></div><div class="cb"><h3>Docinhos finos</h3><p>Brigadeiros, beijinhos e docinhos gourmet pra festa, no capricho.</p></div></div>
+      <div class="card rv d4"><div class="ci"><img src="https://images.unsplash.com/photo-1605807646983-377bc5a76493?ixlib=rb-4.1.0&amp;w=600&amp;h=420&amp;fit=crop&amp;q=80&amp;auto=format" onerror="this.src='https://picsum.photos/seed/s3/600/420'" loading="lazy" alt="Sobremesas &amp; datas"></div><div class="cb"><h3>Sobremesas &amp; datas</h3><p>Ovos de colher, sobremesas e encomendas especiais nas datas do ano.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec why">
+  <div class="wrap">
+    <span class="tag rv">Por que a Valença</span>
+    <h2 class="rv d2">Doce bonito que também é gostoso</h2>
+    <div class="why-grid">
+      <div class="why-item rv d2"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg><h3>Feito à mão</h3><p>Cada doce é produzido artesanalmente, com cuidado no detalhe.</p></div>
+      <div class="why-item rv d3"><svg viewBox="0 0 24 24"><path d="M12 3l2 5 5 .5-4 3.5 1.5 5-4.5-3-4.5 3 1.5-5-4-3.5 5-.5z"/></svg><h3>Do seu jeito</h3><p>Sabores e decoração personalizados pra combinar com a sua festa.</p></div>
+      <div class="why-item rv d4"><svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.3 16.5 14 18.3 21 12 17 5.7 21 7.5 14 2 9.3 9 9"/></svg><h3>Capricho de verdade</h3><p>Acabamento bonito, do jeito que dá gosto de servir.</p></div>
+      <div class="why-item rv d5"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>Sob encomenda</h3><p>Combine pelo WhatsApp com antecedência e garanta a sua data.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <div class="banner-bg" style="background-image:url('https://images.unsplash.com/photo-1604413191066-4dd20bedf486?ixlib=rb-4.1.0&amp;w=1600&amp;h=600&amp;fit=crop&amp;q=80&amp;auto=format')"></div>
+  <div class="wrap">
+    <h2 class="rv">Tem festa chegando?</h2>
+    <p class="rv d2">Me conta sua ideia que a gente monta o bolo e os doces do seu jeito.</p>
+    <a class="btn btn-primary rv d3" href="https://wa.me/5512988245984" target="_blank" rel="noopener" style="background:var(--secondary);color:#2a2000">Pedir orçamento</a>
+  </div>
+</section>
+
+<section class="sec" id="sobre">
+  <div class="wrap sobre-grid">
+    <img class="rv" src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?ixlib=rb-4.1.0&amp;w=800&amp;h=760&amp;fit=crop&amp;q=80&amp;auto=format" onerror="this.src='https://picsum.photos/seed/sobre/800/760'" loading="lazy" alt="Sobre">
+    <div class="sobre">
+      <span class="tag rv">A Valença</span>
+      <h2 class="rv d2">Doçaria feita com carinho</h2>
+      <p class="rv d3">A Valença Confeitaria Artesanal faz bolos e doces personalizados sob encomenda em São José dos Campos — do docinho da festa ao bolo que é o centro das atenções.</p>
+      <p class="rv d4">Tudo feito à mão, com atenção ao sabor e ao acabamento. Me manda a sua ideia pelo WhatsApp que a gente combina tudo.</p>
+      <a class="btn btn-primary rv d5" href="https://wa.me/5512988245984" target="_blank" rel="noopener" style="margin-top:16px">Fazer uma encomenda</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec contato" id="contato">
+  <div class="wrap">
+    <span class="tag rv">Fale com a gente</span>
+    <h2 class="rv d2">Peça o seu doce</h2>
+    <div class="contato-grid one">
+      <div class="rv d3">
+        <div class="row"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.5-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg><p><b>WhatsApp</b><br>(12) 98824-5984</p></div>
+        <div class="row"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg><p><b>Instagram</b><br><a href="https://instagram.com/valencaconfeitariaartesanal" target="_blank" rel="noopener" style="color:var(--primary)">@valencaconfeitariaartesanal</a></p></div>
+        <div class="row"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><p><b>Encomendas</b><br>Orçamento e pedidos pelo WhatsApp.</p></div>
+        <a class="btn btn-primary" href="https://wa.me/5512988245984" target="_blank" rel="noopener" style="margin-top:8px">Chamar no WhatsApp</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <h4>Valença Confeitaria Artesanal</h4>
+      <p style="font-size:.92rem;opacity:.9">Bolos e doces artesanais personalizados em São José dos Campos. Encomendas pelo WhatsApp.</p>
+      <div class="footer-thumbs">
+        <a href="#galeria"><img src="imagens-insta/1.jpg" onerror="this.src='https://picsum.photos/seed/ft0/120/120'" alt="Trabalho"></a>
+        <a href="#galeria"><img src="imagens-insta/2.jpg" onerror="this.src='https://picsum.photos/seed/ft1/120/120'" alt="Trabalho"></a>
+        <a href="#galeria"><img src="imagens-insta/3.jpg" onerror="this.src='https://picsum.photos/seed/ft2/120/120'" alt="Trabalho"></a>
+      </div>
+    </div>
+    <div>
+      <h4>Navegar</h4>
+      <a href="#galeria">Doces</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <a href="https://wa.me/5512988245984" target="_blank" rel="noopener">WhatsApp (12) 98824-5984</a>
+      <a href="https://instagram.com/valencaconfeitariaartesanal" target="_blank" rel="noopener">@valencaconfeitariaartesanal</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    © 2026 Valença Confeitaria Artesanal — São José dos Campos/SP
+    <div class="preview-line">Prévia / demonstração — site amostra, não oficial.</div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5512988245984" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.6 14.2c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.3-.9-2.8-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 .9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.7.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.8-.1 1.4z"/></svg> Encomendar</a>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Foto ampliada">
+  <button class="lightbox-close" aria-label="Fechar">&times;</button>
+  <img src="" alt="Foto ampliada">
+</div>
+
+<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
+<script>
+(function(){var e=document.querySelectorAll('.rv');if('IntersectionObserver' in window){var o=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target);}});},{threshold:.12});e.forEach(function(x){o.observe(x);});}else{e.forEach(function(x){x.classList.add('in');});}setTimeout(function(){e.forEach(function(x){x.classList.add('in');});},1400);})();
+(function(){var lb=document.getElementById('lightbox'),img=lb.querySelector('img');document.querySelectorAll('.galeria-grid .gi img').forEach(function(i){i.addEventListener('click',function(){img.src=i.src;lb.classList.add('open');});});lb.addEventListener('click',function(e){if(e.target!==img)lb.classList.remove('open');});})();
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

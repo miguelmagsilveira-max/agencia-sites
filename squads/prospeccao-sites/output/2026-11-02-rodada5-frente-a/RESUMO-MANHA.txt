@@ -1,0 +1,58 @@
+========================================================================
+RESUMO DA MANHÃ — Rodada 5 (Frentes A e B)   ·   atualizado progressivamente
+========================================================================
+Última atualização: commit "fase 3 — frente A (parcial)".
+Trabalho autônomo noturno + continuação. Nada foi ENVIADO. Tudo é "kit gerado".
+
+------------------------------------------------------------------------
+TABELA — FRENTE A (7 comércios do bairro; presencial plano A + WhatsApp plano B)
+------------------------------------------------------------------------
+Alvo                     | Nicho              | Status            | Site no ar                              | Kit
+-------------------------|--------------------|-------------------|-----------------------------------------|----------------------------------
+CÃOMIAU Mundo Pet        | banho e tosa       | PRONTO (200)      | https://caomiau-mundo-pet.vercel.app    | caomiau-mundo-pet/kit-envio.txt
+Valença Confeitaria      | bolos/doces (VA)   | PRONTO (200)      | https://valenca-confeitaria.vercel.app  | valenca-confeitaria/kit-envio.txt
+Studio Edu Castor        | academia           | PRONTO (200)      | https://studio-edu-castor.vercel.app    | studio-edu-castor/kit-envio.txt
+Sanja Presentes          | cestas luxo (VA)   | EM ANDAMENTO      | (gerando o site)                        | (pendente)
+Pet Shop Penedo          | pet shop           | A FAZER           | —                                       | —
+Saddam Burguer           | hamburgueria       | A FAZER (último)  | —                                       | —
+Kascão Express           | sorveteria         | PULADO (franquia) | —                                       | —
+
+(VA = visual-autoral, galeria com fotos reais do Instagram.)
+
+------------------------------------------------------------------------
+TABELA — FRENTE B (7 prestadores novos; só WhatsApp, sem roteiro presencial)
+------------------------------------------------------------------------
+(a fazer — Pablo prospecta 7: 3-4 visual-autorais + 3-4 não-visuais)
+
+------------------------------------------------------------------------
+LINKS DE ANALYTICS — clicar ENABLE em cada um (conta pessoal)
+------------------------------------------------------------------------
+https://vercel.com/miguelmagsilveira-3897/caomiau-mundo-pet/analytics
+https://vercel.com/miguelmagsilveira-3897/valenca-confeitaria/analytics
+https://vercel.com/miguelmagsilveira-3897/studio-edu-castor/analytics
+(mais serão adicionados conforme cada site sobe)
+
+------------------------------------------------------------------------
+DECISÕES TOMADAS NA DÚVIDA (conservador)
+------------------------------------------------------------------------
+- Kascão Express PULADO: é unidade de franquia (marca tem kascao.com.br; franqueado não pode ter site próprio). Não entrou em descartados.
+- Valença: nota/endereço/horário NÃO informados → ficaram fora do site (sem inventar). Galeria = 4 fotos reais do Insta; resto Unsplash. Instagram confirmado (@valencaconfeitariaartesanal) → linkado.
+- Studio Edu Castor: nota 4,9 (real) exibida; horário não confirmado → "Fale no WhatsApp". Sem Instagram no site (handle não confirmado).
+- Fotos reais só de trabalho próprio (sem repost/promo com texto). Valença: descartei 1 "Feliz Natal" (texto) e 1 vídeo com legenda. Sanja: descartei 1 com legenda "Quer surpreender".
+- Objeção "tá caro": ticket baixo (pet/academia) → usei "o valor ou o momento?"; confeitaria (pedido de festa pode cobrir R$500) → usei o gancho só onde é verdade.
+- Selo LGBTQ+ (CÃOMIAU, Studio): NÃO aparece em nenhum site nem texto.
+
+------------------------------------------------------------------------
+CONFERIR ANTES DE ENVIAR
+------------------------------------------------------------------------
+- Abrir cada link no celular e confirmar que carrega sem login.
+- Clicar ENABLE no Analytics de cada projeto (links acima).
+- Nos kits visual-autorais, as fotos reais são de exemplo do que já existe — confirmar com o dono antes de publicar definitivo.
+- Preencher [dia]/[hora] no fechamento (preferir quarta).
+
+------------------------------------------------------------------------
+ORDEM SUGERIDA DE ENVIO
+------------------------------------------------------------------------
+- WhatsApp: até 3 por dia (não disparar tudo junto).
+- Presencial (Frente A): preferir quartas, no horário de menor movimento de cada nicho (ver cada roteiro-presencial.txt).
+- Começar pelos prontos (CÃOMIAU, Valença, Studio).

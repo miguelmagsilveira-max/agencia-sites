@@ -41,6 +41,9 @@ Negócios neste arquivo com data nos últimos 30 dias são FILTRADOS automaticam
 | Saint Joe Burgerhouse | São José dos Campos/SP | ~2026-10 (aprox., rodada 4) | WhatsApp (rodada 4 — só etapa 1, caiu no bot/atendente) | reservado-repescagem |
 | Araci (personal organizer) | São José dos Campos/SP | ~2026-09 (aprox., rodada 4) | WhatsApp (rodada 4) | saiu-do-ramo |
 | Poli Pinturas | São José dos Campos/SP | 2026-11-02 (rodada 5; kit novo .txt c/ padrões novos pronto, ainda NÃO enviado) | WhatsApp (12) 98706-5217 | em-andamento |
+| CÃOMIAU Mundo Pet | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente A) | Presencial R. Itabaiana 1275 (plano A) / WhatsApp (12) 99781-2684 (plano B) | kit gerado |
+| Valença Confeitaria Artesanal | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente A, visual-autoral) | Presencial / WhatsApp (12) 98824-5984 | kit gerado |
+| Studio Edu Castor | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente A) | Presencial R. Icatu 1366 (plano A) / WhatsApp (12) 98829-2850 (plano B) | kit gerado |
 
 <!-- Bloqueio de 30 dias (rodada 1): não prospectar antes de 2026-06-18 (já expirado). -->
 <!-- Rodada 2 (A Família, Classe A, Equilibre-se, Cris): data de envio APROXIMADA (~final de maio/2026, "há mais de 2 semanas" segundo o Miguel) — usada só para o cálculo do bloqueio de 30 dias, não é data exata. Bloqueio de 30 dias já expirado. -->
@@ -50,3 +53,5 @@ Negócios neste arquivo com data nos últimos 30 dias são FILTRADOS automaticam
 <!-- EM ANDAMENTO (rodada 5, 2026-11-02): André Pintor (disse SIM e adiou por contas a pagar; 2ª mensagem vista sem resposta; toque 3 em 2 versões em andre-pintor/toque-3-rodada5.txt) e Poli Pinturas (kit novo .txt com padrões da rodada 5 pronto, nunca enviado). -->
 <!-- Araci respondeu que saiu do ramo (personal organizer) — lead morto, não reabordar. -->
 <!-- Dona Costura (rodada 3): site preparado mas NÃO enviado — por isso NÃO consta aqui. -->
+<!-- RODADA 5 FRENTE A (2026-11-02, bairro perto da casa do Miguel): kits gerados (presencial plano A + WhatsApp plano B), NÃO enviados, status "kit gerado". Run folder: output/2026-11-02-rodada5-frente-a/. Primeiro: CÃOMIAU. -->
+<!-- Kascão Express: parado (não processado) — é unidade de FRANQUIA (marca tem site kascao.com.br); franqueado normalmente não pode ter site próprio. Decisão do Miguel: pular, começar pelo CÃOMIAU. NÃO está em descartados. -->
