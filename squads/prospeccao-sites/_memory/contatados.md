@@ -47,13 +47,13 @@ Negócios neste arquivo com data nos últimos 30 dias são FILTRADOS automaticam
 | Sanja Presentes | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente A, visual-autoral) | Presencial R. Raimundo Barbosa Nogueira 322 (plano A) / WhatsApp (12) 99722-2588 (plano B) | kit gerado |
 | Pet Shop Penedo | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente A) | Presencial R. Penedo 615/621 (plano A) / WhatsApp (12) 99231-1729 (plano B) | kit gerado |
 | Saddam Burguer | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente A) | Presencial R. Itabaiana 1239 (plano A) / WhatsApp (12) 98702-3847 (plano B — risco de bot) | kit gerado |
-| JF Eletricista | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, prestador não-visual) | WhatsApp (12) 98200-1210 (Maps — confirmar número) | kit gerado |
-| RD Caça Vazamentos e Desentupidora | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, não-visual) | WhatsApp (12) 98161-9504 (Maps — confirmar número) | kit gerado |
-| Chaveiro Vitória 24h | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, não-visual) | WhatsApp (12) 99119-6481 (Maps — confirmar número) | kit gerado |
-| Torres Manutenção | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, não-visual) | WhatsApp (12) 98804-7080 (Maps — confirmar número) | kit gerado |
-| Du Tattoos | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, visual-autoral) | WhatsApp (12) 98102-4628 (Maps — confirmar número) · @dutattooz | kit gerado |
-| Francine Machado (Bolos e Doces) | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, visual-autoral — site com fotos de exemplo) | WhatsApp (12) 99726-1586 (Maps — confirmar número) | kit gerado |
-| Valeriano Nails | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, visual-autoral — site com fotos de exemplo) | WhatsApp (12) 99211-3498 (Maps — confirmar número) | kit gerado |
+| JF Eletricista | São José dos Campos/SP | 2026-11-03 (rodada 5, Frente B, prestador não-visual) | WhatsApp (12) 98200-1210 (Maps — confirmar número) | recusou |
+| RD Caça Vazamentos e Desentupidora | São José dos Campos/SP | 2026-11-04 (rodada 5, Frente B, não-visual) | WhatsApp (12) 98161-9504 (Maps — confirmar número) | desqualificado — já tem site próprio (NÃO enviar) |
+| Chaveiro Vitória 24h | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, não-visual) | WhatsApp (12) 99119-6481 (Maps — confirmar número) | kit gerado (re-checagem de site OK — sem site próprio) |
+| Torres Manutenção | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, não-visual) | WhatsApp (12) 98804-7080 (Maps — confirmar número) | kit gerado (re-checagem de site OK — sem site próprio) |
+| Du Tattoos | São José dos Campos/SP | 2026-11-03 (rodada 5, Frente B, visual-autoral) | WhatsApp (12) 98102-4628 (Maps — confirmar número) · @dutattooz | em-andamento |
+| Francine Machado (Bolos e Doces) | São José dos Campos/SP | 2026-11-03 (rodada 5, Frente B, visual-autoral) | WhatsApp (12) 99726-1586 (Maps — confirmar número) | recusou — já tem site próprio |
+| Valeriano Nails | São José dos Campos/SP | 2026-11-02 (rodada 5, Frente B, visual-autoral — site com fotos de exemplo) | WhatsApp (12) 99211-3498 (Maps — confirmar número) | kit gerado (re-checagem de site OK — sem site próprio) |
 
 <!-- Bloqueio de 30 dias (rodada 1): não prospectar antes de 2026-06-18 (já expirado). -->
 <!-- Rodada 2 (A Família, Classe A, Equilibre-se, Cris): data de envio APROXIMADA (~final de maio/2026, "há mais de 2 semanas" segundo o Miguel) — usada só para o cálculo do bloqueio de 30 dias, não é data exata. Bloqueio de 30 dias já expirado. -->
@@ -65,3 +65,14 @@ Negócios neste arquivo com data nos últimos 30 dias são FILTRADOS automaticam
 <!-- Dona Costura (rodada 3): site preparado mas NÃO enviado — por isso NÃO consta aqui. -->
 <!-- RODADA 5 FRENTE A (2026-11-02, bairro perto da casa do Miguel): kits gerados (presencial plano A + WhatsApp plano B), NÃO enviados, status "kit gerado". Run folder: output/2026-11-02-rodada5-frente-a/. Primeiro: CÃOMIAU. -->
 <!-- Kascão Express: parado (não processado) — é unidade de FRANQUIA (marca tem site kascao.com.br); franqueado normalmente não pode ter site próprio. Decisão do Miguel: pular, começar pelo CÃOMIAU. NÃO está em descartados. -->
+<!-- RODADA 5 FRENTE B — primeiros envios (reportados por Miguel em 2026-11-04):
+     - Du Tattoos: etapa 1 SEM falar de site → respondeu caloroso, conversa aberta (em-andamento).
+     - Francine Machado e JF Eletricista: a 1ª mensagem já falava "mexo com criação de site / montei uma coisa" → os dois recusaram (ENCERRADOS).
+     Lição: a ETAPA 1 não pode falar de site nem de "montei uma coisa" — só saudação + elogio a fato real + pergunta leve. A apresentação do que faço vai na ETAPA 3. Os kits de RD, Chaveiro, Torres e Valeriano foram corrigidos (ETAPA 1 limpa, apresentação movida pra ETAPA 3). -->
+<!-- FRANCINE MACHADO — já tem site institucional próprio: francinemachado.com.br (Ateliê Francine Machado / Cake & Design, Rua Peroba 243, Jardim das Indústrias, SJC; WhatsApp do site 12 99726-1586 = o mesmo do Maps; Instagram @francine_machado; galeria de bolos em Adobe Portfolio). Era 🚫 SITE INSTITUCIONAL PRÓPRIO — deveria ter sido DESQUALIFICADA, não contatada. Não reprospectar como "sem site". -->
+<!-- RE-CHECAGEM DE SITE (2026-11-04, pós-Francine, nos não-visuais ainda não enviados):
+     - RD Caça Vazamentos → 🚫 JÁ TEM SITE PRÓPRIO: rdcacavazamentos.com.br (WhatsApp do site 12 98161-9504 = o do Maps; e-mail contato@rdcacavazamentos.com.br; atende Vale do Paraíba/Litoral Norte). DESQUALIFICADO — NÃO enviar. Não reprospectar como "sem site".
+     - Chaveiro Vitória 24h → sem site próprio (domínios-palpite chaveirovitoria.com.br / chaveirovitoria24h.com.br não resolvem; nada por nome+cidade nem pelo telefone). OK enviar.
+     - Torres Manutenção → sem site próprio confirmado (torresmanutencao.com.br não serve conteúdo institucional — sem www, sem achado por nome/telefone). OK enviar.
+     - Valeriano Nails (visual-autoral, bônus) → sem site próprio (valerianonails.com.br não resolve; nada por nome). OK enviar.
+     Método que pegou Francine e RD: PALPITE DE DOMÍNIO (nomedonegocio.com.br) + CRUZAMENTO DE TELEFONE (o WhatsApp do site bate com o do Maps). Virou ajuste no processo do Roberto. -->

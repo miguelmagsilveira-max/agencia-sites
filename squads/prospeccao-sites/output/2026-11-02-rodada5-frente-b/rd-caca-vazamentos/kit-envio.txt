@@ -1,6 +1,15 @@
 KIT DE ENVIO (WhatsApp) — RD Caça Vazamentos e Desentupidora  ·  [PRESTADOR — não-visual]  ·  (Rodada 5, Frente B)
 
-Status: kit gerado — pronto, NÃO enviado.
+############################################################
+## ⛔ NÃO ENVIAR — NEGÓCIO DESQUALIFICADO
+## A RD JÁ TEM SITE INSTITUCIONAL PRÓPRIO: rdcacavazamentos.com.br
+## (o WhatsApp do site, 12 98161-9504, é o mesmo do Google Maps;
+##  e-mail próprio contato@rdcacavazamentos.com.br). Ela já tem o que
+##  venderíamos. Descoberto na re-checagem de 2026-11-04. Kit mantido
+##  só como registro. Não reprospectar como "sem site".
+############################################################
+
+Status: DESQUALIFICADO — já tem site próprio. NÃO enviar (kit mantido só como registro).
 Canal: WhatsApp -> (12) 98161-9504
 Link ao vivo: https://rd-caca-vazamentos.vercel.app
 Âncora: presta serviço de caça vazamento/desentupidora em SJC e não tem site próprio (Maps, sem site).
@@ -12,7 +21,7 @@ ATENÇÃO: formato em etapas. Mande UMA por vez e espere a resposta. Onde estive
 ETAPA 1 — ABERTURA (manda primeiro) · copiar e colar
 
 Oi, boa tarde! Tudo bem? Aqui é o Miguel, sou de São José também 🙂
-Vi que você trabalha com caça vazamento e desentupimento aqui na cidade. Eu mexo com criação de site pra quem presta serviço em SJC e montei uma coisa rápida pensando no seu trabalho.
+Vi que você trabalha com caça vazamento e desentupimento aqui na cidade — serviço que salva o dia de quem tá com dor de cabeça em casa.
 Você pega mais vazamento ou tem bastante desentupimento também?
 
 ------------------------------------------------------------
@@ -22,8 +31,9 @@ Não mande mais nada aqui. Espere responder.
 ------------------------------------------------------------
 ETAPA 3 — CONTEXTO + DOR + PERMISSÃO (depois que responder) · copiar e colar
 
-Ó, vou ser direto 🙂 quem tá com vazamento ou cano entupido corre pro Google procurar "caça vazamento em São José" ou "desentupidora perto de mim". Quem tem uma página própria, com os serviços e o botão de WhatsApp, passa confiança e é chamado primeiro — e você ainda não tem.
-Fiz uma pensando no seu trabalho. Posso te mandar pra dar uma olhada?
+Ó, deixa eu me apresentar direito 🙂 além de morador daqui, eu mexo com criação de site pra quem presta serviço em SJC.
+Quem tá com vazamento ou cano entupido corre pro Google procurar "caça vazamento em São José" ou "desentupidora perto de mim". Quem tem uma página própria, com os serviços e o botão de WhatsApp, passa confiança e é chamado primeiro — e você ainda não tem.
+Montei uma rápida pensando no seu trabalho. Posso te mandar pra dar uma olhada?
 
 ------------------------------------------------------------
 ETAPA 4 — [AGUARDE o "pode mandar"]
